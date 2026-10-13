@@ -1,20 +1,11 @@
-# Проверки и границы версии
+# Readiness of the separate reference landing
 
-Сайт разрабатывается локально и хранится в закрытом GitHub. Внешняя публикация отложена пользователем.
+Updated 13 October 2026. This project is isolated from aerzen-psk-arus. Current branch: codex/reference-landing. GitHub API confirms wm669vjvr2-ui/aerzen-reference-landing is private. Source files and preview screenshots are saved there.
 
-| Область | Статус | Доказательство / условие |
-| --- | --- | --- |
-| Утверждённая структура и страницы | готово | Главная, три входа, модели, подбор, ремонт, компания, статьи и контакты |
-| Прокрутка и пространственная разборка | готово | Реальная Three.js-сцена, проверка прямой/обратной прокрутки, reduced motion и fallback |
-| Серверная защита обращений и заказов | готово | CSRF, origin, whitelist, лимиты, идемпотентность, владение заказом и 11 тестов |
-| Зависимости Python | готово | Pinned requirements; pip-audit без известных уязвимостей на момент проверки |
-| Реальный приём заявок | заблокировано | Подтвердить владельца, условия обработки, контакты по данным и срок хранения |
-| Реальная покупка / фид галереи | заблокировано | Конкретные SKU, подтверждённая конечная цена, наличие, получение, реквизиты |
-| Подключение Метрики / Директа | не применимо | Кампании не запускаются, идентификаторы не выданы, трекеры выключены |
-| Карта старых URL | готово | `content/migration-map.json`; перенаправления включать при согласованном переносе |
-| Публичный HTTPS | не применимо | Пользователь явно отложил публикацию |
-| Закрытый GitHub | готово после проверки API | Проверить `isPrivate: true` при сдаче |
+Local browser/HTTP checks and 11 security tests pass. Known dependency vulnerability audit has no findings. Detailed evidence and limitations: verification.md.
 
-Не заявляем готовность к реальным платежам, гарантированную модерацию Яндекса или юридическое соответствие по одному макету. Банковские реквизиты и исходные персональные записи в Git не включаются. База хранится вне публичных файлов. Не публиковать `.env`, `.git`, SQLite, операторские экспорты или private uploads.
+Public release is blocked: no configured compatible Python host/persistent private SQLite/HTTPS origin, no confirmed production owner/privacy/retention/delivery of leads, material rights unresolved, exact visual reference access unavailable. No legal compliance or production-security conclusion is made. Server forms, commerce and analytics remain disabled. Contact links and the email quotation action are available.
 
-Для внешнего запуска нужны постоянный секрет, HTTPS, разрешённый hostname, ограниченный reverse proxy, backup/retention план и проверка актуальных требований реальной обработки. Возврат на страницу заказа не подтверждает оплату.
+To finish visual matching, provide accessible screenshots/pages for the unavailable aerzen.com.ru and aerzen.oooprofi.ru, and visible desktop/mobile versions for all four if exact matching is required. Current version follows verified text structure and actual client photos; it is not a verified pixel-identical copy.
+
+Use the existing Python stack for hosting. Database defaults and Docker Compose project/volume/port are isolated. Never expose .env, .git, app source, SQLite, backups or private uploads. Before activation of real forms, confirm business jurisdiction/owner and actual data flows, refresh official legal sources, finalize appropriate documents and configure tested operator delivery and retention.
