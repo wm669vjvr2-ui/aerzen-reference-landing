@@ -1,0 +1,28 @@
+name: aerzen-reference-landing
+services:
+  web:
+    build: ..
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:8027:8000"
+    environment:
+      AERZEN_DATA_DIR: /var/lib/aerzen-reference
+      AERZEN_SECRET_KEY: ${AERZEN_SECRET_KEY:?Set a persistent secret outside Git}
+      AERZEN_BASE_URL: ${AERZEN_BASE_URL:?Set the HTTPS public origin}
+      AERZEN_ALLOWED_HOSTS: ${AERZEN_ALLOWED_HOSTS:?Set explicit public hosts},localhost,127.0.0.1
+      AERZEN_PREVIEW_MODE: ${AERZEN_PREVIEW_MODE:-true}
+      AERZEN_FORMS_ENABLED: ${AERZEN_FORMS_ENABLED:-false}
+      AERZEN_COMMERCE_ENABLED: ${AERZEN_COMMERCE_ENABLED:-false}
+      AERZEN_SECURE_COOKIES: "true"
+      AERZEN_TRUSTED_PROXY_IPS: ${AERZEN_TRUSTED_PROXY_IPS:-127.0.0.1}
+    volumes:
+      - aerzen-reference-data:/var/lib/aerzen-reference
+    read_only: true
+    tmpfs:
+      - /tmp:size=16m
+    cap_drop:
+      - ALL
+    security_opt:
+      - no-new-privileges:true
+volumes:
+  aerzen-reference-data:

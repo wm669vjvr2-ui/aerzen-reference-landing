@@ -1,0 +1,38 @@
+{
+  "date": "2026-10-06",
+  "conceptId": "A",
+  "revision": 1,
+  "image": "concept-a.png",
+  "userChoice": "Первый белый вариант: Воздух. Точно по задаче.",
+  "scopeNow": "Static image storyboard only. The user explicitly asked not to build the website yet.",
+  "motion": "Selected white concept A: during natural downward scrolling the blower turns, separates into schematic components, then yields to three visitor paths, catalog, selection, company and useful materials. These are proposal keyframes, not implemented animation.",
+  "latestAmendmentDate": "2026-10-07",
+  "storyboard": [
+    "../aerzen-scroll-01-hero-reference.jpg",
+    "../aerzen-scroll-02-turn.png",
+    "../aerzen-scroll-03-exploded.png",
+    "../aerzen-home-after-animation-v2.png"
+  ],
+  "modelPage": "../aerzen-models-page-v1.png",
+  "latestDecision": "Keep the original three photo routes and the original About PSK ARUS, articles/examples, and Discuss task sections. Remove only the homepage equipment catalog/model grid and the task-selection form. Clicking the first route opens a separate model showcase page inspired by the user-supplied centered-product reference, with price, availability and delivery placeholders and a smooth model-to-model scroll concept. No site code yet.",
+  "checkoutConcept": {
+    "date": "2026-10-07",
+    "scope": "Static Mac-format images of the checkout and order/invoice confirmation shown after clicking Buy; the existing product-card mockup is unchanged.",
+    "images": [
+      "../aerzen-mac-08-checkout-demo.png",
+      "../aerzen-mac-09-invoice-demo.png"
+    ],
+    "commercialAssumptions": "2,000,000 RUB is an illustrative price supplied approximately by the user. Actual per-product final price, availability, seller identity and payment implementation require confirmation before any live product-gallery campaign."
+  },
+  "clientPresentationRevision": {
+    "date": "2026-10-12",
+    "scope": "Client-facing presentation only; simplified deck unchanged.",
+    "slide3": "Three routes: Know the model, Have a task, Repair. Repair subtitle: Diagnostics and repair. CTA: Discuss repair. About remains on slide 4.",
+    "slide4": "About PSK ARUS and articles/application examples; no bottom contact banner. Compact Discuss task button in top-right header. More whitespace, no extra copy.",
+    "assets": [
+      "../aerzen-mac-03-solutions-repair.png",
+      "../aerzen-mac-04-about-articles-v3.png"
+    ],
+    "validation": "Static mockups; no website implementation or new business claims."
+  }
+}

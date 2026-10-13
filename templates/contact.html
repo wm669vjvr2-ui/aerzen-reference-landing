@@ -1,0 +1,2 @@
+{% extends 'base.html' %}{% from '_macros.html' import form with context %}
+{% block content %}<div class="breadcrumb wrap"><a href="/">Главная</a><span>/</span><span>Контакты</span></div><section class="contact-hero wrap"><span class="eyebrow">ПСК АРУС</span><h1>На связи.</h1><a class="contact-big" href="{{ site.phone_href }}">{{ site.phone }}</a><a class="contact-email" href="mailto:{{ site.email }}">{{ site.email }}</a><div class="contact-address"><p>{{ site.address }}</p><p>{{ site.hours }}</p></div></section>{{ form('contact', '', 'Обсудим ваш проект') }}{% endblock %}

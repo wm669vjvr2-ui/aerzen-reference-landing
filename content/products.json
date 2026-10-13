@@ -1,0 +1,389 @@
+[
+  {
+    "brand": "AERZEN",
+    "price": null,
+    "price_rub": null,
+    "price_confirmed": false,
+    "sku_confirmed": false,
+    "purchasable": false,
+    "purchase_enabled": false,
+    "availability": "По запросу",
+    "delivery": "Срок после согласования комплектации",
+    "currency": "RUB",
+    "verified_on": "2026-10-12",
+    "cta": "Обсудить комплектацию",
+    "is_series": true,
+    "image": "/static/images/generated/delta-blower.webp",
+    "images": [
+      "/static/images/generated/delta-blower.webp"
+    ],
+    "image_status": "Illustrative render based on user-approved mockup. It is not a specification of any delivered SKU.",
+    "slug": "delta-blower",
+    "title": "Delta Blower",
+    "family": "Delta Blower",
+    "sku": "",
+    "type": "Роторная воздуходувка",
+    "short_description": "Для аэрации, пневмотранспорта и подачи технологического воздуха.",
+    "description": "Роторные воздуходувки серии Delta Blower работают по принципу Рутса. Исполнение, привод и рабочую точку подбирают по расходу, перепаду давления и условиям процесса.",
+    "technical_specs": [
+      {
+        "label": "Принцип",
+        "value": "Роторная"
+      },
+      {
+        "label": "Комплектация",
+        "value": "Под параметры процесса"
+      },
+      {
+        "label": "Рабочая точка",
+        "value": "По инженерному подбору"
+      }
+    ],
+    "source_price": null,
+    "source_url": "https://vozduhoduvka-aerzen.ru/",
+    "name": "Delta Blower",
+    "product_kind": "series",
+    "display_title": [
+      "DELTA",
+      "BLOWER"
+    ],
+    "image_is_illustration": true
+  },
+  {
+    "brand": "AERZEN",
+    "price": null,
+    "price_rub": null,
+    "price_confirmed": false,
+    "sku_confirmed": false,
+    "purchasable": false,
+    "purchase_enabled": false,
+    "availability": "По запросу",
+    "delivery": "Срок после согласования комплектации",
+    "currency": "RUB",
+    "verified_on": "2026-10-12",
+    "cta": "Обсудить комплектацию",
+    "is_series": true,
+    "image": "/static/images/generated/delta-hybrid.webp",
+    "images": [
+      "/static/images/generated/delta-hybrid.webp"
+    ],
+    "image_status": "Illustrative render based on user-approved mockup. It is not a specification of any delivered SKU.",
+    "slug": "delta-hybrid",
+    "title": "Delta Hybrid",
+    "family": "Delta Hybrid",
+    "sku": "",
+    "type": "Винтовая воздуходувка",
+    "short_description": "Для систем аэрации и пневмотранспорта с переменной нагрузкой.",
+    "description": "Серия Delta Hybrid объединяет принципы роторной воздуходувки и винтового компрессора. Для подбора нужны расход воздуха, рабочее давление и режим нагрузки.",
+    "technical_specs": [
+      {
+        "label": "Принцип",
+        "value": "Винтовая"
+      },
+      {
+        "label": "Комплектация",
+        "value": "Под параметры процесса"
+      },
+      {
+        "label": "Рабочая точка",
+        "value": "По инженерному подбору"
+      }
+    ],
+    "source_price": null,
+    "source_url": "https://vozduhoduvka-aerzen.ru/vozduhoduvka-dlya-ochistnyh-sooruzhenij/",
+    "technical_definition_source": "https://www.aerzen.com/product/screw-blowers-delta-hybrid",
+    "name": "Delta Hybrid",
+    "product_kind": "series",
+    "display_title": [
+      "DELTA",
+      "HYBRID"
+    ],
+    "image_is_illustration": true
+  },
+  {
+    "brand": "AERZEN",
+    "price": null,
+    "price_rub": null,
+    "price_confirmed": false,
+    "sku_confirmed": false,
+    "purchasable": false,
+    "purchase_enabled": false,
+    "availability": "По запросу",
+    "delivery": "Срок после согласования комплектации",
+    "currency": "RUB",
+    "verified_on": "2026-10-12",
+    "cta": "Обсудить комплектацию",
+    "is_series": true,
+    "image": "/static/images/generated/delta-screw.webp",
+    "images": [
+      "/static/images/generated/delta-screw.webp"
+    ],
+    "image_status": "Illustrative render based on user-approved mockup. It is not a specification of any delivered SKU.",
+    "slug": "delta-screw",
+    "title": "Delta Screw",
+    "family": "Delta Screw",
+    "sku": "",
+    "type": "Винтовой компрессор",
+    "short_description": "Для сухого сжатого воздуха и промышленных технологических процессов.",
+    "description": "Серия винтовых компрессоров Delta Screw применяется в том числе в пневмотранспорте. Комплектация зависит от характеристик материала, трассы и требуемого давления.",
+    "technical_specs": [
+      {
+        "label": "Принцип",
+        "value": "Винтовая"
+      },
+      {
+        "label": "Комплектация",
+        "value": "Под параметры процесса"
+      },
+      {
+        "label": "Рабочая точка",
+        "value": "По инженерному подбору"
+      }
+    ],
+    "source_price": null,
+    "source_url": "https://vozduhoduvka-aerzen.ru/vozduhoduvka-dlya-pnevmotransporta/",
+    "name": "Delta Screw",
+    "product_kind": "series",
+    "display_title": [
+      "DELTA",
+      "SCREW"
+    ],
+    "image_is_illustration": true
+  },
+  {
+    "brand": "AERZEN",
+    "price": null,
+    "price_rub": null,
+    "price_confirmed": false,
+    "sku_confirmed": false,
+    "purchasable": false,
+    "purchase_enabled": false,
+    "availability": "По запросу",
+    "delivery": "Срок после согласования комплектации",
+    "currency": "RUB",
+    "verified_on": "2026-10-12",
+    "cta": "Обсудить комплектацию",
+    "is_series": false,
+    "image": "/static/images/source/product-gm-source-1.webp",
+    "images": [
+      "/static/images/source/product-gm-source-1.webp",
+      "/static/images/source/product-gm-source-2.webp",
+      "/static/images/source/product-gm-source-3.webp"
+    ],
+    "image_status": "Source site shares one photo between several GM model pages; specific SKU/configuration image identity is unconfirmed.",
+    "slug": "gm35s",
+    "title": "GM35S",
+    "family": "Delta Blower",
+    "sku": "GM35S",
+    "type": "Роторная воздуходувка",
+    "short_description": "Воздуходувка для промышленной подачи воздуха и газовых смесей.",
+    "description": "Модель серии Delta Blower Generation 5. Приведённые диапазоны зависят от двигателя, исполнения и рабочей точки; окончательную комплектацию и актуальную стоимость необходимо согласовать.",
+    "technical_specs": [
+      {
+        "label": "Мощность",
+        "value": "11–90 кВт"
+      },
+      {
+        "label": "Производительность",
+        "value": "11,8–40,3 м³/мин"
+      },
+      {
+        "label": "Перепад давления",
+        "value": "300–1000 мбар"
+      },
+      {
+        "label": "Серия",
+        "value": "Delta Blower Generation 5"
+      }
+    ],
+    "source_price": 2382657,
+    "source_price_currency": "RUB",
+    "source_availability": "по запросу",
+    "source_delivery": "от 2 недель",
+    "source_url": "https://vozduhoduvka-aerzen.ru/catalog/vozduhoduvka-gm35s/",
+    "price_note": "На исходной странице есть «Уточнить цену», наличие по запросу. Конечная цена конкретной комплектации не подтверждена.",
+    "name": "GM35S",
+    "product_kind": "sku",
+    "display_title": [
+      "GM35S"
+    ],
+    "image_is_illustration": false
+  },
+  {
+    "brand": "AERZEN",
+    "price": null,
+    "price_rub": null,
+    "price_confirmed": false,
+    "sku_confirmed": false,
+    "purchasable": false,
+    "purchase_enabled": false,
+    "availability": "По запросу",
+    "delivery": "Срок после согласования комплектации",
+    "currency": "RUB",
+    "verified_on": "2026-10-12",
+    "cta": "Обсудить комплектацию",
+    "is_series": false,
+    "image": "/static/images/source/product-gm-source-1.webp",
+    "images": [
+      "/static/images/source/product-gm-source-1.webp",
+      "/static/images/source/product-gm-source-2.webp",
+      "/static/images/source/product-gm-source-3.webp"
+    ],
+    "image_status": "Source site shares one photo between several GM model pages; specific SKU/configuration image identity is unconfirmed.",
+    "slug": "gm50l",
+    "title": "GM50L",
+    "family": "Delta Blower",
+    "sku": "GM50L",
+    "type": "Роторная воздуходувка",
+    "short_description": "Воздуходувка для промышленной подачи воздуха и газовых смесей.",
+    "description": "Модель серии Delta Blower Generation 5. Приведённые диапазоны зависят от двигателя, исполнения и рабочей точки; окончательную комплектацию и актуальную стоимость необходимо согласовать.",
+    "technical_specs": [
+      {
+        "label": "Мощность",
+        "value": "15–90 кВт"
+      },
+      {
+        "label": "Производительность",
+        "value": "17,9–55,1 м³/мин"
+      },
+      {
+        "label": "Перепад давления",
+        "value": "300–700 мбар"
+      },
+      {
+        "label": "Серия",
+        "value": "Delta Blower Generation 5"
+      }
+    ],
+    "source_price": 3332015,
+    "source_price_currency": "RUB",
+    "source_availability": "по запросу",
+    "source_delivery": "от 2 недель",
+    "source_url": "https://vozduhoduvka-aerzen.ru/catalog/vozduhoduvka-gm50l/",
+    "price_note": "На исходной странице есть «Уточнить цену», наличие по запросу. Конечная цена конкретной комплектации не подтверждена.",
+    "name": "GM50L",
+    "product_kind": "sku",
+    "display_title": [
+      "GM50L"
+    ],
+    "image_is_illustration": false
+  },
+  {
+    "brand": "AERZEN",
+    "price": null,
+    "price_rub": null,
+    "price_confirmed": false,
+    "sku_confirmed": false,
+    "purchasable": false,
+    "purchase_enabled": false,
+    "availability": "По запросу",
+    "delivery": "Срок после согласования комплектации",
+    "currency": "RUB",
+    "verified_on": "2026-10-12",
+    "cta": "Обсудить комплектацию",
+    "is_series": false,
+    "image": "/static/images/source/product-gm-source-1.webp",
+    "images": [
+      "/static/images/source/product-gm-source-1.webp",
+      "/static/images/source/product-gm-source-2.webp",
+      "/static/images/source/product-gm-source-3.webp"
+    ],
+    "image_status": "Source site shares one photo between several GM model pages; specific SKU/configuration image identity is unconfirmed.",
+    "slug": "gm60s",
+    "title": "GM60S",
+    "family": "Delta Blower",
+    "sku": "GM60S",
+    "type": "Роторная воздуходувка",
+    "short_description": "Воздуходувка для промышленной подачи воздуха и газовых смесей.",
+    "description": "Модель серии Delta Blower Generation 5. Приведённые диапазоны зависят от двигателя, исполнения и рабочей точки; окончательную комплектацию и актуальную стоимость необходимо согласовать.",
+    "technical_specs": [
+      {
+        "label": "Мощность",
+        "value": "15–132 кВт"
+      },
+      {
+        "label": "Производительность",
+        "value": "16,7–59 м³/мин"
+      },
+      {
+        "label": "Перепад давления",
+        "value": "300–1000 мбар"
+      },
+      {
+        "label": "Серия",
+        "value": "Delta Blower Generation 5"
+      }
+    ],
+    "source_price": 3588324,
+    "source_price_currency": "RUB",
+    "source_availability": "по запросу",
+    "source_delivery": "от 2 недель",
+    "source_url": "https://vozduhoduvka-aerzen.ru/catalog/vozduhoduvka-gm60s/",
+    "price_note": "На исходной странице есть «Уточнить цену», наличие по запросу. Конечная цена конкретной комплектации не подтверждена.",
+    "name": "GM60S",
+    "product_kind": "sku",
+    "display_title": [
+      "GM60S"
+    ],
+    "image_is_illustration": false
+  },
+  {
+    "brand": "AERZEN",
+    "price": null,
+    "price_rub": null,
+    "price_confirmed": false,
+    "sku_confirmed": false,
+    "purchasable": false,
+    "purchase_enabled": false,
+    "availability": "По запросу",
+    "delivery": "Срок после согласования комплектации",
+    "currency": "RUB",
+    "verified_on": "2026-10-12",
+    "cta": "Обсудить комплектацию",
+    "is_series": false,
+    "image": "/static/images/source/product-gm-source-1.webp",
+    "images": [
+      "/static/images/source/product-gm-source-1.webp",
+      "/static/images/source/product-gm-source-2.webp",
+      "/static/images/source/product-gm-source-3.webp"
+    ],
+    "image_status": "Source site shares one photo between several GM model pages; specific SKU/configuration image identity is unconfirmed.",
+    "slug": "gm80l",
+    "title": "GM80L",
+    "family": "Delta Blower",
+    "sku": "GM80L",
+    "type": "Роторная воздуходувка",
+    "short_description": "Воздуходувка для промышленной подачи воздуха и газовых смесей.",
+    "description": "Модель серии Delta Blower Generation 5. Приведённые диапазоны зависят от двигателя, исполнения и рабочей точки; окончательную комплектацию и актуальную стоимость необходимо согласовать.",
+    "technical_specs": [
+      {
+        "label": "Мощность",
+        "value": "18,5–160 кВт"
+      },
+      {
+        "label": "Производительность",
+        "value": "19,1–83,9 м³/мин"
+      },
+      {
+        "label": "Перепад давления",
+        "value": "300–700 мбар"
+      },
+      {
+        "label": "Серия",
+        "value": "Delta Blower Generation 5"
+      }
+    ],
+    "source_price": 4028042,
+    "source_price_currency": "RUB",
+    "source_availability": "по запросу",
+    "source_delivery": "от 2 недель",
+    "source_url": "https://vozduhoduvka-aerzen.ru/catalog/vozduhoduvka-gm80l/",
+    "price_note": "На исходной странице есть «Уточнить цену», наличие по запросу. Конечная цена конкретной комплектации не подтверждена.",
+    "name": "GM80L",
+    "product_kind": "sku",
+    "display_title": [
+      "GM80L"
+    ],
+    "image_is_illustration": false
+  }
+]

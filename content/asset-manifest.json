@@ -1,0 +1,292 @@
+[
+  {
+    "filename": "static/images/source/source-blower-hero.webp",
+    "public_url": "/static/images/source/source-blower-hero.webp",
+    "source_url": "https://vozduhoduvka-aerzen.ru/wp-content/uploads/2026/04/block1.png",
+    "source_page": "https://vozduhoduvka-aerzen.ru/",
+    "retrieved_on": "2026-10-12",
+    "original_dimensions": [
+      768,
+      866
+    ],
+    "dimensions": [
+      768,
+      866
+    ],
+    "transparent": true,
+    "sha256": "089c1c495a5174bc2d4df48a93b3950d1c1009d4c9c24ec7127285bb9d836e4c",
+    "caption": "Product illustration used by source home page; series illustration, not a verified sale SKU",
+    "processing": "EXIF orientation, proportional resize if above 2200x1800, WebP encoding; no subject alteration",
+    "rights": "No external licence inferred. User instructed reuse of public client-site imagery; company must confirm rights before production launch."
+  },
+  {
+    "filename": "static/images/source/source-blower-legacy.webp",
+    "public_url": "/static/images/source/source-blower-legacy.webp",
+    "source_url": "https://vozduhoduvka-aerzen.ru/wp-content/themes/aerzen/assets/img/block.png",
+    "source_page": "https://vozduhoduvka-aerzen.ru/vozduhoduvka-dlya-ochistnyh-sooruzhenij/",
+    "retrieved_on": "2026-10-12",
+    "original_dimensions": [
+      768,
+      866
+    ],
+    "dimensions": [
+      768,
+      866
+    ],
+    "transparent": true,
+    "sha256": "089c1c495a5174bc2d4df48a93b3950d1c1009d4c9c24ec7127285bb9d836e4c",
+    "caption": "Product illustration from older application page; source model identity must be confirmed",
+    "processing": "EXIF orientation, proportional resize if above 2200x1800, WebP encoding; no subject alteration",
+    "rights": "No external licence inferred. User instructed reuse of public client-site imagery; company must confirm rights before production launch."
+  },
+  {
+    "filename": "static/images/source/company-production.webp",
+    "public_url": "/static/images/source/company-production.webp",
+    "source_url": "https://vozduhoduvka-aerzen.ru/wp-content/uploads/2026/06/images-about-psk-arus-1.png",
+    "source_page": "https://vozduhoduvka-aerzen.ru/about/",
+    "retrieved_on": "2026-10-12",
+    "original_dimensions": [
+      1600,
+      1472
+    ],
+    "dimensions": [
+      1600,
+      1472
+    ],
+    "transparent": true,
+    "sha256": "bc3ed6023979ce3d83a2780d599e564d0c7fe7f90a467033f472f00370e53d45",
+    "caption": "Company production image on About page",
+    "processing": "EXIF orientation, proportional resize if above 2200x1800, WebP encoding; no subject alteration",
+    "rights": "No external licence inferred. User instructed reuse of public client-site imagery; company must confirm rights before production launch."
+  },
+  {
+    "filename": "static/images/source/repair-workshop.webp",
+    "public_url": "/static/images/source/repair-workshop.webp",
+    "source_url": "https://vozduhoduvka-aerzen.ru/wp-content/uploads/2020/06/photo_2020-06-23_14-47-12.jpg",
+    "source_page": "https://vozduhoduvka-aerzen.ru/repair/",
+    "retrieved_on": "2026-10-12",
+    "original_dimensions": [
+      1280,
+      960
+    ],
+    "dimensions": [
+      1280,
+      960
+    ],
+    "transparent": false,
+    "sha256": "a67d773fb975ab9016dd85351b08be1613b40d3197fa2419eb4347ef4bc39ad0",
+    "caption": "Source labels this as a warehouse photo, historical 2020 asset",
+    "processing": "EXIF orientation, proportional resize if above 2200x1800, WebP encoding; no subject alteration",
+    "rights": "No external licence inferred. User instructed reuse of public client-site imagery; company must confirm rights before production launch."
+  },
+  {
+    "filename": "static/images/source/repair-workshop-2.webp",
+    "public_url": "/static/images/source/repair-workshop-2.webp",
+    "source_url": "https://vozduhoduvka-aerzen.ru/wp-content/uploads/2020/06/photo_2020-06-23_14-47-10.jpg",
+    "source_page": "https://vozduhoduvka-aerzen.ru/repair/",
+    "retrieved_on": "2026-10-12",
+    "original_dimensions": [
+      1280,
+      960
+    ],
+    "dimensions": [
+      1280,
+      960
+    ],
+    "transparent": false,
+    "sha256": "f2603a4cae55fb9780217464b48a19912c3f74071b0c671bc201471fb3e5b858",
+    "caption": "Source labels this as a warehouse photo, historical 2020 asset",
+    "processing": "EXIF orientation, proportional resize if above 2200x1800, WebP encoding; no subject alteration",
+    "rights": "No external licence inferred. User instructed reuse of public client-site imagery; company must confirm rights before production launch."
+  },
+  {
+    "filename": "static/images/source/repair-workshop-3.webp",
+    "public_url": "/static/images/source/repair-workshop-3.webp",
+    "source_url": "https://vozduhoduvka-aerzen.ru/wp-content/uploads/2020/06/photo_2020-06-23_14-47-07.jpg",
+    "source_page": "https://vozduhoduvka-aerzen.ru/repair/",
+    "retrieved_on": "2026-10-12",
+    "original_dimensions": [
+      1280,
+      960
+    ],
+    "dimensions": [
+      1280,
+      960
+    ],
+    "transparent": false,
+    "sha256": "1d8355b20c427a87e85864019a1fbe32188d2507bf1bb38f30985632e03b31a3",
+    "caption": "Source labels this as a warehouse photo, historical 2020 asset",
+    "processing": "EXIF orientation, proportional resize if above 2200x1800, WebP encoding; no subject alteration",
+    "rights": "No external licence inferred. User instructed reuse of public client-site imagery; company must confirm rights before production launch."
+  },
+  {
+    "filename": "static/images/source/product-gm-source-1.webp",
+    "public_url": "/static/images/source/product-gm-source-1.webp",
+    "source_url": "https://vozduhoduvka-aerzen.ru/wp-content/uploads/2026/04/605a0222-scaled-1-1.jpg",
+    "source_page": "https://vozduhoduvka-aerzen.ru/catalog/vozduhoduvka-gm35s/",
+    "retrieved_on": "2026-10-12",
+    "original_dimensions": [
+      2560,
+      1707
+    ],
+    "dimensions": [
+      2200,
+      1467
+    ],
+    "transparent": false,
+    "sha256": "4fc8bb782e371f6ebb49068228d5cd7fc64915ea6d21335a2d40ef39ab6f01bb",
+    "caption": "Photo shared by several GM SKU pages; do not assert exact SKU visual identity",
+    "processing": "EXIF orientation, proportional resize if above 2200x1800, WebP encoding; no subject alteration",
+    "rights": "No external licence inferred. User instructed reuse of public client-site imagery; company must confirm rights before production launch."
+  },
+  {
+    "filename": "static/images/source/product-gm-source-2.webp",
+    "public_url": "/static/images/source/product-gm-source-2.webp",
+    "source_url": "https://vozduhoduvka-aerzen.ru/wp-content/uploads/2026/04/605a0241-scaled-1-1.jpg",
+    "source_page": "https://vozduhoduvka-aerzen.ru/catalog/vozduhoduvka-gm35s/",
+    "retrieved_on": "2026-10-12",
+    "original_dimensions": [
+      2560,
+      1707
+    ],
+    "dimensions": [
+      2200,
+      1467
+    ],
+    "transparent": false,
+    "sha256": "3c8c565101a77b027a33a6e62295d839b80fcf0c79a5393c9137e00ab9704df9",
+    "caption": "Additional source GM product photo",
+    "processing": "EXIF orientation, proportional resize if above 2200x1800, WebP encoding; no subject alteration",
+    "rights": "No external licence inferred. User instructed reuse of public client-site imagery; company must confirm rights before production launch."
+  },
+  {
+    "filename": "static/images/source/product-gm-source-3.webp",
+    "public_url": "/static/images/source/product-gm-source-3.webp",
+    "source_url": "https://vozduhoduvka-aerzen.ru/wp-content/uploads/2026/04/605a0244-scaled-1-1.jpg",
+    "source_page": "https://vozduhoduvka-aerzen.ru/catalog/vozduhoduvka-gm35s/",
+    "retrieved_on": "2026-10-12",
+    "original_dimensions": [
+      2560,
+      1707
+    ],
+    "dimensions": [
+      2200,
+      1467
+    ],
+    "transparent": false,
+    "sha256": "f93a2f40762ca7cadd7f95ab2571b9db77844dfb2a89d778c5c0ffaaeb881ba6",
+    "caption": "Additional source GM product photo",
+    "processing": "EXIF orientation, proportional resize if above 2200x1800, WebP encoding; no subject alteration",
+    "rights": "No external licence inferred. User instructed reuse of public client-site imagery; company must confirm rights before production launch."
+  },
+  {
+    "filename": "static/images/source/application-aeration.webp",
+    "public_url": "/static/images/source/application-aeration.webp",
+    "source_url": "https://vozduhoduvka-aerzen.ru/wp-content/uploads/2020/07/imag1715-scaled.jpg",
+    "source_page": "https://vozduhoduvka-aerzen.ru/vozduhoduvka-dlya-ochistnyh-sooruzhenij/",
+    "retrieved_on": "2026-10-12",
+    "original_dimensions": [
+      2560,
+      1448
+    ],
+    "dimensions": [
+      2200,
+      1244
+    ],
+    "transparent": false,
+    "sha256": "fcf03c794d498e720e793bf4130b9bcdedb5d25122fd02e50036ec5bb761dedc",
+    "caption": "Historical site installation photo",
+    "processing": "EXIF orientation, proportional resize if above 2200x1800, WebP encoding; no subject alteration",
+    "rights": "No external licence inferred. User instructed reuse of public client-site imagery; company must confirm rights before production launch."
+  },
+  {
+    "filename": "static/images/source/application-pneumatic.webp",
+    "public_url": "/static/images/source/application-pneumatic.webp",
+    "source_url": "https://vozduhoduvka-aerzen.ru/wp-content/uploads/2020/07/img_20170615_112357.jpg",
+    "source_page": "https://vozduhoduvka-aerzen.ru/vozduhoduvka-dlya-pnevmotransporta/",
+    "retrieved_on": "2026-10-12",
+    "original_dimensions": [
+      1233,
+      925
+    ],
+    "dimensions": [
+      1233,
+      925
+    ],
+    "transparent": false,
+    "sha256": "65cadf3e56247a759a4eb6c02d2e5bd35d2b5bc8c3f8b49ea431626c541aa582",
+    "caption": "Historical installation photo",
+    "processing": "EXIF orientation, proportional resize if above 2200x1800, WebP encoding; no subject alteration",
+    "rights": "No external licence inferred. User instructed reuse of public client-site imagery; company must confirm rights before production launch."
+  },
+  {
+    "filename": "static/images/source/article-roots.webp",
+    "public_url": "/static/images/source/article-roots.webp",
+    "source_url": "https://vozduhoduvka-aerzen.ru/wp-content/uploads/2026/08/img-blog-2026-printcip-rutsa.jpg",
+    "source_page": "https://vozduhoduvka-aerzen.ru/blog/oborudovanie-i-tehnologii/nasos-rutsa-printcip-raboty/",
+    "retrieved_on": "2026-10-12",
+    "original_dimensions": [
+      1408,
+      1408
+    ],
+    "dimensions": [
+      1408,
+      1408
+    ],
+    "transparent": false,
+    "sha256": "2a5c20d315f02aebdf1f454f9e87da12d3f5c0f271dfd1d59cbfe38430ddd75e",
+    "caption": "Roots article illustration from company blog",
+    "processing": "EXIF orientation, proportional resize if above 2200x1800, WebP encoding; no subject alteration",
+    "rights": "No external licence inferred. User instructed reuse of public client-site imagery; company must confirm rights before production launch."
+  },
+  {
+    "filename": "static/images/source/article-oil.webp",
+    "public_url": "/static/images/source/article-oil.webp",
+    "source_url": "https://vozduhoduvka-aerzen.ru/wp-content/uploads/2026/09/img-blog-prev-2026-09-01-2.jpg",
+    "source_page": "https://vozduhoduvka-aerzen.ru/blog/",
+    "retrieved_on": "2026-10-12",
+    "original_dimensions": [
+      1000,
+      563
+    ],
+    "dimensions": [
+      1000,
+      563
+    ],
+    "transparent": false,
+    "sha256": "ea8f87da8aa4ee1be4fed195ba93adf5da782ff46547ff6881ef86e6e0f0671b",
+    "caption": "Oil article thumbnail from company blog",
+    "processing": "EXIF orientation, proportional resize if above 2200x1800, WebP encoding; no subject alteration",
+    "rights": "No external licence inferred. User instructed reuse of public client-site imagery; company must confirm rights before production launch."
+  },
+  {
+    "filename": "static/images/source/logo-aerzen.webp",
+    "public_url": "/static/images/source/logo-aerzen.webp",
+    "source_url": "https://vozduhoduvka-aerzen.ru/wp-content/themes/aerzen/assets/img/logo.png",
+    "source_page": "https://vozduhoduvka-aerzen.ru/",
+    "retrieved_on": "2026-10-12",
+    "original_dimensions": [
+      170,
+      53
+    ],
+    "dimensions": [
+      170,
+      53
+    ],
+    "transparent": true,
+    "sha256": "404d8e806e04096d779e7109907a1a343e04c76fa22987d4237f0616a98da9c1",
+    "caption": "Public source brand logo",
+    "processing": "EXIF orientation, proportional resize if above 2200x1800, WebP encoding; no subject alteration",
+    "rights": "No external licence inferred. User instructed reuse of public client-site imagery; company must confirm rights before production launch."
+  },
+  {
+    "filename": "static/images/source/logo-psk-arus.svg",
+    "public_url": "/static/images/source/logo-psk-arus.svg",
+    "source_url": "https://vozduhoduvka-aerzen.ru/wp-content/themes/aerzen/assets/img/logo-psk-arus-2.svg",
+    "source_page": "https://vozduhoduvka-aerzen.ru/",
+    "retrieved_on": "2026-10-12",
+    "caption": "PSK ARUS logo from source header",
+    "processing": "Unchanged SVG, checked for script/foreignObject/external refs",
+    "rights": "Client-site asset reused under user instruction; company rights confirmation pending."
+  }
+]

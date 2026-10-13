@@ -1,0 +1,15 @@
+{
+  "date": "2026-10-13",
+  "direction": "reference-copy",
+  "user_instruction": "Use all four supplied sites; no new design concepts; no catalog emphasis; isolated project and branch; do not change original repository.",
+  "branch": "codex/reference-landing",
+  "sources": [
+    "https://aerzen.com.ru/",
+    "https://aerzen.oooprofi.ru/",
+    "https://aerzen.net.ru/",
+    "https://aerzen.vozduhoduvka.ru/"
+  ],
+  "verified_scope": "Text structure available for net.ru and vozduhoduvka.ru only; visual comparison of all four blocked by timeouts.",
+  "implementation": "Conventional blue-white supplier landing, real client photographs, quotation/service-first flow, no homepage 3D scene.",
+  "production_status": "blocked: reference visibility, business privacy and material rights, compatible hosting"
+}

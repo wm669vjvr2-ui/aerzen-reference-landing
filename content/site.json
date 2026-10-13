@@ -1,0 +1,159 @@
+{
+  "name": "ПСК АРУС · AERZEN",
+  "brand": "AERZEN",
+  "company_name": "ПСК АРУС",
+  "tagline": "Воздух. Точно по задаче.",
+  "description": "Промышленные воздуходувки, пневмотранспортные системы, ремонт и сервис. Подбор решения под параметры вашего производства.",
+  "source_url": "https://vozduhoduvka-aerzen.ru/",
+  "content_verified_on": "2026-10-12",
+  "phone": "+7 (499) 959-01-12",
+  "phone_href": "tel:+74999590112",
+  "email": "info@psk-arus.ru",
+  "email_href": "mailto:info@psk-arus.ru",
+  "address": "141044, Московская область, г. Мытищи, д. Грибки, ул. Ангарская, 40А/4",
+  "hours": "Пн–Пт, 09:00–18:00",
+  "contact": {
+    "phone": "+7 (499) 959-01-12",
+    "phone_href": "tel:+74999590112",
+    "email": "info@psk-arus.ru",
+    "address": "141044, Московская область, г. Мытищи, д. Грибки, ул. Ангарская, 40А/4",
+    "hours": "Пн–Пт, 09:00–18:00",
+    "source_url": "https://vozduhoduvka-aerzen.ru/contacts/"
+  },
+  "company": {
+    "title": "Инженерия. Производство. Сервис.",
+    "name": "ПСК АРУС",
+    "description": "ПСК АРУС проектирует, производит и поставляет воздуходувки и системы пневмотранспорта. Обслуживает и ремонтирует оборудование на протяжении эксплуатации.",
+    "image": "/static/images/source/repair-workshop-3.webp",
+    "source_url": "https://vozduhoduvka-aerzen.ru/about/",
+    "facts": [
+      {
+        "label": "С 2008 года",
+        "description": "Опыт команды в промышленном оборудовании",
+        "source_url": "https://vozduhoduvka-aerzen.ru/about/"
+      },
+      {
+        "label": "Собственное производство",
+        "description": "Проектирование и производство систем пневмотранспорта",
+        "source_url": "https://vozduhoduvka-aerzen.ru/about/"
+      },
+      {
+        "label": "Сервис и ремонт",
+        "description": "Диагностика, обслуживание, ремонт ступеней и агрегатов",
+        "source_url": "https://vozduhoduvka-aerzen.ru/repair/"
+      }
+    ]
+  },
+  "paths": [
+    {
+      "slug": "models",
+      "title": "Знаю модель",
+      "description": "Модели и характеристики",
+      "cta": "Выбрать модель",
+      "href": "/models/",
+      "image": "/static/images/source/product-gm-source-1.webp"
+    },
+    {
+      "slug": "solution",
+      "title": "Есть задача",
+      "description": "Подбор под ваш процесс",
+      "cta": "Подобрать решение",
+      "href": "/solutions/",
+      "image": "/static/images/source/application-aeration.webp"
+    },
+    {
+      "slug": "repair",
+      "title": "Ремонт",
+      "description": "Диагностика и ремонт",
+      "cta": "Обсудить ремонт",
+      "href": "/repair/",
+      "image": "/static/images/source/repair-workshop.webp"
+    }
+  ],
+  "repair": {
+    "title": "Ремонт и обслуживание",
+    "description": "Диагностика, обслуживание и ремонт воздуходувок AERZEN и ступеней других производителей. Объём работ определяем по состоянию оборудования.",
+    "image": "/static/images/source/repair-workshop.webp",
+    "services": [
+      "Диагностика и дефектация",
+      "Плановое обслуживание",
+      "Ремонт ступеней сжатия",
+      "Шеф-монтаж и пусконаладка"
+    ],
+    "source_url": "https://vozduhoduvka-aerzen.ru/repair/",
+    "warranty_source_months": 6,
+    "warranty_display": "Условия гарантии фиксируются в договоре",
+    "steps": [
+      {
+        "title": "Расскажите о неисправности",
+        "description": "Укажите модель, симптомы и условия эксплуатации."
+      },
+      {
+        "title": "Диагностика",
+        "description": "Согласуем способ передачи оборудования и объём проверки."
+      },
+      {
+        "title": "Ремонт",
+        "description": "После дефектации согласуем состав работ, стоимость и сроки."
+      },
+      {
+        "title": "Возврат в работу",
+        "description": "Проверим оборудование и передадим рекомендации по эксплуатации."
+      }
+    ]
+  },
+  "applications": [
+    {
+      "slug": "aeration",
+      "title": "Аэрация и водоочистка",
+      "description": "Воздух для биологических процессов и очистных сооружений. Подбор зависит от расхода, давления и режима работы.",
+      "image": "/static/images/source/application-aeration.webp",
+      "source_url": "https://vozduhoduvka-aerzen.ru/vozduhoduvka-dlya-ochistnyh-sooruzhenij/"
+    },
+    {
+      "slug": "pneumatic",
+      "title": "Пневмотранспорт",
+      "description": "Системы перемещения сыпучих материалов. Учитываем свойства продукта, длину трассы и требуемую производительность.",
+      "image": "/static/images/source/application-pneumatic.webp",
+      "source_url": "https://vozduhoduvka-aerzen.ru/pnevmotransportnye-systemy/"
+    },
+    {
+      "slug": "industrial",
+      "title": "Технологические процессы",
+      "description": "Подбор подачи воздуха и газа под условия промышленного производства.",
+      "image": "/static/images/source/product-gm-source-2.webp",
+      "source_url": "https://vozduhoduvka-aerzen.ru/"
+    }
+  ],
+  "delivery": {
+    "title": "Доставка и оплата",
+    "description": "Оборудование поставляется по договору. Оплата — безналичным переводом на расчётный счёт. Состав поставки, цена, условия доставки и сроки фиксируются перед заказом.",
+    "regions_source": "Россия и страны СНГ",
+    "pickup_source": "Московская область, г. Мытищи, д. Грибки, ул. Ангарская, 40А",
+    "source_url": "https://vozduhoduvka-aerzen.ru/home/dostavka-i-oplata/"
+  },
+  "seller": {
+    "confirmed": false,
+    "legal_name": "ООО «ПРОИЗВОДСТВЕННО-СЕРВИСНАЯ КОМПАНИЯ АРУС»",
+    "inn": "5029282156",
+    "kpp": "502901001",
+    "ogrn": "1235000162671",
+    "address": "141044, Московская область, г. Мытищи, д. Грибки, ул. Ангарская, 40А/4",
+    "bank_name": "",
+    "bank_bik": "",
+    "bank_account": "",
+    "correspondent_account": "",
+    "source_url": "https://vozduhoduvka-aerzen.ru/contacts/"
+  },
+  "legal": {
+    "owner_confirmed": false,
+    "privacy_ready": false,
+    "commerce_terms_ready": false,
+    "privacy_contact": "",
+    "audience": "B2B — промышленное оборудование",
+    "country": "RU",
+    "note": "Данные владельца, основания обработки, правила заказа и банковские реквизиты требуют подтверждения компании. Формы и расчёты не активируются только по данным открытого сайта."
+  },
+  "commercial_status": "quote_only",
+  "source_price_policy": "Опубликованная цена исходного сайта не считается подтверждённой конечной ценой конкретной комплектации."
+}

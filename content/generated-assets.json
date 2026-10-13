@@ -1,0 +1,32 @@
+[
+  {
+    "asset": "/static/images/generated/delta-blower.webp",
+    "input_reference": "delta-blower",
+    "origin": "OpenAI image generation, user-approved visual extracted as transparent illustration",
+    "image_type": "illustrative, not verified manufacturer CAD or photo of a concrete SKU",
+    "width": 1585,
+    "height": 992,
+    "bytes": 328880,
+    "sha256": "f0f90de9cf9ad7fae899c2839eca7b3eeaf09943c96811f924cc5e9a2636e1e3"
+  },
+  {
+    "asset": "/static/images/generated/delta-hybrid.webp",
+    "input_reference": "delta-hybrid",
+    "origin": "OpenAI image generation, user-approved visual extracted as transparent illustration",
+    "image_type": "illustrative, not verified manufacturer CAD or photo of a concrete SKU",
+    "width": 1774,
+    "height": 887,
+    "bytes": 302954,
+    "sha256": "740d54e918d44a1e9b731f8b386e9e4b1887b8583dede761754fb6f618992177"
+  },
+  {
+    "asset": "/static/images/generated/delta-screw.webp",
+    "input_reference": "delta-screw",
+    "origin": "OpenAI image generation, user-approved visual extracted as transparent illustration",
+    "image_type": "illustrative, not verified manufacturer CAD or photo of a concrete SKU",
+    "width": 1781,
+    "height": 883,
+    "bytes": 302168,
+    "sha256": "c4e09cddd0152a6df24ed7061c6fe4231f466b3a66832a3d1a40e6e8697e2057"
+  }
+]

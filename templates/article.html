@@ -1,0 +1,3 @@
+{% extends 'base.html' %}{% from '_macros.html' import arrow with context %}
+{% block description %}{{ article.summary }}{% endblock %}
+{% block content %}<div class="breadcrumb wrap"><a href="/">Главная</a><span>/</span><a href="/articles">Статьи</a></div><article class="article-detail wrap"><span class="eyebrow">{{ article.category }}</span><h1>{{ article.title }}</h1><p class="lead">{{ article.summary }}</p><img class="article-detail-image" src="{{ article.image }}" alt="{{ article.title }}" width="1400" height="850" fetchpriority="high"><div class="prose">{% for paragraph in article.paragraphs %}<p>{{ paragraph }}</p>{% endfor %}</div><a class="button" href="/solutions#request">Обсудить применение {{ arrow() }}</a></article>{% endblock %}

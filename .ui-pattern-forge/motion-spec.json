@@ -1,0 +1,39 @@
+{
+  "version": 1,
+  "direction": "white-cobalt-industrial-scroll",
+  "engine": "Three.js + native scroll, CSS states",
+  "scenes": [
+    {
+      "id": "hero-arrival",
+      "location": "home hero",
+      "trigger": "mount",
+      "durationMs": 1000,
+      "reducedMotion": "immediate still",
+      "mobile": "single product with compact primary CTA",
+      "fallback": "semantic text and product image visible without JS"
+    },
+    {
+      "id": "blower-assembly",
+      "location": "home technology section",
+      "trigger": "native scroll",
+      "desktopInterval": "section 240svh, sticky stage",
+      "tracks": [
+        "rotate 3/4 to side",
+        "separate flange/casing/rotors/coupling/motor",
+        "hold",
+        "reassemble"
+      ],
+      "mobile": "shorter unpinned scene, bounded separation",
+      "reducedMotion": "poster only",
+      "pause": "static toggle and hidden/offscreen stopping",
+      "assetBoundary": "illustrative original geometry, not supplier CAD"
+    },
+    {
+      "id": "series-navigation",
+      "location": "models",
+      "trigger": "native anchor scroll",
+      "engine": "CSS scroll-behavior",
+      "reducedMotion": "instant navigation"
+    }
+  ]
+}

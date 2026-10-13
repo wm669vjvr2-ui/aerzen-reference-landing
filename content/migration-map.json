@@ -1,0 +1,67 @@
+[
+  {
+    "old_path": "/about/",
+    "new_path": "/about/",
+    "status": "preserve"
+  },
+  {
+    "old_path": "/repair/",
+    "new_path": "/repair/",
+    "status": "preserve"
+  },
+  {
+    "old_path": "/contacts/",
+    "new_path": "/contacts/",
+    "status": "preserve"
+  },
+  {
+    "old_path": "/catalog/",
+    "new_path": "/models/",
+    "status": "candidate_redirect"
+  },
+  {
+    "old_path": "/home/dostavka-i-oplata/",
+    "new_path": "/delivery/",
+    "status": "candidate_redirect"
+  },
+  {
+    "old_path": "/catalog/vozduhoduvka-gm35s/",
+    "new_path": "/models/gm35s/",
+    "status": "candidate_redirect_same_item_only"
+  },
+  {
+    "old_path": "/catalog/vozduhoduvka-gm50l/",
+    "new_path": "/models/gm50l/",
+    "status": "candidate_redirect_same_item_only"
+  },
+  {
+    "old_path": "/catalog/vozduhoduvka-gm60s/",
+    "new_path": "/models/gm60s/",
+    "status": "candidate_redirect_same_item_only"
+  },
+  {
+    "old_path": "/catalog/vozduhoduvka-gm80l/",
+    "new_path": "/models/gm80l/",
+    "status": "candidate_redirect_same_item_only"
+  },
+  {
+    "old_path": "/pnevmotransportnye-systemy/",
+    "new_path": "/applications/pneumatic/",
+    "status": "requires_content_equivalence_review"
+  },
+  {
+    "old_path": "/vozduhoduvka-dlya-ochistnyh-sooruzhenij/",
+    "new_path": "/applications/aeration/",
+    "status": "requires_content_equivalence_review"
+  },
+  {
+    "old_path": "/blog/oborudovanie-i-tehnologii/nasos-rutsa-printcip-raboty/",
+    "new_path": "/articles/principle-roots/",
+    "status": "requires_full_content_migration"
+  },
+  {
+    "old_path": "/blog/oborudovanie-i-tehnologii/aerzen-delta-lube-otlichit-original/",
+    "new_path": "/articles/delta-lube-check/",
+    "status": "requires_full_content_migration"
+  }
+]
