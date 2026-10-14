@@ -1,0 +1,483 @@
+[
+  {
+    "supply_status": "not_supplied",
+    "checked_on": "2026-10-14",
+    "demand_verified": false,
+    "technology": "Роторная воздуходувка Рутса",
+    "target_family_slug": "delta-blower",
+    "target_family_name": "AERZEN Delta Blower",
+    "range_notice": "Диапазоны охватывают разные режимы и комплектации. Максимальный расход и максимальное давление не являются одной гарантированной рабочей точкой.",
+    "selection_checks": [
+      "Рабочая точка: фактический расход и перепад давления одновременно.",
+      "Среда, температура на входе, высота над уровнем моря и режим работы.",
+      "Присоединения, габариты, привод, электропитание и требования к шуму.",
+      "Исполнение, автоматика и состав поставки."
+    ],
+    "slug": "huadong-hdsr",
+    "name": "Huadong HDSR",
+    "country": "Китай",
+    "country_status": "verified",
+    "title": "Китайские воздуходувки HDSR: характеристики и подбор альтернативы AERZEN",
+    "description": "Сравните модели HDSR50–HDSR350 по расходу и давлению. HDSR не поставляем; подбираем оборудование AERZEN под рабочие параметры.",
+    "manufacturer": "Shandong Huadong Blower Co., Ltd.",
+    "origin_note": "Китайский производитель Huadong. На этой странице — справочные параметры серии HDSR.",
+    "intro": "Серия трёхлопастных воздуходувок HDSR охватывает широкий диапазон подачи воздуха. Для замены важна рабочая точка, а не только номер типоразмера.",
+    "specific_note": "Для HDSR150 источник указывает верхнюю границу давления 58,8 кПа. Её нельзя заменять общим максимумом серии 98 кПа.",
+    "conversion_note": "В первичном источнике расход дан в м³/мин. Для сравнения здесь приведены м³/ч: значения умножены на 60. Нормальные условия расхода источником не установлены.",
+    "source_url": "https://www.huadongblower.com/products_detail.php?cid=6&id=1",
+    "origin_source_url": "https://www.huadongblower.com/about.php?cid=10",
+    "models": [
+      {
+        "name": "HDSR50",
+        "anchor": "hdsr50",
+        "flow_native": [
+          0.45,
+          2.48
+        ],
+        "flow_source_unit": "m3/min",
+        "flow_m3_h": [
+          27.0,
+          148.8
+        ],
+        "flow_display": "27–148,8",
+        "pressure_display": "9,8–98",
+        "power_display": "0,55–7,5",
+        "source_url": "https://www.huadongblower.com/products_detail.php?cid=6&id=1"
+      },
+      {
+        "name": "HDSR65",
+        "anchor": "hdsr65",
+        "flow_native": [
+          0.78,
+          3.64
+        ],
+        "flow_source_unit": "m3/min",
+        "flow_m3_h": [
+          46.8,
+          218.4
+        ],
+        "flow_display": "46,8–218,4",
+        "pressure_display": "9,8–98",
+        "power_display": "0,55–11",
+        "source_url": "https://www.huadongblower.com/products_detail.php?cid=6&id=1"
+      },
+      {
+        "name": "HDSR80",
+        "anchor": "hdsr80",
+        "flow_native": [
+          1.82,
+          6.13
+        ],
+        "flow_source_unit": "m3/min",
+        "flow_m3_h": [
+          109.2,
+          367.8
+        ],
+        "flow_display": "109,2–367,8",
+        "pressure_display": "9,8–98",
+        "power_display": "1,5–15",
+        "source_url": "https://www.huadongblower.com/products_detail.php?cid=6&id=1"
+      },
+      {
+        "name": "HDSR100",
+        "anchor": "hdsr100",
+        "flow_native": [
+          2.65,
+          9.62
+        ],
+        "flow_source_unit": "m3/min",
+        "flow_m3_h": [
+          159.0,
+          577.2
+        ],
+        "flow_display": "159–577,2",
+        "pressure_display": "9,8–98",
+        "power_display": "1,5–22",
+        "source_url": "https://www.huadongblower.com/products_detail.php?cid=6&id=1"
+      },
+      {
+        "name": "HDSR125",
+        "anchor": "hdsr125",
+        "flow_native": [
+          4.64,
+          13.39
+        ],
+        "flow_source_unit": "m3/min",
+        "flow_m3_h": [
+          278.4,
+          803.4
+        ],
+        "flow_display": "278,4–803,4",
+        "pressure_display": "9,8–98",
+        "power_display": "2,2–30",
+        "source_url": "https://www.huadongblower.com/products_detail.php?cid=6&id=1"
+      },
+      {
+        "name": "HDSR150",
+        "anchor": "hdsr150",
+        "flow_native": [
+          10.39,
+          29.61
+        ],
+        "flow_source_unit": "m3/min",
+        "flow_m3_h": [
+          623.4,
+          1776.6
+        ],
+        "flow_display": "623,4–1776,6",
+        "pressure_display": "9,8–58,8",
+        "power_display": "5,5–55",
+        "source_url": "https://www.huadongblower.com/products_detail.php?cid=6&id=1"
+      },
+      {
+        "name": "HDSR175",
+        "anchor": "hdsr175",
+        "flow_native": [
+          9.53,
+          40.67
+        ],
+        "flow_source_unit": "m3/min",
+        "flow_m3_h": [
+          571.8,
+          2440.2
+        ],
+        "flow_display": "571,8–2440,2",
+        "pressure_display": "9,8–98",
+        "power_display": "11–75",
+        "source_url": "https://www.huadongblower.com/products_detail.php?cid=6&id=1"
+      },
+      {
+        "name": "HDSR200",
+        "anchor": "hdsr200",
+        "flow_native": [
+          25.34,
+          58.81
+        ],
+        "flow_source_unit": "m3/min",
+        "flow_m3_h": [
+          1520.4,
+          3528.6
+        ],
+        "flow_display": "1520,4–3528,6",
+        "pressure_display": "9,8–98",
+        "power_display": "15–132",
+        "source_url": "https://www.huadongblower.com/products_detail.php?cid=6&id=1"
+      },
+      {
+        "name": "HDSR250",
+        "anchor": "hdsr250",
+        "flow_native": [
+          58.1,
+          97.1
+        ],
+        "flow_source_unit": "m3/min",
+        "flow_m3_h": [
+          3486.0,
+          5826.0
+        ],
+        "flow_display": "3486–5826",
+        "pressure_display": "9,8–98",
+        "power_display": "18,5–132",
+        "source_url": "https://www.huadongblower.com/products_detail.php?cid=6&id=1"
+      },
+      {
+        "name": "HDSR300",
+        "anchor": "hdsr300",
+        "flow_native": [
+          83.8,
+          136.7
+        ],
+        "flow_source_unit": "m3/min",
+        "flow_m3_h": [
+          5028.0,
+          8202.0
+        ],
+        "flow_display": "5028–8202",
+        "pressure_display": "9,8–98",
+        "power_display": "22–280",
+        "source_url": "https://www.huadongblower.com/products_detail.php?cid=6&id=1"
+      },
+      {
+        "name": "HDSR350",
+        "anchor": "hdsr350",
+        "flow_native": [
+          111.9,
+          179.65
+        ],
+        "flow_source_unit": "m3/min",
+        "flow_m3_h": [
+          6714.0,
+          10779.0
+        ],
+        "flow_display": "6714–10779",
+        "pressure_display": "9,8–98",
+        "power_display": "30–400",
+        "source_url": "https://www.huadongblower.com/products_detail.php?cid=6&id=1"
+      }
+    ]
+  },
+  {
+    "supply_status": "not_supplied",
+    "checked_on": "2026-10-14",
+    "demand_verified": false,
+    "technology": "Роторная воздуходувка Рутса",
+    "target_family_slug": "delta-blower",
+    "target_family_name": "AERZEN Delta Blower",
+    "range_notice": "Диапазоны охватывают разные режимы и комплектации. Максимальный расход и максимальное давление не являются одной гарантированной рабочей точкой.",
+    "selection_checks": [
+      "Рабочая точка: фактический расход и перепад давления одновременно.",
+      "Среда, температура на входе, высота над уровнем моря и режим работы.",
+      "Присоединения, габариты, привод, электропитание и требования к шуму.",
+      "Исполнение, автоматика и состав поставки."
+    ],
+    "slug": "mingtian-rsr",
+    "name": "Mingtian RSR",
+    "country": "Китай",
+    "country_status": "verified",
+    "title": "Китайские воздуходувки RSR: параметры и подбор альтернативы AERZEN",
+    "description": "Параметры китайской серии RSR50–RSR150 для сравнения. RSR не поставляем; проверяем возможность подбора AERZEN по задаче.",
+    "manufacturer": "Shandong Mingtian Machinery Group",
+    "origin_note": "Производитель Mingtian расположен в провинции Шаньдун, Китай. Здесь собраны параметры серии RSR.",
+    "intro": "В серии RSR диапазон допустимого перепада давления меняется с типоразмером. При сравнении с AERZEN учитывайте именно параметры выбранной модели.",
+    "specific_note": "У RSR50, RSR65 и RSR100 верхняя граница таблицы — 78,4 кПа; у RSR80, RSR125 и RSR150 — 98 кПа.",
+    "conversion_note": "Исходный расход указан в м³/мин; в таблице — пересчёт в м³/ч умножением на 60. Это не пересчёт в Нм³/ч.",
+    "source_url": "https://www.rootsblowertech.com/rsr-roots-blower/",
+    "origin_source_url": "https://www.rootsblowertech.com/contact/",
+    "models": [
+      {
+        "name": "RSR50",
+        "anchor": "rsr50",
+        "flow_native": [
+          0.64,
+          3.07
+        ],
+        "flow_source_unit": "m3/min",
+        "flow_m3_h": [
+          38.4,
+          184.2
+        ],
+        "flow_display": "38,4–184,2",
+        "pressure_display": "9,8–78,4",
+        "power_display": "0,75–5,5",
+        "source_url": "https://www.rootsblowertech.com/rsr-roots-blower/"
+      },
+      {
+        "name": "RSR65",
+        "anchor": "rsr65",
+        "flow_native": [
+          1.36,
+          4.13
+        ],
+        "flow_source_unit": "m3/min",
+        "flow_m3_h": [
+          81.6,
+          247.8
+        ],
+        "flow_display": "81,6–247,8",
+        "pressure_display": "9,8–78,4",
+        "power_display": "0,75–7,5",
+        "source_url": "https://www.rootsblowertech.com/rsr-roots-blower/"
+      },
+      {
+        "name": "RSR80",
+        "anchor": "rsr80",
+        "flow_native": [
+          2.35,
+          6.43
+        ],
+        "flow_source_unit": "m3/min",
+        "flow_m3_h": [
+          141.0,
+          385.8
+        ],
+        "flow_display": "141–385,8",
+        "pressure_display": "9,8–98",
+        "power_display": "1,5–18,5",
+        "source_url": "https://www.rootsblowertech.com/rsr-roots-blower/"
+      },
+      {
+        "name": "RSR100",
+        "anchor": "rsr100",
+        "flow_native": [
+          3.75,
+          10.31
+        ],
+        "flow_source_unit": "m3/min",
+        "flow_m3_h": [
+          225.0,
+          618.6
+        ],
+        "flow_display": "225–618,6",
+        "pressure_display": "9,8–78,4",
+        "power_display": "2,2–18,5",
+        "source_url": "https://www.rootsblowertech.com/rsr-roots-blower/"
+      },
+      {
+        "name": "RSR125",
+        "anchor": "rsr125",
+        "flow_native": [
+          4.91,
+          13.66
+        ],
+        "flow_source_unit": "m3/min",
+        "flow_m3_h": [
+          294.6,
+          819.6
+        ],
+        "flow_display": "294,6–819,6",
+        "pressure_display": "9,8–98",
+        "power_display": "4–37",
+        "source_url": "https://www.rootsblowertech.com/rsr-roots-blower/"
+      },
+      {
+        "name": "RSR150",
+        "anchor": "rsr150",
+        "flow_native": [
+          12.63,
+          30.19
+        ],
+        "flow_source_unit": "m3/min",
+        "flow_m3_h": [
+          757.8,
+          1811.4
+        ],
+        "flow_display": "757,8–1811,4",
+        "pressure_display": "9,8–98",
+        "power_display": "5,5–75",
+        "source_url": "https://www.rootsblowertech.com/rsr-roots-blower/"
+      }
+    ]
+  },
+  {
+    "supply_status": "not_supplied",
+    "checked_on": "2026-10-14",
+    "demand_verified": false,
+    "technology": "Роторная воздуходувка Рутса",
+    "target_family_slug": "delta-blower",
+    "target_family_name": "AERZEN Delta Blower",
+    "range_notice": "Диапазоны охватывают разные режимы и комплектации. Максимальный расход и максимальное давление не являются одной гарантированной рабочей точкой.",
+    "selection_checks": [
+      "Рабочая точка: фактический расход и перепад давления одновременно.",
+      "Среда, температура на входе, высота над уровнем моря и режим работы.",
+      "Присоединения, габариты, привод, электропитание и требования к шуму.",
+      "Исполнение, автоматика и состав поставки."
+    ],
+    "slug": "erstvak-erb",
+    "name": "ERSTVAK ERB",
+    "country": "Происхождение не установлено",
+    "country_status": "unconfirmed",
+    "title": "Воздуходувки ERSTVAK ERB: характеристики и подбор альтернативы AERZEN",
+    "description": "Справочные параметры ERSTVAK ERB-50–ERB-150. ERB не поставляем; подбираем альтернативу AERZEN. Китайское происхождение не подтверждено.",
+    "manufacturer": "ERSTVAK — бренд источника",
+    "origin_note": "Китайское происхождение этой серии не подтверждено. Бренд ERSTVAK и параметры моделей проверены по страницам Erstvak.com.",
+    "intro": "ERB — серия роторных воздуходувок Рутса. Табличный диапазон подачи и предельное давление описывают серию, но не заменяют кривую конкретной конфигурации.",
+    "specific_note": "Для ERB-100 таблица серии и карточка товара расходятся по мощности. До уточнения источника мощность этой модели не приводим.",
+    "conversion_note": "Расход сохранён в м³/ч. Максимальное избыточное давление 1000 мбар показано как 100 кПа. Расход не переименован в Нм³/ч.",
+    "source_url": "https://erstvak.com/brands/rotornye-vozdukhoduvki-erstevak/erstevak-seriya-erb/",
+    "origin_source_url": "https://erstvak.com/catalog/vozdukhoduvki-erstevak/",
+    "models": [
+      {
+        "name": "ERB-50",
+        "anchor": "erb-50",
+        "flow_native": [
+          25.8,
+          314.4
+        ],
+        "flow_source_unit": "m3/h",
+        "flow_m3_h": [
+          25.8,
+          314.4
+        ],
+        "flow_display": "25,8–314,4",
+        "pressure_display": "до 100",
+        "power_display": "1,1–15",
+        "source_url": "https://erstvak.com/product/rotornaya-vozdukhoduvka-ruts-erstevak-erb-50/"
+      },
+      {
+        "name": "ERB-65",
+        "anchor": "erb-65",
+        "flow_native": [
+          63.6,
+          537.6
+        ],
+        "flow_source_unit": "m3/h",
+        "flow_m3_h": [
+          63.6,
+          537.6
+        ],
+        "flow_display": "63,6–537,6",
+        "pressure_display": "до 100",
+        "power_display": "1,1–22",
+        "source_url": "https://erstvak.com/product/rotornaya-vozdukhoduvka-ruts-erstevak-erb-65/"
+      },
+      {
+        "name": "ERB-80",
+        "anchor": "erb-80",
+        "flow_native": [
+          249.6,
+          804
+        ],
+        "flow_source_unit": "m3/h",
+        "flow_m3_h": [
+          249.6,
+          804
+        ],
+        "flow_display": "249,6–804",
+        "pressure_display": "до 100",
+        "power_display": "2,2–37",
+        "source_url": "https://erstvak.com/product/rotornaya-vozdukhoduvka-ruts-erstevak-erb-80/"
+      },
+      {
+        "name": "ERB-100",
+        "anchor": "erb-100",
+        "flow_native": [
+          374,
+          1218
+        ],
+        "flow_source_unit": "m3/h",
+        "flow_m3_h": [
+          374,
+          1218
+        ],
+        "flow_display": "374–1218",
+        "pressure_display": "до 100",
+        "power_display": "Требует уточнения",
+        "source_url": "https://erstvak.com/product/rotornaya-vozdukhoduvka-ruts-erstevak-erb-100/"
+      },
+      {
+        "name": "ERB-125",
+        "anchor": "erb-125",
+        "flow_native": [
+          402,
+          1830
+        ],
+        "flow_source_unit": "m3/h",
+        "flow_m3_h": [
+          402,
+          1830
+        ],
+        "flow_display": "402–1830",
+        "pressure_display": "до 100",
+        "power_display": "4–75",
+        "source_url": "https://erstvak.com/product/rotornaya-vozdukhoduvka-ruts-erstevak-erb-125/"
+      },
+      {
+        "name": "ERB-150",
+        "anchor": "erb-150",
+        "flow_native": [
+          672,
+          2964
+        ],
+        "flow_source_unit": "m3/h",
+        "flow_m3_h": [
+          672,
+          2964
+        ],
+        "flow_display": "672–2964",
+        "pressure_display": "до 100",
+        "power_display": "7,5–110",
+        "source_url": "https://erstvak.com/product/rotornaya-vozdukhoduvka-ruts-erstevak-erb-150/"
+      }
+    ]
+  }
+]

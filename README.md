@@ -24,6 +24,12 @@ Phone/email links work. Backend form submission, purchases and analytics are dis
 
 No public HTTPS hosting is configured. Before launch: obtain visible versions of the missing references, confirm material rights, approve business data/privacy documents and retention, configure a compatible Python host with persistent private SQLite storage, permanent secret and HTTPS origin. Do not expose server code, .env, .git or database files; do not change the Python stack for hosting. No temporary tunnel or owner-only preview counts as the public handoff.
 
+## Model comparisons added 14 October 2026
+
+`/alternatives` and three family pages cover 17 Chinese Huadong HDSR / Mingtian RSR models and six ERSTVAK ERB models. ERSTVAK Chinese origin is unconfirmed. These are reference comparisons, explicitly not supplied inventory; they never become cart/feed offers. Requests stay on this separate site; there are no links or redirects to the main company website. Search frequency rankings are not established.
+
+Primary sources and access/licensing limits: `docs/chinese-models-sources.md`. Verification: `docs/alternatives-verification.md`. No additional dependencies were installed.
+
 ## Checks
 
 ```bash

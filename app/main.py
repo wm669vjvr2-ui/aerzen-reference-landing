@@ -68,6 +68,7 @@ def create_app(settings: Settings | None = None) -> FastAPI:
     def base_context(request: Request, purpose: str = "lead") -> dict:
         site = content.site
         return {"request": request, "site": site, "products": content.products, "articles": content.articles,
+                "alternatives": content.alternatives,
                 "csrf_token": security.csrf(request), "form_token": security.token(request, purpose),
                 "cart_token": security.token(request, "cart"), "csp_nonce": request.state.csp_nonce,
                 "preview_mode": settings.preview_mode, "readiness": readiness(site, settings),
@@ -110,6 +111,21 @@ def create_app(settings: Settings | None = None) -> FastAPI:
     @app.get("/models", response_class=HTMLResponse)
     async def models(request: Request):
         return render(request, "models.html", page="models", title="Модели оборудования")
+
+    @app.get("/alternatives", response_class=HTMLResponse)
+    async def alternatives(request: Request):
+        return render(request, "alternatives.html", page="alternatives",
+                      title="Китайские воздуходувки и модели ERSTVAK: подбор альтернативы")
+
+    @app.get("/alternatives/{slug}", response_class=HTMLResponse)
+    async def alternative(request: Request, slug: str):
+        family = content.alternative(slug)
+        if family is None:
+            raise HTTPException(404, "Справочная серия не найдена")
+        message = (f"Рассматриваю {family['name']}. Нужна альтернатива AERZEN.\n"
+                   "Модель: \nРасход воздуха: \nПерепад давления: \nРежим работы: ")
+        return render(request, "alternative.html", page="alternatives", family=family,
+                      message_default=message, title=family["title"])
 
     @app.get("/models/{slug}", response_class=HTMLResponse)
     async def model(request: Request, slug: str):
@@ -290,7 +306,8 @@ def create_app(settings: Settings | None = None) -> FastAPI:
     @app.get("/sitemap.xml")
     async def sitemap():
         tree=Element("urlset",xmlns="http://www.sitemaps.org/schemas/sitemap/0.9")
-        urls=["/","/models","/solutions","/repair","/about","/articles","/contact"]
+        urls=["/","/models","/solutions","/repair","/about","/articles","/contact","/alternatives"]
+        urls += ["/alternatives/"+family["slug"] for family in content.alternatives]
         urls += ["/models/"+p["slug"] for p in content.products] + ["/articles/"+a["slug"] for a in content.articles]
         if not settings.preview_mode:
             for url in urls:

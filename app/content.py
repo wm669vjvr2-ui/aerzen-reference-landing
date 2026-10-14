@@ -41,6 +41,18 @@ class Content:
     def product(self, slug: str) -> dict | None:
         return next((p for p in self.products if p["slug"] == slug), None)
 
+    @property
+    def alternatives(self) -> list[dict]:
+        """Reference families are never inventory, purchasable SKUs or feed offers."""
+        data = self.read("alternatives.json", [])
+        return [dict(item) for item in data if isinstance(item, dict)
+                and isinstance(item.get("slug"), str)
+                and re.fullmatch(r"[a-z0-9]+(?:-[a-z0-9]+)*", item["slug"])
+                and item.get("supply_status") == "not_supplied"] if isinstance(data, list) else []
+
+    def alternative(self, slug: str) -> dict | None:
+        return next((item for item in self.alternatives if item["slug"] == slug), None)
+
 
 def price_kopecks(product: dict) -> int | None:
     value = product.get("price_rub")
