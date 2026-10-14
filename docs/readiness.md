@@ -1,11 +1,21 @@
-# Readiness of the separate reference landing
+# Готовность отдельного сайта
 
-Updated 13 October 2026. This project is isolated from aerzen-psk-arus. Current branch: codex/reference-landing. GitHub API confirms wm669vjvr2-ui/aerzen-reference-landing is private. Source files and preview screenshots are saved there.
+Обновлено 14.10.2026. Проект `aerzen-reference-landing` изолирован от `aerzen-site` и репозитория `aerzen-psk-arus`. Рабочая ветка — `codex/reference-landing`. Последний выбранный референс — Erstvak.com, палитра — чёрно-жёлтая. Сайт сохраняет Python/FastAPI/Jinja/SQLite.
 
-Local browser/HTTP checks and 11 security tests pass. Known dependency vulnerability audit has no findings. Detailed evidence and limitations: verification.md.
+| Статус | Область | Доказательство / ограничение |
+| --- | --- | --- |
+| готово | Изоляция исходного проекта | Отдельный каталог, репозиторий, branch, порт 8027 и SQLite вне публичной раздачи. Исходный проект не редактировался в этой задаче. |
+| готово | Выбор структуры и фотографий | Решение пользователя зафиксировано; источники и пределы исследования — `reference-evidence.md`, бесплатные тематические фото — `photo-sources.md`. Старые фото не входят в новую компоновку. |
+| готово | GitHub: private | Проверка GitHub API 14.10.2026: `wm669vjvr2-ui/aerzen-reference-landing`, `private=true`, `visibility=private`. Сохранение текущих изменений подтверждается финальным commit/push отдельно. |
+| готово | Текущая техническая проверка | 38 passed, 1 прежнее предупреждение Starlette/httpx; 28 HTTP-страниц, 6 ресурсов, 201 якорь; адаптивные проверки 390/768/1440px. `storefront-verification.md`. |
+| готово | Защита справочного раздела | HDSR, RSR, ERB отделены от коммерческих SKU и раскрыты как не поставляемые. Нет автоматического перехода на основной сайт. Регрессионные сценарии описаны в `alternatives-verification.md`. |
+| готово | Проверка цен AERZEN и китайских моделей | В доступных первичных источниках — запрос КП, числовой прайс не подтверждён. Оснований для расчёта −30% нет; `price-verification.md`. |
+| заблокировано | Пиксельное сравнение с Erstvak | Официальные тексты доступны, живая браузерная страница не загрузилась. |
+| заблокировано | Публичный HTTPS-сайт | Не настроен совместимый Python-хостинг с постоянным приватным SQLite, HTTPS origin и проверенным анонимным доступом. Localhost и GitHub не заменяют публичную ссылку. |
+| заблокировано | Реальный приём заявок | Не подтверждены production-владелец, политика обработки, сроки хранения и доставка заявок оператору. Серверный приём выключен до готовности конфигурации. |
+| заблокировано | Коммерческое включение | Не подтверждены продавец, реальные цены/наличие SKU и применимые условия. Реальные покупки выключены. |
+| не применимо | Необязательная аналитика и реклама | Аналитические и рекламные сервисы не подключены. |
 
-Public release is blocked: no configured compatible Python host/persistent private SQLite/HTTPS origin, no confirmed production owner/privacy/retention/delivery of leads, material rights unresolved, exact visual reference access unavailable. No legal compliance or production-security conclusion is made. Server forms, commerce and analytics remain disabled. Contact links and the email quotation action are available.
+Техническая проверка не является заключением о юридическом соответствии или общей безопасности production. Перед публичной сдачей нужны проверенный HTTPS URL, фактическая приватность GitHub и подтверждённые бизнес-данные. Текущая проверка — `storefront-verification.md`, проверка цен — `price-verification.md`; `verification.md` и `alternatives-verification.md` сохраняют результаты прежних версий.
 
-To finish visual matching, provide accessible screenshots/pages for the unavailable aerzen.com.ru and aerzen.oooprofi.ru, and visible desktop/mobile versions for all four if exact matching is required. Current version follows verified text structure and actual client photos; it is not a verified pixel-identical copy.
-
-Use the existing Python stack for hosting. Database defaults and Docker Compose project/volume/port are isolated. Never expose .env, .git, app source, SQLite, backups or private uploads. Before activation of real forms, confirm business jurisdiction/owner and actual data flows, refresh official legal sources, finalize appropriate documents and configure tested operator delivery and retention.
+Размещение должно сохранять существующий Python-стек. База, `.env`, `.git`, серверные исходники, резервные копии и приватные загрузки не должны попасть в публичную раздачу. Для включения форм следует подтвердить юрисдикцию, владельца и реальные потоки данных, актуализировать документы по официальным источникам и проверить доставку, хранение и удаление обращений. Этот документ не разрешает изменение или публикацию исходного репозитория.

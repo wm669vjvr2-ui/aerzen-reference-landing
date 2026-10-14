@@ -27,10 +27,8 @@ document.querySelectorAll('[data-request-form]').forEach(form=>{
  form.addEventListener('submit',event=>{const email=form.querySelector('[name=email]');const phone=form.querySelector('[name=phone]');if(!email.value.trim()&&!phone.value.trim()){event.preventDefault();form.classList.add('form-invalid');phone.setCustomValidity('Укажите телефон или e-mail, чтобы мы могли ответить.');phone.reportValidity();return;}phone.setCustomValidity('');const button=form.querySelector('[type=submit]');if(button){button.disabled=true;button.setAttribute('aria-busy','true');form.querySelector('.form-feedback').textContent='Отправляем…';}});
  form.querySelectorAll('[name=phone],[name=email]').forEach(input=>input.addEventListener('input',()=>form.querySelector('[name=phone]').setCustomValidity('')));
 });
-const assembly=document.querySelector('[data-blower-section]');
-if(assembly){
- const caption=document.querySelector('[data-scene-caption]');
- assembly.addEventListener('blower:progress',event=>{const {progress}=event.detail;caption.textContent=progress<.25?'Агрегат в сборе':progress<.56?'Разборка':progress<.70?'Корпус. Роторы. Привод.':progress<.92?'Сборка':'Единая система';});
- import('./blower-scene.js').then(({initBlowerScene})=>initBlowerScene({canvas:'[data-blower-canvas]',section:'[data-blower-section]',poster:'[data-blower-poster]'})).catch(()=>{assembly.dataset.motionState='static';});
-}
+document.querySelectorAll('.catalog-menu, .mobile-menu').forEach(menu=>{
+ menu.addEventListener('keydown',event=>{if(event.key==='Escape'){menu.open=false;menu.querySelector('summary').focus();}});
+ menu.addEventListener('focusout',event=>{if(!menu.contains(event.relatedTarget))menu.open=false;});
+});
 window.addEventListener('pageshow',()=>document.querySelectorAll('[data-request-form] [aria-busy]').forEach(b=>{b.disabled=false;b.removeAttribute('aria-busy');}));

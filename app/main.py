@@ -8,9 +8,10 @@ import secrets
 import time
 import uuid
 from types import SimpleNamespace
+from typing import Literal
 from xml.etree.ElementTree import Element, SubElement, tostring
 
-from fastapi import FastAPI, HTTPException, Request
+from fastapi import FastAPI, HTTPException, Query, Request
 from fastapi.responses import HTMLResponse, JSONResponse, RedirectResponse, Response
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
@@ -109,8 +110,29 @@ def create_app(settings: Settings | None = None) -> FastAPI:
         return render(request, "index.html", page="home")
 
     @app.get("/models", response_class=HTMLResponse)
-    async def models(request: Request):
-        return render(request, "models.html", page="models", title="Модели оборудования")
+    async def models(request: Request, q: str = Query(default="", max_length=100),
+                     equipment_type: Literal["", "rotary", "screw"] = Query(default="", alias="type"),
+                     equipment_kind: Literal["", "series", "model"] = Query(default="", alias="kind")):
+        query = q.strip()
+        matching = []
+        for product in content.products:
+            searchable = " ".join(str(product.get(key, "")) for key in ("brand", "name", "type", "family")).casefold()
+            if query.casefold() not in searchable:
+                continue
+            if equipment_type == "rotary" and "Роторная" not in product.get("type", ""):
+                continue
+            if equipment_type == "screw" and "Винтов" not in product.get("type", ""):
+                continue
+            if equipment_kind == "series" and not product.get("is_series"):
+                continue
+            if equipment_kind == "model" and product.get("is_series"):
+                continue
+            matching.append(product)
+        matching_families = [family for family in content.alternatives if query and
+                            query.casefold() in (family["name"] + " " + " ".join(model["name"] for model in family["models"])).casefold()]
+        return render(request, "models.html", page="models", title="Оборудование AERZEN", query=query,
+                      equipment_type=equipment_type, equipment_kind=equipment_kind,
+                      matching_products=matching, matching_families=matching_families)
 
     @app.get("/alternatives", response_class=HTMLResponse)
     async def alternatives(request: Request):

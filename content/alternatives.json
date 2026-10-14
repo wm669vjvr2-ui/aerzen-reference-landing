@@ -214,7 +214,10 @@
         "power_display": "30–400",
         "source_url": "https://www.huadongblower.com/products_detail.php?cid=6&id=1"
       }
-    ]
+    ],
+    "price_status": "quote_only",
+    "price_checked_on": "2026-10-14",
+    "price_source_url": "https://www.huadongblower.com/products_detail.php?cid=6&id=1"
   },
   {
     "supply_status": "not_supplied",
@@ -346,7 +349,10 @@
         "power_display": "5,5–75",
         "source_url": "https://www.rootsblowertech.com/rsr-roots-blower/"
       }
-    ]
+    ],
+    "price_status": "quote_only",
+    "price_checked_on": "2026-10-14",
+    "price_source_url": "https://www.rootsblowertech.com/rsr-roots-blower/"
   },
   {
     "supply_status": "not_supplied",
@@ -478,6 +484,9 @@
         "power_display": "7,5–110",
         "source_url": "https://erstvak.com/product/rotornaya-vozdukhoduvka-ruts-erstevak-erb-150/"
       }
-    ]
+    ],
+    "price_status": "quote_only",
+    "price_checked_on": "2026-10-14",
+    "price_source_url": "https://erstvak.com/brands/rotornye-vozdukhoduvki-erstevak/erstevak-seriya-erb/"
   }
 ]

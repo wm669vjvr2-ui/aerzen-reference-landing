@@ -1,15 +1,14 @@
 {
-  "date": "2026-10-13",
-  "direction": "reference-copy",
-  "user_instruction": "Use all four supplied sites; no new design concepts; no catalog emphasis; isolated project and branch; do not change original repository.",
+  "date": "2026-10-14",
+  "direction": "erstvak-structure-black-yellow",
+  "user_selected": true,
+  "user_instruction": "Confirmed Erstvak.com and AERZEN; standalone structure, black/yellow palette, remove old photographs. Later authorized suitable internet photographs.",
+  "reference": "https://erstvak.com/",
   "branch": "codex/reference-landing",
-  "sources": [
-    "https://aerzen.com.ru/",
-    "https://aerzen.oooprofi.ru/",
-    "https://aerzen.net.ru/",
-    "https://aerzen.vozduhoduvka.ru/"
-  ],
-  "verified_scope": "Text structure available for net.ru and vozduhoduvka.ru only; visual comparison of all four blocked by timeouts.",
-  "implementation": "Conventional blue-white supplier landing, real client photographs, quotation/service-first flow, no homepage 3D scene.",
-  "production_status": "blocked: reference visibility, business privacy and material rights, compatible hosting"
+  "implementation": "Python/FastAPI/Jinja2; original storefront CSS; multi-row header, search and category navigation, industrial hero, applications, categories, six steps, services, company, technical blog and local engineering request.",
+  "photos": "Three verified free Unsplash photographs used as thematic industrial illustrations. Model photographs are not invented.",
+  "motion": "Brief hover and focus feedback only; reduced-motion disables transitions; no scroll story, mascot, carousel or Three.js runtime.",
+  "verified_scope": "Official home, category and product text structure; exact visual matching blocked by browser network access.",
+  "restrictions": "No main-site links or redirect; no competitor impersonation, fake inventory, testimonials or search-popularity claim. Reference Chinese/ERB models explicitly not supplied.",
+  "production_status": "blocked: compatible Python HTTPS hosting and confirmed owner/privacy/delivery of real leads"
 }

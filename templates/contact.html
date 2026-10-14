@@ -1,2 +1,9 @@
-{% extends 'base.html' %}{% from '_macros.html' import form with context %}
-{% block content %}<div class="breadcrumb wrap"><a href="/">Главная</a><span>/</span><span>Контакты</span></div><section class="contact-hero wrap"><span class="eyebrow">ПСК АРУС</span><h1>На связи.</h1><a class="contact-big" href="{{ site.phone_href }}">{{ site.phone }}</a><a class="contact-email" href="mailto:{{ site.email }}">{{ site.email }}</a><div class="contact-address"><p>{{ site.address }}</p><p>{{ site.hours }}</p></div></section>{{ form('contact', '', 'Обсудим ваш проект') }}{% endblock %}
+{% extends 'base.html' %}
+{% from '_macros.html' import form with context %}
+{% block title %}Контакты ПСК АРУС{% endblock %}
+{% block content %}
+<div class="breadcrumb wrap"><a href="/">Главная</a><span>/</span><span>Контакты</span></div>
+<section class="page-heading wrap"><span class="eyebrow">ПСК АРУС</span><h1>Контакты</h1><p>Обратитесь к нам для подбора воздуходувки, подготовки предложения или обсуждения ремонта.</p></section>
+<section class="section-pad wrap"><div class="content-grid"><div class="service-card"><span class="eyebrow">Телефон и e-mail</span><h2><a href="{{ site.phone_href }}">{{ site.phone }}</a></h2><p><a href="mailto:{{ site.email }}">{{ site.email }}</a></p><p>{{ site.hours }}</p></div><div class="service-card"><span class="eyebrow">Адрес</span><h2>Московская область</h2><p>{{ site.address }}</p><p>Перед визитом согласуйте время и цель встречи по телефону.</p></div></div></section>
+{{ form('contact', '', 'Запрос в ПСК АРУС') }}
+{% endblock %}

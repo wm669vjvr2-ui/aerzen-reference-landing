@@ -1,2 +1,8 @@
-{% extends 'base.html' %}{% from '_macros.html' import arrow with context %}
-{% block content %}<div class="breadcrumb wrap"><a href="/">Главная</a><span>/</span><span>Статьи</span></div><section class="text-hero wrap"><span class="eyebrow">Полезные материалы</span><h1>Понимать.<br>Выбирать точно.</h1></section><section class="section-pad article-grid">{% for item in articles %}<a class="article-card" href="/articles/{{ item.slug }}"><div class="article-photo"><img src="{{ item.image }}" alt="" width="800" height="600" loading="lazy"></div><span class="eyebrow">{{ item.category }}</span><h2>{{ item.title }}</h2><p>{{ item.summary }}</p><span class="link-arrow">Читать статью {{ arrow() }}</span></a>{% endfor %}</section>{% endblock %}
+{% extends 'base.html' %}
+{% from '_macros.html' import arrow with context %}
+{% block title %}Статьи о воздуходувках и промышленном оборудовании — ПСК АРУС{% endblock %}
+{% block content %}
+<div class="breadcrumb wrap"><a href="/">Главная</a><span>/</span><span>Статьи</span></div>
+<section class="page-heading wrap"><span class="eyebrow">Технические материалы</span><h1>Статьи об оборудовании</h1><p>Принципы работы, параметры подбора и применение промышленных воздуходувок.</p></section>
+<section class="section-pad wrap"><div class="article-grid">{% for item in articles %}<article class="article-card"><span class="eyebrow">{{ item.category }}</span><h2><a href="/articles/{{ item.slug }}">{{ item.title }}</a></h2><p>{{ item.summary }}</p><a class="link-arrow" href="/articles/{{ item.slug }}">Читать материал {{ arrow() }}</a></article>{% else %}<p>Материалы готовятся. <a href="/contact">Задайте вопрос инженеру.</a></p>{% endfor %}</div></section>
+{% endblock %}

@@ -1,39 +1,17 @@
 {
-  "version": 1,
-  "direction": "white-cobalt-industrial-scroll",
-  "engine": "Three.js + native scroll, CSS states",
+  "version": 2,
+  "date": "2026-10-14",
+  "direction": "erstvak-structure-black-yellow",
+  "engine": "CSS and native HTML controls",
   "scenes": [
     {
-      "id": "hero-arrival",
-      "location": "home hero",
-      "trigger": "mount",
-      "durationMs": 1000,
-      "reducedMotion": "immediate still",
-      "mobile": "single product with compact primary CTA",
-      "fallback": "semantic text and product image visible without JS"
-    },
-    {
-      "id": "blower-assembly",
-      "location": "home technology section",
-      "trigger": "native scroll",
-      "desktopInterval": "section 240svh, sticky stage",
-      "tracks": [
-        "rotate 3/4 to side",
-        "separate flange/casing/rotors/coupling/motor",
-        "hold",
-        "reassemble"
-      ],
-      "mobile": "shorter unpinned scene, bounded separation",
-      "reducedMotion": "poster only",
-      "pause": "static toggle and hidden/offscreen stopping",
-      "assetBoundary": "illustrative original geometry, not supplier CAD"
-    },
-    {
-      "id": "series-navigation",
-      "location": "models",
-      "trigger": "native anchor scroll",
-      "engine": "CSS scroll-behavior",
-      "reducedMotion": "instant navigation"
+      "id": "interface-feedback",
+      "trigger": "hover or keyboard focus",
+      "tracks": ["short border and background transitions"],
+      "mobile": "native touch activation without hover dependency",
+      "reducedMotion": "transition disabled",
+      "fallback": "all routes, filters, forms and details menus usable without motion"
     }
-  ]
+  ],
+  "constraints": "No page-intro delays, pinned scroll, 3D runtime or fake motion reproduction; reference motion not visually observed. Native dialogs close via Escape and restore focus."
 }

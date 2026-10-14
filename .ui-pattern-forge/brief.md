@@ -1,52 +1,21 @@
-# Бриф отдельного лендинга AERZEN
+# Independent industrial supplier storefront
 
-Обновлён: 14.10.2026. Проект: `aerzen-reference-landing`. Ветка: `codex/reference-landing`.
+Updated 14 October 2026. User confirmed Erstvak.com as the reference and AERZEN as the equipment brand. Black/yellow palette and the reference's supplier-site structure are selected; the user explicitly declined a new design/concept round. Later authorization permits suitable freely licensed internet photographs. The initial four AERZEN sources are historical context, superseded for layout by this request.
 
-## Дополнение 14.10.2026
+Work only in aerzen-reference-landing, branch codex/reference-landing, private remote wm669vjvr2-ui/aerzen-reference-landing. Do not modify aerzen-site or the aerzen-psk-arus remote. No links or automatic redirects to the main company website.
 
-Добавлены справочные модели китайских Huadong HDSR / Mingtian RSR и ERSTVAK ERB по первичным техническим источникам. Серии не предлагаются к поставке: это раскрыто до обращения. Нельзя обозначать неподтверждённую страну ERSTVAK как Китай, выдумывать наличие или выдавать выбор моделей за подтверждённый рейтинг поискового спроса. Нового выбора дизайна нет; сохранена существующая система.
+Audience: Russian B2B industrial equipment buyers and engineers. Primary action: request technical selection or a quotation. Retain Python/FastAPI/Jinja2/SQLite. Use original compatible HTML/CSS and native details/dialogs; no framework migration or UI package installs.
 
-Последнее уточнение пользователя — без перехода на основной сайт. В новых страницах нет ссылок на основной домен и автоматического перенаправления. Задача и контакты остаются в отдельном сайте. Подробности: `docs/chinese-models-sources.md`, `docs/alternatives-verification.md`.
+Reference pattern: utility header, search/contacts, equipment and company navigation, industrial hero, benefits, applications, equipment categories, six project steps, services, company facts, technical blog, engineering form and multi-column footer. Product/category pages include discoverable filters and technical specifications. Do not adopt the client's previous three-entry screen or fullscreen blue AERZEN showcase.
 
-## Актуальное поручение
+Own facts come from content/site.json; competitor reviews, projects, metrics, prices and credentials are not client facts. Seven AERZEN entries remain quotation only. Seventeen Chinese HDSR/RSR and six ERSTVAK ERB references carry an upfront non-supply disclosure, technical-source links and origin uncertainty where appropriate. Search-demand ranking is not verified.
 
-Создать самостоятельную продающую страницу на основе четырёх присланных референсов, близко повторяя их подход. Последние уточнения пользователя имеют приоритет над прежним концептом A и стандартным этапом выбора трёх вариантов: «нет не надо дизайн», «просто как там прям слижи», «без упора на каталог». Новые картинки концептов и новый выбор направления не нужны.
+New photos: verified free Unsplash License; documented in docs/photo-sources.md. They are thematic illustrations of third-party industrial objects, not the company's projects or exact equipment models. Old photographs and generated renders are not rendered by current templates.
 
-Старый проект и его репозиторий сохраняются без изменений. Новый результат готовится в отдельном каталоге и ветке; работа над этим брифом не разрешает изменения или публикацию старого production.
+Pricing follow-up: check AERZEN, Chinese and ERB prices; display 30% lower only if a comparable numerical source exists. Current primary pages show quote-only pricing; no verified numeric base exists. No unsupported discount claim or price is published. Evidence is in docs/price-verification.md; reference pages show the checked primary-source price status.
 
-## Бизнес и основное действие
+UI Pattern Forge applied: local UI UX Pro Max advisory, Refero research and 21st discovery/metadata check. Exact pages and access/license limitations are recorded in docs/reference-evidence.md. 21st MCP unavailable; no component code retrieved. User-selected palette overrides advisory suggestions.
 
-Промышленное оборудование AERZEN, подбор, поставка, комплектующие и сервис. Аудитория — предприятия и специалисты, которым нужно решить задачу оборудования или ремонта. Основное действие — запросить подбор/КП или обратиться по подтверждённым контактам клиента. Каталог не служит центром главной страницы.
+Browser visual access to Erstvak failed; text structure was obtained from the official home, rotary category and ERB-50 detail page. Do not claim a verified pixel copy, exact hover behavior or measured conversion increase.
 
-Факты и контакты клиента: `content/site.json`, `docs/content-sources.md`. Визуальные активы: существующие локальные фотографии и иллюстрации из `content/asset-manifest.json`. Статус официального дилера, цены, отзывы, сроки, аренда и другие факты конкурентов не импортируются как клиентские обещания.
-
-## Референсы и ограничение сходства
-
-- [aerzen.com.ru](https://aerzen.com.ru/) — содержание и вид заблокированы при текущей проверке.
-- [aerzen.oooprofi.ru](https://aerzen.oooprofi.ru/) — содержание и вид заблокированы при текущей проверке.
-- [aerzen.net.ru](https://aerzen.net.ru/) — доступна текстовая структура; полезен маршрут от решения задачи к сервису и обращению.
-- [aerzen.vozduhoduvka.ru](https://aerzen.vozduhoduvka.ru/) — доступна текстовая структура; полезно повторение действия запроса КП.
-
-Живые браузерные страницы всех четырёх источников не получены из-за timeout. Точные визуальные параметры и движение не подтверждены. Поэтому направление — близкая адаптация проверенного содержания и механик обращения, с явным ограничением визуальной проверки; не заявлять проверенную пиксельную копию. Подробная доказательная запись: `docs/reference-evidence.md`.
-
-## Приоритеты реализации
-
-1. Понятное предложение и доступное действие для запроса КП на первом экране.
-2. Пояснение задач предприятия и возможностей подбора.
-3. Подтверждённые услуги поставки, комплектующих и сервиса.
-4. Клиентские фотографии и фактические сведения вместо выдуманных отзывов или показателей.
-5. Повторное обращение в конце страницы; товарная сетка и каталожная фильтрация не становятся главным содержанием.
-
-Не добавлять новый сценарий анимации, маскота, 3D-сцену или живые альтернативы только ради стандартного процесса. Подтверждённого движения референсов нет. Любая небольшая реакция интерфейса сохраняет доступность, естественную прокрутку, мобильный вариант и `prefers-reduced-motion`.
-
-## Стек и компоненты
-
-Сохранить Python/FastAPI, серверные Jinja2-шаблоны, существующие CSS/JS и SQLite. Не переводить проект на React/Next ради внешнего компонента. Использовать минимальные собственные совместимые паттерны; сохранять семантику, labels, клавиатурную навигацию, видимый фокус, ошибки и состояния формы.
-
-UI Pattern Forge применяется к исследованию, адаптации и проверке. Локальная рекомендация UI UX Pro Max консультативна. Проверенные Refero-страницы teenage engineering и Custo консультативны и не заменяют запрос пользователя. Отдельный MCP `21st` отсутствует; публичная страница Interactive Image Gallery проверена, но React-компонент и его код не используются, лицензия не подтверждена. Точные страницы и ограничения записаны в `docs/reference-evidence.md`.
-
-## Проверки и сдача
-
-Проверить главную и основные действия на desktop/mobile, фокус и клавиатуру, семантическую структуру, состояние формы, отсутствие ошибок, работу ссылок и ограничение движения. Без проверенного визуального сравнения с референсами не обещать точное совпадение.
-
-Перед публикацией выполнить применимые требования `/Users/daniilsedic/.codex/user-guidance/web-security-privacy-compliance.md`, проверить права на материалы, приватность GitHub и совместимый хостинг с постоянным приватным хранением SQLite. Готовая сдача по постоянному требованию пользователя — проверенный публичный HTTPS URL без входа владельца и исходники GitHub `private`. При отсутствии совместимого размещения, доступа или критичной проверки явно записать блокер; localhost и сообщение об успешном deploy не заменяют эту проверку.
+Verify desktop/touch widths, primary navigation, search/filter/empty states, keyboard focus, Escape/focus return, technical tables, form disabled state, media and browser errors. Keep motion limited to short feedback and a reduced-motion path. Public HTTPS handoff remains blocked until compatible hosting and confirmed business/privacy/real-lead delivery configuration exist; GitHub source must remain private.
