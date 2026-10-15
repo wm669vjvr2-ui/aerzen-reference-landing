@@ -12,6 +12,8 @@ Own facts come from content/site.json; competitor reviews, projects, metrics, pr
 
 New photos: verified free Unsplash License; documented in docs/photo-sources.md. They are thematic illustrations of third-party industrial objects, not the company's projects or exact equipment models. Old photographs and generated renders are not rendered by current templates.
 
+Photo follow-up, 15 October 2026: the user requested photographs for every model. All 30 entries now show real manufacturer images; seven primary photographs and seven additional views cover the entries. Shared series images are labeled and are not claimed as exact SKU photos. Manufacturer redistribution rights remain unconfirmed; local preview only until permission or replacement. The selected structure, palette, Python stack and original-repository boundary are unchanged. Evidence: docs/model-photo-update.md.
+
 Pricing follow-up: check AERZEN, Chinese and ERB prices; display 30% lower only if a comparable numerical source exists. Current primary pages show quote-only pricing; no verified numeric base exists. No unsupported discount claim or price is published. Evidence is in docs/price-verification.md; reference pages show the checked primary-source price status.
 
 UI Pattern Forge applied: local UI UX Pro Max advisory, Refero research and 21st discovery/metadata check. Exact pages and access/license limitations are recorded in docs/reference-evidence.md. 21st MCP unavailable; no component code retrieved. User-selected palette overrides advisory suggestions.

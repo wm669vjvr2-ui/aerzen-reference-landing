@@ -13,11 +13,12 @@
     "verified_on": "2026-10-12",
     "cta": "Обсудить комплектацию",
     "is_series": true,
-    "image": "/static/images/generated/delta-blower.webp",
+    "image": "/static/images/models/aerzen/delta-blower-enclosure.png",
     "images": [
-      "/static/images/generated/delta-blower.webp"
+      "/static/images/models/aerzen/delta-blower-enclosure.png",
+      "/static/images/models/aerzen/delta-blower-open.png"
     ],
-    "image_status": "Illustrative render based on user-approved mockup. It is not a specification of any delivered SKU.",
+    "image_status": "Real manufacturer series photograph; exact SKU appearance is not verified; see photo scope and caption.",
     "slug": "delta-blower",
     "title": "Delta Blower",
     "family": "Delta Blower",
@@ -47,7 +48,51 @@
       "DELTA",
       "BLOWER"
     ],
-    "image_is_illustration": true
+    "image_is_illustration": false,
+    "photo": {
+      "id": "delta-blower-enclosure",
+      "path": "/static/images/models/aerzen/delta-blower-enclosure.png",
+      "public_path": "/static/images/models/aerzen/delta-blower-enclosure.png",
+      "source_page_url": "https://www.aerzen.com/us/products/product/blower-units-delta-blower-generation-5",
+      "source_image_url": "https://www.aerzen.com/fileadmin/_processed_/f/5/csm_Blower-mit-Schallhaube_f8783829d2.png",
+      "width": 1000,
+      "height": 1000,
+      "format": "PNG",
+      "mime_type": "image/png",
+      "sha256": "be3b56e5c26493d38f8d5cf5093f91a0ce38da6df6ebb50a8968e97afd4c7610",
+      "file_size": 674651,
+      "scope": "series",
+      "license_status": "unknown",
+      "usage": "local_preview_only_pending_rights_confirmation",
+      "caption": "Delta Blower Generation 5: вариант с шумозащитным кожухом. Фото серии; комплектация может отличаться.",
+      "alt": "AERZEN Delta Blower Generation 5: вариант с шумозащитным кожухом.",
+      "checked_on": "2026-10-15",
+      "visual_inspection": "passed",
+      "is_ai_generated": false
+    },
+    "photo_gallery": [
+      {
+        "id": "delta-blower-open",
+        "path": "/static/images/models/aerzen/delta-blower-open.png",
+        "public_path": "/static/images/models/aerzen/delta-blower-open.png",
+        "source_page_url": "https://www.aerzen.com/us/products/product/blower-units-delta-blower-generation-5",
+        "source_image_url": "https://www.aerzen.com/fileadmin/_processed_/6/b/csm_Blower-ohne-Schallhaube-2_UEberdruck_95a9f85a2c.png",
+        "width": 1000,
+        "height": 1000,
+        "format": "PNG",
+        "mime_type": "image/png",
+        "sha256": "5e19a4dfc40a460389b87426cc048b8d1aab47925cb3bea0a76c48b2673d3be8",
+        "file_size": 839564,
+        "scope": "series",
+        "license_status": "unknown",
+        "usage": "local_preview_only_pending_rights_confirmation",
+        "caption": "Delta Blower Generation 5: агрегат без кожуха, исполнение для избыточного давления. Фото серии; комплектация может отличаться.",
+        "alt": "AERZEN Delta Blower Generation 5: агрегат без кожуха, исполнение для избыточного давления.",
+        "checked_on": "2026-10-15",
+        "visual_inspection": "passed",
+        "is_ai_generated": false
+      }
+    ]
   },
   {
     "brand": "AERZEN",
@@ -63,11 +108,12 @@
     "verified_on": "2026-10-12",
     "cta": "Обсудить комплектацию",
     "is_series": true,
-    "image": "/static/images/generated/delta-hybrid.webp",
+    "image": "/static/images/models/aerzen/delta-hybrid-enclosure.png",
     "images": [
-      "/static/images/generated/delta-hybrid.webp"
+      "/static/images/models/aerzen/delta-hybrid-enclosure.png",
+      "/static/images/models/aerzen/delta-hybrid-detail.png"
     ],
-    "image_status": "Illustrative render based on user-approved mockup. It is not a specification of any delivered SKU.",
+    "image_status": "Real manufacturer series photograph; exact SKU appearance is not verified; see photo scope and caption.",
     "slug": "delta-hybrid",
     "title": "Delta Hybrid",
     "family": "Delta Hybrid",
@@ -98,7 +144,51 @@
       "DELTA",
       "HYBRID"
     ],
-    "image_is_illustration": true
+    "image_is_illustration": false,
+    "photo": {
+      "id": "delta-hybrid-enclosure",
+      "path": "/static/images/models/aerzen/delta-hybrid-enclosure.png",
+      "public_path": "/static/images/models/aerzen/delta-hybrid-enclosure.png",
+      "source_page_url": "https://www.aerzen.com/us/products/product/screw-blowers-delta-hybrid",
+      "source_image_url": "https://www.aerzen.com/fileadmin/_processed_/3/c/csm_Delta-Hybrid-2_1b113f3e22.png",
+      "width": 1000,
+      "height": 1000,
+      "format": "PNG",
+      "mime_type": "image/png",
+      "sha256": "1d5d8058012d3f7ae083cf342147a1a3af96ca027562ec56439e8612fc1ea894",
+      "file_size": 662592,
+      "scope": "series",
+      "license_status": "unknown",
+      "usage": "local_preview_only_pending_rights_confirmation",
+      "caption": "Delta Hybrid: вариант агрегата с шумозащитным кожухом. Фото серии; комплектация может отличаться.",
+      "alt": "AERZEN Delta Hybrid: вариант агрегата с шумозащитным кожухом.",
+      "checked_on": "2026-10-15",
+      "visual_inspection": "passed",
+      "is_ai_generated": false
+    },
+    "photo_gallery": [
+      {
+        "id": "delta-hybrid-detail",
+        "path": "/static/images/models/aerzen/delta-hybrid-detail.png",
+        "public_path": "/static/images/models/aerzen/delta-hybrid-detail.png",
+        "source_page_url": "https://www.aerzen.com/us/products/product/screw-blowers-delta-hybrid",
+        "source_image_url": "https://www.aerzen.com/fileadmin/_processed_/0/5/csm_Delta_Hybrid_2_d929c948c4.png",
+        "width": 1000,
+        "height": 1000,
+        "format": "PNG",
+        "mime_type": "image/png",
+        "sha256": "cc525ed81f96fa4ed8a3065fb4a791b9e1f8bcb857ecd0382b3b512ab8baa707",
+        "file_size": 1189604,
+        "scope": "series",
+        "license_status": "unknown",
+        "usage": "local_preview_only_pending_rights_confirmation",
+        "caption": "Delta Hybrid: приборы контроля давления агрегата. Фото серии; комплектация может отличаться.",
+        "alt": "AERZEN Delta Hybrid: приборы контроля давления агрегата.",
+        "checked_on": "2026-10-15",
+        "visual_inspection": "passed",
+        "is_ai_generated": false
+      }
+    ]
   },
   {
     "brand": "AERZEN",
@@ -114,11 +204,12 @@
     "verified_on": "2026-10-12",
     "cta": "Обсудить комплектацию",
     "is_series": true,
-    "image": "/static/images/generated/delta-screw.webp",
+    "image": "/static/images/models/aerzen/delta-screw-enclosure.png",
     "images": [
-      "/static/images/generated/delta-screw.webp"
+      "/static/images/models/aerzen/delta-screw-enclosure.png",
+      "/static/images/models/aerzen/delta-screw-open.png"
     ],
-    "image_status": "Illustrative render based on user-approved mockup. It is not a specification of any delivered SKU.",
+    "image_status": "Real manufacturer series photograph; exact SKU appearance is not verified; see photo scope and caption.",
     "slug": "delta-screw",
     "title": "Delta Screw",
     "family": "Delta Screw",
@@ -148,7 +239,51 @@
       "DELTA",
       "SCREW"
     ],
-    "image_is_illustration": true
+    "image_is_illustration": false,
+    "photo": {
+      "id": "delta-screw-enclosure",
+      "path": "/static/images/models/aerzen/delta-screw-enclosure.png",
+      "public_path": "/static/images/models/aerzen/delta-screw-enclosure.png",
+      "source_page_url": "https://www.aerzen.com/product/screw-compressor-units-delta-screw-with-direct-drive",
+      "source_image_url": "https://www.aerzen.com/fileadmin/_processed_/c/3/csm_DeltaScrew_VM45E_E-Design_1_2b49f59d56.png",
+      "width": 1000,
+      "height": 1000,
+      "format": "PNG",
+      "mime_type": "image/png",
+      "sha256": "97567a84f0fca33a2e7227e8cc05250a312e5368ebc9af787427640089b9e64d",
+      "file_size": 672968,
+      "scope": "series",
+      "license_status": "unknown",
+      "usage": "local_preview_only_pending_rights_confirmation",
+      "caption": "Delta Screw: пример исполнения VM45E E-Design с прямым приводом.",
+      "alt": "AERZEN Delta Screw: пример исполнения VM45E E-Design с прямым приводом.",
+      "checked_on": "2026-10-15",
+      "visual_inspection": "passed",
+      "is_ai_generated": false
+    },
+    "photo_gallery": [
+      {
+        "id": "delta-screw-open",
+        "path": "/static/images/models/aerzen/delta-screw-open.png",
+        "public_path": "/static/images/models/aerzen/delta-screw-open.png",
+        "source_page_url": "https://www.aerzen.com/product/screw-compressor-units-delta-screw-with-direct-drive",
+        "source_image_url": "https://www.aerzen.com/fileadmin/_processed_/d/9/csm_DeltaScrew_VM45E_E-Design_2_e421ec3de0.png",
+        "width": 1000,
+        "height": 1000,
+        "format": "PNG",
+        "mime_type": "image/png",
+        "sha256": "d82167f83cea3efe0c68c2136b7b144d3fd49a28e4537977eff87fd8c6a5c26b",
+        "file_size": 995454,
+        "scope": "series",
+        "license_status": "unknown",
+        "usage": "local_preview_only_pending_rights_confirmation",
+        "caption": "Delta Screw VM45E E-Design: внутренний вид агрегата с прямым приводом. Фото серии; комплектация может отличаться.",
+        "alt": "AERZEN Delta Screw VM45E E-Design: внутренний вид агрегата с прямым приводом.",
+        "checked_on": "2026-10-15",
+        "visual_inspection": "passed",
+        "is_ai_generated": false
+      }
+    ]
   },
   {
     "brand": "AERZEN",
@@ -164,13 +299,11 @@
     "verified_on": "2026-10-12",
     "cta": "Обсудить комплектацию",
     "is_series": false,
-    "image": "/static/images/source/product-gm-source-1.webp",
+    "image": "/static/images/models/aerzen/gm-series.png",
     "images": [
-      "/static/images/source/product-gm-source-1.webp",
-      "/static/images/source/product-gm-source-2.webp",
-      "/static/images/source/product-gm-source-3.webp"
+      "/static/images/models/aerzen/gm-series.png"
     ],
-    "image_status": "Source site shares one photo between several GM model pages; specific SKU/configuration image identity is unconfirmed.",
+    "image_status": "Real manufacturer series photograph; exact SKU appearance is not verified; see photo scope and caption.",
     "slug": "gm35s",
     "title": "GM35S",
     "family": "Delta Blower",
@@ -207,7 +340,29 @@
     "display_title": [
       "GM35S"
     ],
-    "image_is_illustration": false
+    "image_is_illustration": false,
+    "photo": {
+      "id": "gm-series",
+      "path": "/static/images/models/aerzen/gm-series.png",
+      "public_path": "/static/images/models/aerzen/gm-series.png",
+      "source_page_url": "https://www.aerzen.com/product/positive-displacement-blower-stages",
+      "source_image_url": "https://www.aerzen.com/fileadmin/_processed_/e/3/csm_GM_2ac52a8501.png",
+      "width": 1000,
+      "height": 1000,
+      "format": "PNG",
+      "mime_type": "image/png",
+      "sha256": "2bc5f56863e585d3e83a4fe2fb83feba7d7997bac1d4ecf64847c412f4e89cac",
+      "file_size": 845859,
+      "scope": "series",
+      "license_status": "unknown",
+      "usage": "local_preview_only_pending_rights_confirmation",
+      "caption": "Ступень серии GM. Внешний вид и комплектация зависят от исполнения.",
+      "alt": "AERZEN Ступень серии GM. Внешний вид и комплектация зависят от исполнения.",
+      "checked_on": "2026-10-15",
+      "visual_inspection": "passed",
+      "is_ai_generated": false
+    },
+    "photo_gallery": []
   },
   {
     "brand": "AERZEN",
@@ -223,13 +378,11 @@
     "verified_on": "2026-10-12",
     "cta": "Обсудить комплектацию",
     "is_series": false,
-    "image": "/static/images/source/product-gm-source-1.webp",
+    "image": "/static/images/models/aerzen/gm-series.png",
     "images": [
-      "/static/images/source/product-gm-source-1.webp",
-      "/static/images/source/product-gm-source-2.webp",
-      "/static/images/source/product-gm-source-3.webp"
+      "/static/images/models/aerzen/gm-series.png"
     ],
-    "image_status": "Source site shares one photo between several GM model pages; specific SKU/configuration image identity is unconfirmed.",
+    "image_status": "Real manufacturer series photograph; exact SKU appearance is not verified; see photo scope and caption.",
     "slug": "gm50l",
     "title": "GM50L",
     "family": "Delta Blower",
@@ -266,7 +419,29 @@
     "display_title": [
       "GM50L"
     ],
-    "image_is_illustration": false
+    "image_is_illustration": false,
+    "photo": {
+      "id": "gm-series",
+      "path": "/static/images/models/aerzen/gm-series.png",
+      "public_path": "/static/images/models/aerzen/gm-series.png",
+      "source_page_url": "https://www.aerzen.com/product/positive-displacement-blower-stages",
+      "source_image_url": "https://www.aerzen.com/fileadmin/_processed_/e/3/csm_GM_2ac52a8501.png",
+      "width": 1000,
+      "height": 1000,
+      "format": "PNG",
+      "mime_type": "image/png",
+      "sha256": "2bc5f56863e585d3e83a4fe2fb83feba7d7997bac1d4ecf64847c412f4e89cac",
+      "file_size": 845859,
+      "scope": "series",
+      "license_status": "unknown",
+      "usage": "local_preview_only_pending_rights_confirmation",
+      "caption": "Ступень серии GM. Внешний вид и комплектация зависят от исполнения.",
+      "alt": "AERZEN Ступень серии GM. Внешний вид и комплектация зависят от исполнения.",
+      "checked_on": "2026-10-15",
+      "visual_inspection": "passed",
+      "is_ai_generated": false
+    },
+    "photo_gallery": []
   },
   {
     "brand": "AERZEN",
@@ -282,13 +457,11 @@
     "verified_on": "2026-10-12",
     "cta": "Обсудить комплектацию",
     "is_series": false,
-    "image": "/static/images/source/product-gm-source-1.webp",
+    "image": "/static/images/models/aerzen/gm-series.png",
     "images": [
-      "/static/images/source/product-gm-source-1.webp",
-      "/static/images/source/product-gm-source-2.webp",
-      "/static/images/source/product-gm-source-3.webp"
+      "/static/images/models/aerzen/gm-series.png"
     ],
-    "image_status": "Source site shares one photo between several GM model pages; specific SKU/configuration image identity is unconfirmed.",
+    "image_status": "Real manufacturer series photograph; exact SKU appearance is not verified; see photo scope and caption.",
     "slug": "gm60s",
     "title": "GM60S",
     "family": "Delta Blower",
@@ -325,7 +498,29 @@
     "display_title": [
       "GM60S"
     ],
-    "image_is_illustration": false
+    "image_is_illustration": false,
+    "photo": {
+      "id": "gm-series",
+      "path": "/static/images/models/aerzen/gm-series.png",
+      "public_path": "/static/images/models/aerzen/gm-series.png",
+      "source_page_url": "https://www.aerzen.com/product/positive-displacement-blower-stages",
+      "source_image_url": "https://www.aerzen.com/fileadmin/_processed_/e/3/csm_GM_2ac52a8501.png",
+      "width": 1000,
+      "height": 1000,
+      "format": "PNG",
+      "mime_type": "image/png",
+      "sha256": "2bc5f56863e585d3e83a4fe2fb83feba7d7997bac1d4ecf64847c412f4e89cac",
+      "file_size": 845859,
+      "scope": "series",
+      "license_status": "unknown",
+      "usage": "local_preview_only_pending_rights_confirmation",
+      "caption": "Ступень серии GM. Внешний вид и комплектация зависят от исполнения.",
+      "alt": "AERZEN Ступень серии GM. Внешний вид и комплектация зависят от исполнения.",
+      "checked_on": "2026-10-15",
+      "visual_inspection": "passed",
+      "is_ai_generated": false
+    },
+    "photo_gallery": []
   },
   {
     "brand": "AERZEN",
@@ -341,13 +536,11 @@
     "verified_on": "2026-10-12",
     "cta": "Обсудить комплектацию",
     "is_series": false,
-    "image": "/static/images/source/product-gm-source-1.webp",
+    "image": "/static/images/models/aerzen/gm-series.png",
     "images": [
-      "/static/images/source/product-gm-source-1.webp",
-      "/static/images/source/product-gm-source-2.webp",
-      "/static/images/source/product-gm-source-3.webp"
+      "/static/images/models/aerzen/gm-series.png"
     ],
-    "image_status": "Source site shares one photo between several GM model pages; specific SKU/configuration image identity is unconfirmed.",
+    "image_status": "Real manufacturer series photograph; exact SKU appearance is not verified; see photo scope and caption.",
     "slug": "gm80l",
     "title": "GM80L",
     "family": "Delta Blower",
@@ -384,6 +577,28 @@
     "display_title": [
       "GM80L"
     ],
-    "image_is_illustration": false
+    "image_is_illustration": false,
+    "photo": {
+      "id": "gm-series",
+      "path": "/static/images/models/aerzen/gm-series.png",
+      "public_path": "/static/images/models/aerzen/gm-series.png",
+      "source_page_url": "https://www.aerzen.com/product/positive-displacement-blower-stages",
+      "source_image_url": "https://www.aerzen.com/fileadmin/_processed_/e/3/csm_GM_2ac52a8501.png",
+      "width": 1000,
+      "height": 1000,
+      "format": "PNG",
+      "mime_type": "image/png",
+      "sha256": "2bc5f56863e585d3e83a4fe2fb83feba7d7997bac1d4ecf64847c412f4e89cac",
+      "file_size": 845859,
+      "scope": "series",
+      "license_status": "unknown",
+      "usage": "local_preview_only_pending_rights_confirmation",
+      "caption": "Ступень серии GM. Внешний вид и комплектация зависят от исполнения.",
+      "alt": "AERZEN Ступень серии GM. Внешний вид и комплектация зависят от исполнения.",
+      "checked_on": "2026-10-15",
+      "visual_inspection": "passed",
+      "is_ai_generated": false
+    },
+    "photo_gallery": []
   }
 ]

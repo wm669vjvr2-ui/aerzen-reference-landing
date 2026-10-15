@@ -10,6 +10,7 @@
   <meta property="og:type" content="website"><meta property="og:title" content="{{ title|default('Промышленное оборудование') }} — ПСК АРУС"><meta property="og:description" content="{{ site.description }}"><meta property="og:url" content="{{ canonical_url }}">
   <link rel="icon" href="/static/images/storefront/mark.svg" type="image/svg+xml">
   <link rel="stylesheet" href="/static/css/storefront.css?v=20261014-4">
+  <link rel="stylesheet" href="/static/css/model-photos.css?v=20261015-1">
   <script type="module" src="/static/js/site.js?v=20261014-4"></script>
   <script type="application/ld+json" nonce="{{ csp_nonce }}">{{ {'@context':'https://schema.org','@type':'Organization','name':site.company_name|default(''),'telephone':site.phone|default(''),'email':site.email|default(''),'url':canonical_url,'address':{'@type':'PostalAddress','streetAddress':site.address|default(''),'addressCountry':'RU'}}|tojson }}</script>
   {% block head %}{% endblock %}

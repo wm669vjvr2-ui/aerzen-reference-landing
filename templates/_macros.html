@@ -1,4 +1,10 @@
 {% macro arrow(direction='right') -%}<svg class="icon arrow-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12h15M13 5l7 7-7 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"/></svg>{%- endmacro %}
+{% macro equipment_photo(photo, size='card', priority=false) %}
+{% if photo %}<figure class="equipment-photo equipment-photo-{{ size }}" data-equipment-photo>
+  <img src="{{ photo.path }}" alt="{{ photo.alt }}" width="{{ photo.width }}" height="{{ photo.height }}" loading="{{ 'eager' if priority else 'lazy' }}" decoding="async" {% if priority %}fetchpriority="high"{% endif %}>
+  <figcaption>{% if size == 'table' %}{{ 'Фото серии' if photo.scope == 'series' else 'Фото модели' }}{% else %}{{ photo.caption }}{% endif %}</figcaption>
+</figure>{% endif %}
+{% endmacro %}
 {% macro form(kind='task', product_slug='', heading='Обсудим вашу задачу', message_default='') %}
 <section class="request-block" id="request" aria-labelledby="request-heading">
   <div class="request-intro"><span class="eyebrow">Связаться с инженером</span><h2 id="request-heading">{{ heading }}</h2><p>Расскажите о процессе или оборудовании. Параметры, которых пока нет, можно уточнить вместе.</p><a class="contact-phone" href="{{ site.phone_href }}">{{ site.phone }}</a><a href="mailto:{{ site.email }}">{{ site.email }}</a>{% if not readiness.forms_enabled %}<a class="button reference-email-action" href="mailto:{{ site.email }}?subject=Запрос%20предложения%20AERZEN">Запросить КП по e-mail {{ arrow() }}</a>{% endif %}</div>

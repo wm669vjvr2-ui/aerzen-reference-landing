@@ -1,0 +1,81 @@
+{
+  "checked_on": "2026-10-15",
+  "assets": [
+    {
+      "id": "erb-assembly",
+      "path": "/static/images/models/erb/erb-assembly.png",
+      "source_page_url": "https://erstvak.com/brands/rotornye-vozdukhoduvki-erstevak/erstevak-seriya-erb/",
+      "source_image_url": "https://erstvak.com/upload/medialibrary/855/8550ef5ac91ce4dc53e48ead2c4303e3.PNG",
+      "width": 523,
+      "height": 565,
+      "sha256": "1716b4e304b0a107ac50d131e673ea5f790348713d0305e0b82a1efba14bf903",
+      "mime_type": "image/png",
+      "scope": "series",
+      "license_status": "unknown",
+      "caption": "ERSTVAK ERB: общий вид серии. Исполнение конкретной модели может отличаться.",
+      "alt": "ERSTVAK ERB: общий вид серии роторных воздуходувок",
+      "checked_on": "2026-10-15",
+      "acquisition": "Browser observed pageAssets bundle; original bytes, no image edits.",
+      "inspection": "Viewed locally with view_image; manufacturer reuses the same assembly view for all six model cards."
+    }
+  ],
+  "families": {
+    "erstvak-erb": {
+      "hero_asset_id": "erb-assembly",
+      "gallery_asset_ids": [],
+      "model_images": {
+        "erb-50": "erb-assembly",
+        "erb-65": "erb-assembly",
+        "erb-80": "erb-assembly",
+        "erb-100": "erb-assembly",
+        "erb-125": "erb-assembly",
+        "erb-150": "erb-assembly"
+      }
+    }
+  },
+  "model_card_sources": [
+    {
+      "source_page_url": "https://erstvak.com/product/rotornaya-vozdukhoduvka-ruts-erstevak-erb-50/",
+      "source_image_url": "https://erstvak.com/upload/iblock/665/6tr9pud1tx36r6ssatsn1lrg26qq0jst.webp",
+      "sha256": "93cbedc60d7e843bc701194b700f9d77f3e338ede4f322270f4dab123121a66a",
+      "width": 170,
+      "height": 145
+    },
+    {
+      "source_page_url": "https://erstvak.com/product/rotornaya-vozdukhoduvka-ruts-erstevak-erb-65/",
+      "source_image_url": "https://erstvak.com/upload/iblock/0b8/0hvi7lft7o444ifdchz27t1ajb16hqwj.webp",
+      "sha256": "93cbedc60d7e843bc701194b700f9d77f3e338ede4f322270f4dab123121a66a",
+      "width": 170,
+      "height": 145
+    },
+    {
+      "source_page_url": "https://erstvak.com/product/rotornaya-vozdukhoduvka-ruts-erstevak-erb-80/",
+      "source_image_url": "https://erstvak.com/upload/iblock/a0e/ubykmspixto6nn2bb8xuzj92tk0q4v8n.webp",
+      "sha256": "93cbedc60d7e843bc701194b700f9d77f3e338ede4f322270f4dab123121a66a",
+      "width": 170,
+      "height": 145
+    },
+    {
+      "source_page_url": "https://erstvak.com/product/rotornaya-vozdukhoduvka-ruts-erstevak-erb-100/",
+      "source_image_url": "https://erstvak.com/upload/iblock/b44/s2i0oi5dxqn5hsvt0xl9mefzg9m4qyrj.webp",
+      "sha256": "93cbedc60d7e843bc701194b700f9d77f3e338ede4f322270f4dab123121a66a",
+      "width": 170,
+      "height": 145
+    },
+    {
+      "source_page_url": "https://erstvak.com/product/rotornaya-vozdukhoduvka-ruts-erstevak-erb-125/",
+      "source_image_url": "https://erstvak.com/upload/iblock/357/iyyufod8wmp5oeoclvzrjxzgmng2oqn7.webp",
+      "sha256": "93cbedc60d7e843bc701194b700f9d77f3e338ede4f322270f4dab123121a66a",
+      "width": 170,
+      "height": 145
+    },
+    {
+      "source_page_url": "https://erstvak.com/product/rotornaya-vozdukhoduvka-ruts-erstevak-erb-150/",
+      "source_image_url": "https://erstvak.com/upload/iblock/86d/ipldmwhjnxrbk9m9txm1ia1hfvrzws6p.webp",
+      "sha256": "93cbedc60d7e843bc701194b700f9d77f3e338ede4f322270f4dab123121a66a",
+      "width": 170,
+      "height": 145
+    }
+  ],
+  "card_photo_unique_hashes": 1
+}
