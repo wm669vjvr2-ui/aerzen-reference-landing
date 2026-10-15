@@ -154,7 +154,7 @@ def make_site(tmp_path):
         client.close()
 
 
-def test_reference_pages_disclose_non_supply_and_are_distinct(make_site):
+def test_reference_pages_explain_comparison_context_and_are_distinct(make_site):
     app, client, _ = make_site()
     families = {item["slug"]: item for item in app.state.content.alternatives}
     assert set(FAMILY_COUNTS).issubset(families)
@@ -164,7 +164,10 @@ def test_reference_pages_disclose_non_supply_and_are_distinct(make_site):
         assert response.status_code == 200
         assert not response.history
         page = Page(response.text)
-        assert DISCLAIMER in " ".join(page.text)
+        visible_text = " ".join(page.text)
+        assert DISCLAIMER not in visible_text
+        assert "справоч" in visible_text.casefold()
+        assert "сравнен" in visible_text.casefold()
         assert len(page.headings) == 1 and page.headings[0]
         headings.extend(page.headings)
         assert page.canonical == ["http://testserver" + path]
@@ -187,12 +190,16 @@ def test_reference_families_are_excluded_from_products_cart_and_feed(make_site):
     content = app.state.content
     product_slugs = {product["slug"] for product in content.products}
     assert not (set(FAMILY_COUNTS) & product_slugs)
+    reference_ids = {f"ref-{family['slug']}-{model['anchor']}"
+                     for family in content.alternatives for model in family["models"]}
+    reference_models = {model["anchor"] for family in content.alternatives for model in family["models"]}
+    assert not ((reference_ids | reference_models) & product_slugs)
     for slug in FAMILY_COUNTS:
         assert content.product(slug) is None
         assert content.alternative(slug) is not None
     confirmed_page = Page(client.get("/models/test-confirmed").text)
     cart_form = next(form for form in confirmed_page.forms if form["action"] == "/cart/add")
-    for slug in FAMILY_COUNTS:
+    for slug in set(FAMILY_COUNTS) | reference_ids | reference_models:
         response = client.post("/cart/add", data={**cart_form["fields"], "slug": slug, "quantity": "1"})
         assert response.status_code == 422
     # Confirm the preceding rejections were not caused by disabled commerce or an invalid token.
@@ -228,6 +235,21 @@ def test_reference_form_requests_an_alternative_without_fake_product(make_site):
     payload = json.loads(leads[0]["payload"])
     assert payload["product_slug"] == ""
     assert payload["message"] == message.strip()
+
+
+def test_reference_model_cannot_become_a_quote_product(make_site):
+    app, client, _ = make_site()
+    family = app.state.content.alternative("huadong-hdsr")
+    model = family["models"][0]
+    page = Page(client.get("/alternatives/huadong-hdsr").text)
+    form = next(form for form in page.forms if form["action"].startswith("/requests/"))
+    candidate = f"ref-{family['slug']}-{model['anchor']}"
+    response = client.post(form["action"], data={**form["fields"], "product_slug": candidate,
+                           "name": "Test Person", "company": "TEST", "email": "person@example.test",
+                           "phone": "", "message": "Compare the reference model", "consent": "yes", "website": ""})
+    assert response.status_code == 422
+    with app.state.store.connect() as db:
+        assert db.execute("SELECT COUNT(*) FROM leads").fetchone()[0] == 0
 
 
 def test_model_name_prefill_cannot_close_textarea_or_create_script(make_site):

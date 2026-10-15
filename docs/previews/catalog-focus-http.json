@@ -1,0 +1,35 @@
+{
+  "pages": [
+    {
+      "path": "/",
+      "status": 200,
+      "photos": 11
+    },
+    {
+      "path": "/models",
+      "status": 200,
+      "photos": 30
+    },
+    {
+      "path": "/alternatives",
+      "status": 200,
+      "photos": 3
+    },
+    {
+      "path": "/alternatives/huadong-hdsr",
+      "status": 200,
+      "photos": 14
+    },
+    {
+      "path": "/alternatives/mingtian-rsr",
+      "status": 200,
+      "photos": 9
+    },
+    {
+      "path": "/alternatives/erstvak-erb",
+      "status": 200,
+      "photos": 7
+    }
+  ],
+  "unique_image_assets_200": 14
+}

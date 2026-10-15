@@ -1,0 +1,110 @@
+[
+  {
+    "bodyWidth": 390,
+    "brokenLoadedPhotos": 0,
+    "cards": 0,
+    "notice": false,
+    "path": "/",
+    "photos": 0,
+    "width": 390
+  },
+  {
+    "bodyWidth": 390,
+    "brokenLoadedPhotos": 0,
+    "cards": 30,
+    "notice": false,
+    "path": "/models",
+    "photos": 30,
+    "width": 390
+  },
+  {
+    "bodyWidth": 390,
+    "brokenLoadedPhotos": 0,
+    "cards": 0,
+    "notice": false,
+    "path": "/alternatives",
+    "photos": 0,
+    "width": 390
+  },
+  {
+    "bodyWidth": 390,
+    "brokenLoadedPhotos": 0,
+    "cards": 0,
+    "notice": false,
+    "path": "/alternatives/erstvak-erb",
+    "photos": 0,
+    "width": 390
+  },
+  {
+    "bodyWidth": 768,
+    "brokenLoadedPhotos": 0,
+    "cards": 0,
+    "notice": false,
+    "path": "/",
+    "photos": 0,
+    "width": 768
+  },
+  {
+    "bodyWidth": 768,
+    "brokenLoadedPhotos": 0,
+    "cards": 30,
+    "notice": false,
+    "path": "/models",
+    "photos": 30,
+    "width": 768
+  },
+  {
+    "bodyWidth": 768,
+    "brokenLoadedPhotos": 0,
+    "cards": 0,
+    "notice": false,
+    "path": "/alternatives",
+    "photos": 0,
+    "width": 768
+  },
+  {
+    "bodyWidth": 768,
+    "brokenLoadedPhotos": 0,
+    "cards": 0,
+    "notice": false,
+    "path": "/alternatives/erstvak-erb",
+    "photos": 0,
+    "width": 768
+  },
+  {
+    "bodyWidth": 1440,
+    "brokenLoadedPhotos": 0,
+    "cards": 0,
+    "notice": false,
+    "path": "/",
+    "photos": 0,
+    "width": 1440
+  },
+  {
+    "bodyWidth": 1440,
+    "brokenLoadedPhotos": 0,
+    "cards": 30,
+    "notice": false,
+    "path": "/models",
+    "photos": 30,
+    "width": 1440
+  },
+  {
+    "bodyWidth": 1440,
+    "brokenLoadedPhotos": 0,
+    "cards": 0,
+    "notice": false,
+    "path": "/alternatives",
+    "photos": 0,
+    "width": 1440
+  },
+  {
+    "bodyWidth": 1440,
+    "brokenLoadedPhotos": 0,
+    "cards": 0,
+    "notice": false,
+    "path": "/alternatives/erstvak-erb",
+    "photos": 0,
+    "width": 1440
+  }
+]

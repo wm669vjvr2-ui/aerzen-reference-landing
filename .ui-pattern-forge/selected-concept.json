@@ -9,7 +9,9 @@
   "photos": "All 30 entries use real manufacturer photographs: seven distinct primary photographs and seven additional views. Shared series images are labeled. Manufacturer redistribution rights are unconfirmed; local preview only. Existing thematic Unsplash photos are retained.",
   "motion": "Brief hover and focus feedback only; reduced-motion disables transitions; no scroll story, mascot, carousel or Three.js runtime.",
   "verified_scope": "Official home, category and product text structure; exact visual matching blocked by browser network access.",
-  "restrictions": "No main-site links or redirect; no competitor impersonation, fake inventory, testimonials or search-popularity claim. Reference Chinese/ERB models explicitly not supplied.",
+  "restrictions": "No main-site links or redirect; no competitor impersonation, fake inventory, testimonials or search-popularity claim. HDSR/RSR/ERB retain technical-comparison context without the removed yellow non-supply banner; excluded from cart/feed/quote SKUs.",
   "production_status": "blocked: compatible Python HTTPS hosting and confirmed owner/privacy/delivery of real leads",
-  "photo_revision": "2026-10-15"
+  "photo_revision": "2026-10-15",
+  "catalog_revision": "2026-10-15",
+  "catalog": "30 visible positions: 23 HDSR/RSR/ERB references first, then 7 AERZEN entries; model photos, GET brand/type/kind/search filters; reference data remain separate from inventory."
 }

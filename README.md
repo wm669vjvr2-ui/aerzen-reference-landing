@@ -6,6 +6,8 @@ Latest selected direction (14 October 2026): a separate supplier site based on t
 
 Photo update (15 October 2026): all 30 AERZEN/reference entries now have real manufacturer photographs in catalogue/detail pages and reference rows. Shared series images are labeled accurately; seven distinct primary photographs plus seven additional views are used. This is not a claim of 30 unique exact-SKU photographs. Sources, license limits, changed files and current validation: `docs/model-photo-update.md`. Manufacturer-photo redistribution rights are unconfirmed; publication remains blocked pending permission or replacement.
 
+Catalogue follow-up (15 October 2026): HDSR, RSR and ERB now lead the homepage and the unified catalogue. All 23 reference models have their own photo/specification cards before the seven AERZEN entries. Native brand/type/category/search filters work without JavaScript. The large yellow non-supply banner was removed as requested; reference comparison context and inventory/commerce separation remain. Current verification: `docs/catalog-focus-update.md`.
+
 The reference home, rotary category and product page yielded readable structure; browser visual access failed. This is a structural adaptation, not a verified pixel-identical copy. Erstvak business claims, reviews, prices, contacts, brand identity and project claims are not represented as the client's. All navigation and requests stay on this independent site.
 
 ## Local launch
@@ -30,7 +32,7 @@ No public HTTPS hosting is configured. Before launch: approve business data/priv
 
 ## Model comparisons added 14 October 2026
 
-`/alternatives` and three family pages cover 17 Chinese Huadong HDSR / Mingtian RSR models and six ERSTVAK ERB models. ERSTVAK Chinese origin is unconfirmed. These are reference comparisons, explicitly not supplied inventory; they never become cart/feed offers. Requests stay on this separate site; there are no links or redirects to the main company website. Search frequency rankings are not established.
+`/alternatives` and three family pages cover 17 Chinese Huadong HDSR / Mingtian RSR models and six ERSTVAK ERB models. ERSTVAK Chinese origin is unconfirmed. These remain reference comparisons rather than supplied inventory; they never become cart/feed offers. Requests stay on this separate site; there are no links or redirects to the main company website. Search frequency rankings are not established.
 
 Primary sources and access/licensing limits: `docs/chinese-models-sources.md`. Verification: `docs/alternatives-verification.md`. No additional dependencies were installed.
 
@@ -44,4 +46,4 @@ The price follow-up also includes Chinese models. `docs/price-verification.md` r
 .venv/bin/python -m pip_audit -r requirements.txt
 ```
 
-Evidence and remaining gaps: `docs/storefront-verification.md` (current) and `docs/verification.md` (13 October snapshot). Content/photo provenance: `docs/content-sources.md`, `docs/photo-sources.md`. Current selection and styling: `.ui-pattern-forge/selected-concept.json`, `docs/design-system.md`, `static/css/storefront.css`. Older motion documents and styles are historical; no 3D runtime is loaded by the current interface.
+Evidence and remaining gaps: `docs/catalog-focus-update.md` (current), `docs/storefront-verification.md` (14 October snapshot) and `docs/verification.md` (13 October snapshot). Content/photo provenance: `docs/content-sources.md`, `docs/photo-sources.md`. Current selection and styling: `.ui-pattern-forge/selected-concept.json`, `docs/design-system.md`, `static/css/storefront.css`. Older motion documents and styles are historical; no 3D runtime is loaded by the current interface.

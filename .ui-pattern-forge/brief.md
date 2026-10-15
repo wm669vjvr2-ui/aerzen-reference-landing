@@ -8,7 +8,7 @@ Audience: Russian B2B industrial equipment buyers and engineers. Primary action:
 
 Reference pattern: utility header, search/contacts, equipment and company navigation, industrial hero, benefits, applications, equipment categories, six project steps, services, company facts, technical blog, engineering form and multi-column footer. Product/category pages include discoverable filters and technical specifications. Do not adopt the client's previous three-entry screen or fullscreen blue AERZEN showcase.
 
-Own facts come from content/site.json; competitor reviews, projects, metrics, prices and credentials are not client facts. Seven AERZEN entries remain quotation only. Seventeen Chinese HDSR/RSR and six ERSTVAK ERB references carry an upfront non-supply disclosure, technical-source links and origin uncertainty where appropriate. Search-demand ranking is not verified.
+Own facts come from content/site.json; competitor reviews, projects, metrics, prices and credentials are not client facts. Seven AERZEN entries remain quotation only. Seventeen Chinese HDSR/RSR and six ERSTVAK ERB references retain neutral technical-comparison context, technical-source links and origin uncertainty where appropriate. The user requested removal of the large yellow non-supply banner on 15 October; it is removed without turning reference models into inventory. Search-demand ranking is not verified.
 
 New photos: verified free Unsplash License; documented in docs/photo-sources.md. They are thematic illustrations of third-party industrial objects, not the company's projects or exact equipment models. Old photographs and generated renders are not rendered by current templates.
 
@@ -21,3 +21,5 @@ UI Pattern Forge applied: local UI UX Pro Max advisory, Refero research and 21st
 Browser visual access to Erstvak failed; text structure was obtained from the official home, rotary category and ERB-50 detail page. Do not claim a verified pixel copy, exact hover behavior or measured conversion increase.
 
 Verify desktop/touch widths, primary navigation, search/filter/empty states, keyboard focus, Escape/focus return, technical tables, form disabled state, media and browser errors. Keep motion limited to short feedback and a reduced-motion path. Public HTTPS handoff remains blocked until compatible hosting and confirmed business/privacy/real-lead delivery configuration exist; GitHub source must remain private.
+
+Catalogue follow-up, 15 October 2026: HDSR, RSR and ERB lead the home and unified 30-position catalogue. Each reference model has its own photo/specification card, a source-family table anchor, and native GET brand/type/category/search filters. AERZEN entries remain available after the references and through the brand filter. Current evidence: docs/catalog-focus-update.md.

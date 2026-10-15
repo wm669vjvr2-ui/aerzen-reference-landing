@@ -112,10 +112,28 @@ def create_app(settings: Settings | None = None) -> FastAPI:
     @app.get("/models", response_class=HTMLResponse)
     async def models(request: Request, q: str = Query(default="", max_length=100),
                      equipment_type: Literal["", "rotary", "screw"] = Query(default="", alias="type"),
-                     equipment_kind: Literal["", "series", "model"] = Query(default="", alias="kind")):
+                     equipment_kind: Literal["", "reference", "series", "model"] = Query(default="", alias="kind"),
+                     brand: Literal["", "huadong", "mingtian", "erstvak", "aerzen"] = Query(default="")):
         query = q.strip()
+        matching_references = []
+        if brand != "aerzen" and equipment_type != "screw" and equipment_kind in ("", "reference"):
+            for family in content.alternatives:
+                family_brand = family["slug"].split("-")[0]
+                if brand and family_brand != brand:
+                    continue
+                for model in family["models"]:
+                    searchable = " ".join((model["name"], family["name"], family["manufacturer"],
+                                           family["technology"])).casefold()
+                    if query.casefold() in searchable:
+                        matching_references.append({
+                            "family": family, "model": model, "brand": family_brand,
+                            "card_id": f"ref-{family['slug']}-{model['anchor']}",
+                            "url": f"/alternatives/{family['slug']}#{model['anchor']}",
+                        })
         matching = []
         for product in content.products:
+            if brand not in ("", "aerzen") or equipment_kind == "reference":
+                continue
             searchable = " ".join(str(product.get(key, "")) for key in ("brand", "name", "type", "family")).casefold()
             if query.casefold() not in searchable:
                 continue
@@ -128,11 +146,9 @@ def create_app(settings: Settings | None = None) -> FastAPI:
             if equipment_kind == "model" and product.get("is_series"):
                 continue
             matching.append(product)
-        matching_families = [family for family in content.alternatives if query and
-                            query.casefold() in (family["name"] + " " + " ".join(model["name"] for model in family["models"])).casefold()]
-        return render(request, "models.html", page="models", title="Оборудование AERZEN", query=query,
-                      equipment_type=equipment_type, equipment_kind=equipment_kind,
-                      matching_products=matching, matching_families=matching_families)
+        return render(request, "models.html", page="models", title="Каталог воздуходувок и компрессоров", query=query,
+                      equipment_type=equipment_type, equipment_kind=equipment_kind, selected_brand=brand,
+                      matching_products=matching, matching_references=matching_references)
 
     @app.get("/alternatives", response_class=HTMLResponse)
     async def alternatives(request: Request):
