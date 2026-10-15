@@ -1,0 +1,57 @@
+[
+  {
+    "bodyWidth": 320,
+    "brokenLoadedImages": 0,
+    "ctaWidth": 190,
+    "h1": 1,
+    "heroHeight": 541,
+    "images": 11,
+    "seriesCards": 3,
+    "seriesIndex": 3,
+    "width": 320
+  },
+  {
+    "bodyWidth": 375,
+    "brokenLoadedImages": 0,
+    "ctaWidth": 190,
+    "h1": 1,
+    "heroHeight": 519,
+    "images": 11,
+    "seriesCards": 3,
+    "seriesIndex": 3,
+    "width": 375
+  },
+  {
+    "bodyWidth": 768,
+    "brokenLoadedImages": 0,
+    "ctaWidth": 218,
+    "h1": 1,
+    "heroHeight": 559,
+    "images": 11,
+    "seriesCards": 3,
+    "seriesIndex": 3,
+    "width": 768
+  },
+  {
+    "bodyWidth": 1024,
+    "brokenLoadedImages": 0,
+    "ctaWidth": 218,
+    "h1": 1,
+    "heroHeight": 559,
+    "images": 11,
+    "seriesCards": 3,
+    "seriesIndex": 3,
+    "width": 1024
+  },
+  {
+    "bodyWidth": 1440,
+    "brokenLoadedImages": 0,
+    "ctaWidth": 218,
+    "h1": 1,
+    "heroHeight": 579,
+    "images": 11,
+    "seriesCards": 3,
+    "seriesIndex": 3,
+    "width": 1440
+  }
+]

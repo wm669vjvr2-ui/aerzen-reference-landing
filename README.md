@@ -10,6 +10,8 @@ Catalogue follow-up (15 October 2026): HDSR, RSR and ERB now lead the homepage a
 
 The reference home, rotary category and product page yielded readable structure; browser visual access failed. This is a structural adaptation, not a verified pixel-identical copy. Erstvak business claims, reviews, prices, contacts, brand identity and project claims are not represented as the client's. All navigation and requests stay on this independent site.
 
+Homepage refinement (15 October 2026): replaced the enlarged manufacturer-photo hero with the existing licensed industrial photograph, a larger task-led headline and compact series navigation. Refined the family cards, applications, process, service, company and article sections. Catalogue and backend are unchanged. Current checks and source limits: `docs/home-refinement.md`.
+
 ## Local launch
 
 Use Python 3.12 or newer:
