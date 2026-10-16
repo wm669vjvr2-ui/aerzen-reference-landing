@@ -1,0 +1,305 @@
+[
+  {
+    "slug": "lutos",
+    "name": "Lutos",
+    "aliases": [
+      "LUTOS",
+      "Лутос"
+    ],
+    "description": "Роторные воздуходувки серии DT. На странице сохранено узнаваемое название Lutos и его связь с линейкой Atlas Copco.",
+    "source_url": "https://www.atlascopco.com/es-es/compressors/news-and-stories/lutos",
+    "checked_on": "2026-10-16",
+    "series": [
+      {
+        "slug": "dt",
+        "name": "DT",
+        "type": "rotary",
+        "description": "Ранее выпускавшиеся роторные воздуходувки Lutos DT. Atlas Copco сообщает о включении прежней линейки DT в ассортимент ZL.",
+        "source_url": "https://www.atlascopco.com/es-es/compressors/news-and-stories/lutos",
+        "photo": {
+          "path": "/static/images/brands/lutos.jpg",
+          "width": 714,
+          "height": 628,
+          "alt": "LUTOS DT — историческая серия; Lutos package из сообщения Atlas Copco",
+          "caption": "LUTOS DT — историческая серия; Lutos package из сообщения Atlas Copco",
+          "scope": "series",
+          "source_url": "https://www.atlascopco.com/es-es/compressors/news-and-stories/lutos"
+        }
+      }
+    ],
+    "commercial_status": "reference_only",
+    "note": "По информации Atlas Copco, с апреля 2022 года Lutos больше не является самостоятельным брендом; прежние воздуходувки DT вошли в линейку ZL."
+  },
+  {
+    "slug": "robuschi",
+    "name": "Robuschi",
+    "aliases": [
+      "Robushi",
+      "Робуски",
+      "Робуши"
+    ],
+    "description": "Воздуходувное оборудование Robuschi. Серия Robox Lobe использует роторную технологию, Robox Screw — винтовую.",
+    "source_url": "https://www.robuschi.com/en/rotary-lobe-blowers/robox-lobe-blower-unit/",
+    "checked_on": "2026-10-16",
+    "series": [
+      {
+        "slug": "robox-lobe",
+        "name": "Robox Lobe",
+        "type": "rotary",
+        "description": "Роторные воздуходувные агрегаты с трёхлопастной ступенью сжатия, в том числе в шумозащитном кожухе.",
+        "source_url": "https://www.robuschi.com/en/rotary-lobe-blowers/robox-lobe-blower-unit/",
+        "photo": {
+          "path": "/static/images/brands/robuschi.jpg",
+          "width": 1600,
+          "height": 1600,
+          "alt": "Robuschi Robox Lobe — пример серии в кожухе",
+          "caption": "Robuschi Robox Lobe — пример серии в кожухе",
+          "scope": "series",
+          "source_url": "https://www.robuschi.com/en/rotary-lobe-blowers/robox-lobe-blower-unit/"
+        }
+      },
+      {
+        "slug": "robox-screw",
+        "name": "Robox Screw",
+        "type": "screw",
+        "description": "Винтовые воздуходувные установки Robuschi с внутренним сжатием. Пример исполнения в шумозащитном кожухе.",
+        "source_url": "https://www.robuschi.com/en/screw-blowers/screw-blowers-robox-screw/",
+        "photo": {
+          "path": "/static/images/brands/robuschi-screw.webp",
+          "width": 1600,
+          "height": 1600,
+          "alt": "Robuschi Robox Screw — пример исполнения серии в кожухе",
+          "caption": "Robuschi Robox Screw — пример исполнения серии в кожухе",
+          "scope": "series",
+          "source_url": "https://www.robuschi.com/en/screw-blowers/screw-blowers-robox-screw/"
+        }
+      }
+    ],
+    "commercial_status": "reference_only"
+  },
+  {
+    "slug": "kaeser",
+    "name": "Kaeser",
+    "aliases": [
+      "KAESER KOMPRESSOREN",
+      "Кезер",
+      "Кайзер"
+    ],
+    "description": "Воздуходувки KAESER KOMPRESSOREN. Винтовые серии FBS и GBS предназначены для безмасляной подачи воздуха.",
+    "source_url": "https://au.kaeser.com/products/blowers/rotary-screw-blowers/",
+    "checked_on": "2026-10-16",
+    "series": [
+      {
+        "slug": "fbs-720",
+        "name": "FBS 720",
+        "type": "screw",
+        "description": "Винтовая воздуходувка KAESER. На фотографии показано исполнение FBS 720 M; состав агрегата зависит от комплектации.",
+        "source_url": "https://au.kaeser.com/products/blowers/rotary-screw-blowers/",
+        "photo": {
+          "path": "/static/images/brands/kaeser.png",
+          "width": 927,
+          "height": 522,
+          "alt": "KAESER FBS 720 — пример исполнения серии",
+          "caption": "KAESER FBS 720 — пример исполнения серии",
+          "scope": "series",
+          "source_url": "https://au.kaeser.com/products/blowers/rotary-screw-blowers/"
+        }
+      },
+      {
+        "slug": "gbs-1050",
+        "name": "GBS 1050",
+        "type": "screw",
+        "description": "Винтовые воздуходувки KAESER серии GBS 1050. В линейке предусмотрены исполнения с постоянной и регулируемой частотой вращения.",
+        "source_url": "https://au.kaeser.com/products/blowers/rotary-screw-blowers/",
+        "photo": {
+          "path": "/static/images/brands/kaeser-gbs.png",
+          "width": 927,
+          "height": 522,
+          "alt": "KAESER GBS 1050 — пример исполнения серии",
+          "caption": "KAESER GBS 1050 — пример исполнения серии",
+          "scope": "series",
+          "source_url": "https://au.kaeser.com/products/blowers/rotary-screw-blowers/"
+        }
+      }
+    ],
+    "commercial_status": "reference_only"
+  },
+  {
+    "slug": "atlas-copco",
+    "name": "Atlas Copco",
+    "aliases": [
+      "Атлас Копко",
+      "AtlasCopco"
+    ],
+    "description": "Роторные воздуходувки ZL и винтовые воздуходувки ZS. Линейка включает агрегаты для безмасляной подачи воздуха.",
+    "source_url": "https://www.atlascopco.com/en-us/compressors/products/air-blowers/lobe-blowers-zl",
+    "checked_on": "2026-10-16",
+    "series": [
+      {
+        "slug": "zl",
+        "name": "ZL",
+        "type": "rotary",
+        "description": "Роторные воздуходувки низкого давления Atlas Copco. На фотографии показан пример агрегатов ZL в кожухе.",
+        "source_url": "https://www.atlascopco.com/en-us/compressors/products/air-blowers/lobe-blowers-zl",
+        "photo": {
+          "path": "/static/images/brands/atlas-copco.jpg",
+          "width": 628,
+          "height": 628,
+          "alt": "Atlas Copco ZL — пример исполнения серии",
+          "caption": "Atlas Copco ZL — пример исполнения серии",
+          "scope": "series",
+          "source_url": "https://www.atlascopco.com/en-us/compressors/products/air-blowers/lobe-blowers-zl"
+        }
+      },
+      {
+        "slug": "zs",
+        "name": "ZS",
+        "type": "screw",
+        "description": "Винтовые воздуходувки Atlas Copco с безмасляной рабочей камерой. В линейке представлены исполнения ZS VSD.",
+        "source_url": "https://www.atlascopco.com/en-us/compressors/products/air-blowers/rotary-screw-blower-zs-vsd",
+        "photo": {
+          "path": "/static/images/brands/atlas-copco-zs.png",
+          "width": 443,
+          "height": 628,
+          "alt": "Atlas Copco ZS — пример исполнения серии",
+          "caption": "Atlas Copco ZS — пример исполнения серии",
+          "scope": "series",
+          "source_url": "https://www.atlascopco.com/en-us/compressors/products/air-blowers/rotary-screw-blower-zs-vsd"
+        }
+      }
+    ],
+    "commercial_status": "reference_only"
+  },
+  {
+    "slug": "kubicek",
+    "name": "Kubicek",
+    "aliases": [
+      "KUBÍČEK",
+      "KUBICEK VHS",
+      "Кубичек",
+      "Кубичек ВХС"
+    ],
+    "description": "Воздуходувки KUBÍČEK VHS: роторные ROOTs и винтовая линейка SCREW SD.",
+    "source_url": "https://kubicekvhs.cz/en/produkty/roots-blowers/",
+    "checked_on": "2026-10-16",
+    "series": [
+      {
+        "slug": "roots",
+        "name": "ROOTs",
+        "type": "rotary",
+        "description": "Роторные воздуходувные агрегаты KUBÍČEK VHS. На фотографии показано исполнение 3D38.",
+        "source_url": "https://kubicekvhs.cz/en/produkty/roots-blowers/",
+        "photo": {
+          "path": "/static/images/brands/kubicek.png",
+          "width": 700,
+          "height": 700,
+          "alt": "KUBÍČEK ROOTs 3D38 — пример исполнения серии",
+          "caption": "KUBÍČEK ROOTs 3D38 — пример исполнения серии",
+          "scope": "series",
+          "source_url": "https://kubicekvhs.cz/en/produkty/roots-blowers/"
+        }
+      },
+      {
+        "slug": "screw-sd",
+        "name": "SCREW SD",
+        "type": "screw",
+        "description": "Винтовые агрегаты KUBÍČEK VHS на основе ступеней SD. Фотография показывает общий вид серии, а не конкретный типоразмер ступени.",
+        "source_url": "https://kubicekvhs.cz/en/produkty/screew-blower-units/",
+        "photo": {
+          "path": "/static/images/brands/kubicek-screw.png",
+          "width": 300,
+          "height": 300,
+          "alt": "KUBÍČEK SCREW — пример винтовой серии; конкретная SD-ступень на изображении не установлена",
+          "caption": "KUBÍČEK SCREW — пример винтовой серии; конкретная SD-ступень на изображении не установлена",
+          "scope": "series",
+          "source_url": "https://kubicekvhs.cz/en/produkty/screew-blower-units/"
+        },
+        "models": [
+          "SD28",
+          "SD38",
+          "SD45",
+          "SD55",
+          "SD60B"
+        ]
+      }
+    ],
+    "commercial_status": "reference_only"
+  },
+  {
+    "slug": "busch",
+    "name": "Busch",
+    "aliases": [
+      "Буш",
+      "Busch Vacuum Solutions"
+    ],
+    "description": "Воздуходувное оборудование Busch Vacuum Solutions. Линейка TYR WT использует роторный принцип работы.",
+    "source_url": "https://www.buschvacuum.com/us/en/products/blowers-compressors/rotary-lobe/tyr/",
+    "checked_on": "2026-10-16",
+    "series": [
+      {
+        "slug": "tyr-wt",
+        "name": "TYR WT",
+        "type": "rotary",
+        "description": "Роторные воздуходувки Busch TYR WT в открытом исполнении и в кожухе. Характеристики зависят от типоразмера и рабочего режима.",
+        "source_url": "https://www.buschvacuum.com/us/en/products/blowers-compressors/rotary-lobe/tyr/",
+        "photo": {
+          "path": "/static/images/brands/busch.png",
+          "width": 766,
+          "height": 430,
+          "alt": "Busch TYR WT — пример исполнения серии",
+          "caption": "Busch TYR WT — пример исполнения серии",
+          "scope": "series",
+          "source_url": "https://www.buschvacuum.com/us/en/products/blowers-compressors/rotary-lobe/tyr/"
+        }
+      }
+    ],
+    "commercial_status": "reference_only"
+  },
+  {
+    "slug": "pedro-gil",
+    "name": "Pedro Gil",
+    "aliases": [
+      "Pedrogil",
+      "Педро Гил",
+      "Педрогиль"
+    ],
+    "description": "Воздуходувки Pedro Gil: роторные агрегаты RPG и турбовоздуходувки TPG.",
+    "source_url": "https://www.pedrogil.com/en/products/rpg-rotary-lobe-blowers/rotary-lobe-blower-product/",
+    "checked_on": "2026-10-16",
+    "series": [
+      {
+        "slug": "rpg-30",
+        "name": "RPG 30",
+        "type": "rotary",
+        "description": "Роторные воздуходувки с трёхлопастными роторами. На фотографии показан пример серии RPG 30 в шумозащитном кожухе.",
+        "source_url": "https://www.pedrogil.com/en/products/rpg-rotary-lobe-blowers/rotary-lobe-blower-product/",
+        "photo": {
+          "path": "/static/images/brands/pedro-gil.webp",
+          "width": 1600,
+          "height": 1399,
+          "alt": "Pedro Gil RPG 30 — пример серии в кожухе",
+          "caption": "Pedro Gil RPG 30 — пример серии в кожухе",
+          "scope": "series",
+          "source_url": "https://www.pedrogil.com/en/products/rpg-rotary-lobe-blowers/rotary-lobe-blower-product/"
+        }
+      },
+      {
+        "slug": "tpg",
+        "name": "TPG",
+        "type": "turbo",
+        "description": "Турбовоздуходувки Pedro Gil TPG с воздушными подшипниками. Отдельная линейка оборудования наряду с роторными агрегатами RPG.",
+        "source_url": "https://www.pedrogil.com/en/products/turbo-blower/tpg-turbo-blower/",
+        "photo": {
+          "path": "/static/images/brands/pedro-gil-tpg.webp",
+          "width": 1600,
+          "height": 1065,
+          "alt": "Pedro Gil TPG — пример исполнения турбовоздуходувки",
+          "caption": "Pedro Gil TPG — пример исполнения турбовоздуходувки",
+          "scope": "series",
+          "source_url": "https://www.pedrogil.com/en/products/turbo-blower/tpg-turbo-blower/"
+        }
+      }
+    ],
+    "commercial_status": "reference_only"
+  }
+]

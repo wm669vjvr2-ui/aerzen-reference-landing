@@ -1,9 +1,9 @@
 {
-  "name": "ПСК АРУС · AERZEN",
-  "brand": "AERZEN",
+  "name": "ПСК АРУС · Воздуходувки",
+  "brand": "ПСК АРУС",
   "company_name": "ПСК АРУС",
   "tagline": "Воздух. Точно по задаче.",
-  "description": "Промышленные воздуходувки, пневмотранспортные системы, ремонт и сервис. Подбор решения под параметры вашего производства.",
+  "description": "Промышленные воздуходувки Lutos, Robuschi, Kaeser, Atlas Copco, Kubicek, Busch, Pedro Gil, AERZEN и Huadong. Каталог брендов, серий и моделей, масло для воздуходувок.",
   "source_url": "https://vozduhoduvka-aerzen.ru/",
   "content_verified_on": "2026-10-12",
   "phone": "+7 (499) 959-01-12",
@@ -23,7 +23,7 @@
   "company": {
     "title": "Инженерия. Производство. Сервис.",
     "name": "ПСК АРУС",
-    "description": "ПСК АРУС проектирует, производит и поставляет воздуходувки и системы пневмотранспорта. Обслуживает и ремонтирует оборудование на протяжении эксплуатации.",
+    "description": "ПСК АРУС — компания по промышленному оборудованию. На этом сайте собраны бренды, серии и модели воздуходувок, а также информация о масле для обслуживания.",
     "image": "/static/images/source/repair-workshop-3.webp",
     "source_url": "https://vozduhoduvka-aerzen.ru/about/",
     "facts": [
@@ -31,45 +31,10 @@
         "label": "С 2008 года",
         "description": "Опыт команды в промышленном оборудовании",
         "source_url": "https://vozduhoduvka-aerzen.ru/about/"
-      },
-      {
-        "label": "Собственное производство",
-        "description": "Проектирование и производство систем пневмотранспорта",
-        "source_url": "https://vozduhoduvka-aerzen.ru/about/"
-      },
-      {
-        "label": "Сервис и ремонт",
-        "description": "Диагностика, обслуживание, ремонт ступеней и агрегатов",
-        "source_url": "https://vozduhoduvka-aerzen.ru/repair/"
       }
     ]
   },
-  "paths": [
-    {
-      "slug": "models",
-      "title": "Знаю модель",
-      "description": "Модели и характеристики",
-      "cta": "Выбрать модель",
-      "href": "/models/",
-      "image": "/static/images/source/product-gm-source-1.webp"
-    },
-    {
-      "slug": "solution",
-      "title": "Есть задача",
-      "description": "Подбор под ваш процесс",
-      "cta": "Подобрать решение",
-      "href": "/solutions/",
-      "image": "/static/images/source/application-aeration.webp"
-    },
-    {
-      "slug": "repair",
-      "title": "Ремонт",
-      "description": "Диагностика и ремонт",
-      "cta": "Обсудить ремонт",
-      "href": "/repair/",
-      "image": "/static/images/source/repair-workshop.webp"
-    }
-  ],
+  "paths": [],
   "repair": {
     "title": "Ремонт и обслуживание",
     "description": "Диагностика, обслуживание и ремонт воздуходувок AERZEN и ступеней других производителей. Объём работ определяем по состоянию оборудования.",
@@ -102,29 +67,7 @@
       }
     ]
   },
-  "applications": [
-    {
-      "slug": "aeration",
-      "title": "Аэрация и водоочистка",
-      "description": "Воздух для биологических процессов и очистных сооружений. Подбор зависит от расхода, давления и режима работы.",
-      "image": "/static/images/source/application-aeration.webp",
-      "source_url": "https://vozduhoduvka-aerzen.ru/vozduhoduvka-dlya-ochistnyh-sooruzhenij/"
-    },
-    {
-      "slug": "pneumatic",
-      "title": "Пневмотранспорт",
-      "description": "Системы перемещения сыпучих материалов. Учитываем свойства продукта, длину трассы и требуемую производительность.",
-      "image": "/static/images/source/application-pneumatic.webp",
-      "source_url": "https://vozduhoduvka-aerzen.ru/pnevmotransportnye-systemy/"
-    },
-    {
-      "slug": "industrial",
-      "title": "Технологические процессы",
-      "description": "Подбор подачи воздуха и газа под условия промышленного производства.",
-      "image": "/static/images/source/product-gm-source-2.webp",
-      "source_url": "https://vozduhoduvka-aerzen.ru/"
-    }
-  ],
+  "applications": [],
   "delivery": {
     "title": "Доставка и оплата",
     "description": "Оборудование поставляется по договору. Оплата — безналичным переводом на расчётный счёт. Состав поставки, цена, условия доставки и сроки фиксируются перед заказом.",

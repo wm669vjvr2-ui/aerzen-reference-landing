@@ -1,9 +1,7 @@
-{% extends 'base.html' %}
-{% from '_macros.html' import arrow with context %}
-{% block title %}О компании ПСК АРУС — промышленное оборудование и сервис{% endblock %}
+{% extends 'base.html' %}{% from '_macros.html' import arrow with context %}
+{% block title %}О компании ПСК АРУС{% endblock %}
 {% block content %}
 <div class="breadcrumb wrap"><a href="/">Главная</a><span>/</span><span>О компании</span></div>
-<section class="page-heading wrap"><span class="eyebrow">Производственно-сервисная компания</span><h1>О компании ПСК АРУС</h1><p>{{ site.company.description }}</p><a class="button" href="/contact#request">Связаться с компанией {{ arrow() }}</a></section>
-<section class="section-pad wrap"><div class="section-heading"><h2>Компетенции компании</h2><p>От подбора оборудования до обслуживания в эксплуатации.</p></div><div class="service-grid">{% for fact in site.company.facts %}<article class="service-card"><span class="eyebrow">ПСК АРУС</span><h3>{{ fact.label }}</h3><p>{{ fact.description }}</p></article>{% endfor %}</div></section>
-<section class="section-pad reference-wash"><div class="wrap content-grid"><div><span class="eyebrow">Оборудование</span><h2>Воздуходувки и системы пневмотранспорта</h2><p>В каталоге представлены HDSR, RSR и ERB для технического сравнения, а также серии и модели AERZEN для подбора. Характеристики служат отправной точкой для инженерного подбора; комплектация, цена и срок поставки согласуются в предложении.</p><a class="button button-outline" href="/models">Посмотреть оборудование {{ arrow() }}</a></div><div class="prose"><h3>Сервисное сопровождение</h3><p>{{ site.repair.description }}</p><a class="link-arrow" href="/repair">Услуги по ремонту {{ arrow() }}</a><h3>Контакты</h3><p>{{ site.address }}</p><p>{{ site.hours }}</p><a href="{{ site.phone_href }}">{{ site.phone }}</a><p><a href="mailto:{{ site.email }}">{{ site.email }}</a></p></div></div></section>
+<section class="page-heading wrap"><span class="eyebrow">ПСК АРУС</span><h1>Промышленные воздуходувки</h1><p>{{ site.company.description }}</p></section>
+<section class="section-pad wrap content-grid"><div><span class="eyebrow">Каталог</span><h2>Знакомые марки. Нужные серии.</h2><p>Lutos, Robuschi, Kaeser, Atlas Copco, Kubicek, Busch, Pedro Gil, AERZEN и Huadong — отдельные страницы производителей, серии и модели оборудования.</p><a href="/brands" class="button">Выбрать бренд {{ arrow() }}</a></div><div class="service-card"><h2>Связаться с компанией</h2><p>{{ site.address }}</p><p>{{ site.hours }}</p><a class="header-phone" href="{{ site.phone_href }}">{{ site.phone }}</a><p><a href="mailto:{{ site.email }}">{{ site.email }}</a></p><a href="/contact" class="link-arrow">Все контакты {{ arrow() }}</a></div></section>
 {% endblock %}

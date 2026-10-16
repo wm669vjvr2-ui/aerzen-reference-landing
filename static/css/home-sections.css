@@ -1,203 +1,89 @@
-/* Homepage composition, using the existing black/yellow storefront tokens. */
-.home-section { padding-block: 76px; }
-.home-section-heading { display: flex; align-items: end; justify-content: space-between; gap: 28px; margin-bottom: 28px; }
-.home-section-heading h2, .home-process-intro h2, .home-company-intro h2 { font-size: clamp(29px, 3vw, 42px); line-height: 1.12; letter-spacing: -.045em; margin-bottom: 0; }
-.home-section-heading > .link-arrow { flex: 0 0 auto; padding-block: 5px; font-size: 13px; }
-.home-section .eyebrow { color: #747577; font-size: 10px; margin-bottom: 17px; }
-.home-section-lead { color: var(--muted); max-width: 690px; font-size: 14px; line-height: 1.75; margin-bottom: 32px; }
-.home-series-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 22px; }
-.home-series-card { min-width: 0; display: flex; flex-direction: column; border: 1px solid var(--line); transition: border-color .18s; }
-.home-series-card:hover { border-color: #a68a1d; }
-.home-series-topline { display: flex; align-items: center; justify-content: space-between; gap: 14px; min-height: 49px; padding: 14px 22px; font-size: 9px; line-height: 1.4; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); }
-.home-series-topline > span:last-child { color: var(--ink); font-weight: 700; white-space: nowrap; }
-.home-series-card .equipment-photo-home-series img { height: 235px; padding: 8px 24px 18px; }
-.home-series-card .equipment-photo-home-series figcaption { min-height: 43px; padding: 9px 22px; border-top: 1px solid #f0f0f0; font-size: 9px; }
-.home-series-body { display: flex; flex-direction: column; flex: 1; padding: 24px 22px 20px; background: #f6f6f4; border-top: 1px solid var(--line); }
-.home-series-body h3 { font-size: 25px; line-height: 1.15; letter-spacing: -.04em; margin-bottom: 10px; }
-.home-series-body p { font-size: 12px; color: var(--muted); margin-bottom: 26px; }
-.home-series-bottom { display: flex; align-items: center; justify-content: space-between; gap: 15px; margin-top: auto; font-size: 12px; font-weight: 700; }
-.home-series-bottom > .icon { width: 34px; height: 34px; padding: 7px; background: var(--yellow); transition: background-color .18s; }
-.home-series-card:hover .home-series-bottom > .icon { background: var(--yellow-hover); }
-.home-applications-section { background: #f4f4f1; }
-.home-applications-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; }
-.home-application-feature { position: relative; display: flex; align-items: end; isolation: isolate; min-height: 430px; overflow: hidden; background: var(--dark); color: white; }
-.home-application-feature > img { position: absolute; z-index: -2; inset: 0; width: 100%; height: 100%; object-fit: cover; }
-.home-application-feature::after { content: ''; position: absolute; z-index: -1; inset: 0; background: linear-gradient(180deg, #10171800 5%, #10171877 45%, #101718f2 100%); }
-.home-application-feature-copy { padding: 34px; }
-.home-application-feature .eyebrow { color: var(--yellow); margin-bottom: 17px; }
-.home-application-feature h3 { font-size: 30px; letter-spacing: -.04em; margin-bottom: 14px; }
-.home-application-feature p { max-width: 460px; color: #e0e2e2; font-size: 13px; line-height: 1.7; margin-bottom: 23px; }
-.home-application-feature .link-arrow { font-size: 12px; }
-.home-application-list { display: grid; align-content: stretch; }
-.home-application-row { display: grid; grid-template-columns: minmax(0, 1fr) 128px; gap: 22px; align-items: center; padding-block: 24px; border-top: 1px solid #d2d4d3; }
-.home-application-row:last-child { border-bottom: 1px solid #d2d4d3; }
-.home-application-row .eyebrow { font-size: 9px; margin-bottom: 12px; }
-.home-application-row h3 { font-size: 22px; margin-bottom: 11px; }
-.home-application-row p { color: var(--muted); font-size: 12px; line-height: 1.65; margin-bottom: 17px; }
-.home-application-row > img { width: 128px; height: 145px; object-fit: cover; }
-.home-application-row .link-arrow { font-size: 12px; gap: 12px; }
-.home-application-row:hover h3, .home-application-feature:hover h3 { text-decoration: underline; text-underline-offset: 5px; }
-.home-equipment-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); border-top: 1px solid var(--line); border-left: 1px solid var(--line); }
-.home-equipment-card { min-width: 0; display: flex; flex-direction: column; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); transition: background-color .18s; }
-.home-equipment-card:hover { background: #fffdf3; }
-.home-equipment-card .equipment-photo-home-equipment img { height: 205px; padding: 16px; }
-.home-equipment-card .equipment-photo-home-equipment figcaption { min-height: 46px; padding: 8px 20px; font-size: 9px; line-height: 1.6; }
-.home-equipment-copy { display: flex; flex-direction: column; flex: 1; padding: 23px 20px; border-top: 1px solid var(--line); }
-.home-equipment-copy .eyebrow { font-size: 9px; margin-bottom: 13px; }
-.home-equipment-copy h3 { font-size: 23px; margin-bottom: 13px; }
-.home-equipment-copy p { font-size: 12px; line-height: 1.7; color: var(--muted); margin-bottom: 24px; }
-.home-equipment-copy .link-arrow { font-size: 11px; gap: 10px; margin-top: auto; }
-.home-process-section { background: var(--dark); color: white; }
-.home-process-layout { display: grid; grid-template-columns: .85fr 1.35fr; gap: 80px; align-items: start; }
-.home-process-intro .eyebrow { color: var(--yellow); }
-.home-process-intro h2 { margin-bottom: 23px; }
-.home-process-intro > p { color: #b9bfc2; font-size: 14px; max-width: 340px; line-height: 1.75; margin-bottom: 30px; }
-.home-process-intro .link-arrow { color: var(--yellow); font-size: 13px; }
-.home-process-list { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 30px; }
-.home-process-list > li { display: grid; grid-template-columns: 25px minmax(0, 1fr); gap: 13px; padding: 20px 0; border-top: 1px solid #4b4e50; }
-.home-step-number { color: var(--yellow); font-size: 11px; line-height: 1.6; padding-top: 2px; }
-.home-process-list h3 { font-size: 17px; margin-bottom: 9px; }
-.home-process-list p { font-size: 12px; line-height: 1.65; color: #b9bfc2; margin: 0; }
-.home-service-section { padding-bottom: 0; }
-.home-service-band { display: grid; grid-template-columns: 1.12fr 1fr; gap: 65px; padding: 52px; background: var(--yellow); }
-.home-service-copy .eyebrow { color: #675512; }
-.home-service-copy h2 { font-size: clamp(31px, 3.4vw, 47px); line-height: 1.05; letter-spacing: -.045em; margin-bottom: 24px; }
-.home-service-copy p { max-width: 500px; font-size: 13px; line-height: 1.7; margin-bottom: 26px; }
-.home-service-copy .button { font-size: 12px; }
-.home-service-list { list-style: none; margin: 0; padding: 0; align-self: center; }
-.home-service-list li { display: grid; grid-template-columns: 23px 1fr; gap: 15px; align-items: center; padding: 21px 0; border-top: 1px solid #bfa01e; font-size: 14px; font-weight: 700; line-height: 1.45; }
-.home-service-list li:last-child { border-bottom: 1px solid #bfa01e; }
-.home-service-list li > span:first-child { color: #6b5911; font-size: 10px; font-weight: 400; }
-.home-company-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 95px; }
-.home-company-intro h2 { margin-bottom: 25px; }
-.home-company-intro > p { color: var(--muted); max-width: 475px; font-size: 14px; line-height: 1.8; margin-bottom: 25px; }
-.home-company-intro .link-arrow { font-size: 13px; }
-.home-company-facts { border-top: 1px solid var(--line); }
-.home-company-facts > div { padding: 21px 0; border-bottom: 1px solid var(--line); }
-.home-company-facts h3 { font-size: 20px; margin-bottom: 7px; }
-.home-company-facts p { color: var(--muted); font-size: 12px; line-height: 1.65; margin: 0; }
-.home-articles-section { background: #f4f4f1; }
-.home-article-list { border-top: 1px solid #d2d4d3; }
-.home-article-row { display: grid; grid-template-columns: 175px 1fr 32px; gap: 35px; align-items: start; border-bottom: 1px solid #d2d4d3; padding: 27px 0; }
-.home-article-category { display: block; font-size: 10px; line-height: 1.7; color: var(--muted); padding-top: 3px; }
-.home-article-row h3 { font-size: 22px; line-height: 1.3; margin-bottom: 10px; }
-.home-article-row p { font-size: 12px; line-height: 1.7; color: var(--muted); max-width: 760px; margin: 0; }
-.home-article-row > .icon { margin-top: 4px; }
-.home-article-row:hover h3 { text-decoration: underline; text-underline-offset: 4px; }
-.home-request-section { padding-block: 76px; }
-.home-request-section .request-block { margin-block: 0; }
-@media (max-width: 1100px) {
-  .home-section { padding-block: 62px; }
-  .home-series-grid { gap: 16px; }
-  .home-series-topline { padding-inline: 17px; gap: 10px; font-size: 8px; }
-  .home-series-card .equipment-photo-home-series img { height: 210px; padding-inline: 18px; }
-  .home-series-body { padding-inline: 18px; }
-  .home-series-body h3 { font-size: 23px; }
-  .home-series-card .equipment-photo-home-series figcaption { padding-inline: 18px; }
-  .home-applications-grid { gap: 23px; }
-  .home-application-feature-copy { padding: 27px; }
-  .home-application-feature h3 { font-size: 27px; }
-  .home-application-row { grid-template-columns: minmax(0, 1fr) 100px; gap: 18px; }
-  .home-application-row > img { width: 100px; height: 135px; }
-  .home-application-row h3 { font-size: 20px; }
+/* Catalogue-first homepage; brand names remain text, not invented logos. */
+.home-section { padding-block: 72px; }
+.home-section-heading { display: flex; align-items: end; justify-content: space-between; gap: 40px; margin-bottom: 32px; }
+.home-section-heading h2, .home-oil-copy h2, .home-contact-section h2 { font-size: clamp(30px, 3.2vw, 44px); line-height: 1.13; letter-spacing: -.04em; margin-bottom: 0; }
+.home-section .eyebrow { color: var(--accent); font-size: 10px; margin-bottom: 17px; }
+.home-section-heading > p { max-width: 420px; font-size: 14px; line-height: 1.75; color: var(--muted); margin: 0 0 2px; }
+.home-section-heading > .link-arrow { flex: 0 0 auto; color: var(--accent); padding-block: 5px; font-size: 13px; }
+.home-brand-directory { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); border-top: 1px solid var(--line); }
+.home-brand-entry { display: flex; align-items: center; gap: 21px; min-width: 0; min-height: 118px; padding: 24px 25px 24px 0; border-bottom: 1px solid var(--line); transition: background-color .18s; }
+.home-brand-entry:nth-child(even) { padding-left: 30px; border-left: 1px solid var(--line); }
+.home-brand-number { align-self: start; padding-top: 5px; font-size: 10px; color: #6c8195; }
+.home-brand-entry-copy { flex: 1; min-width: 0; }
+.home-brand-entry h3 { font-size: 29px; line-height: 1.15; letter-spacing: -.035em; margin: 0 0 9px; }
+.home-brand-entry p { color: var(--muted); font-size: 11px; line-height: 1.6; margin: 0; overflow-wrap: anywhere; }
+.home-brand-entry > .icon { width: 24px; height: 24px; color: var(--accent); transition: transform .18s; }
+.home-brand-entry:hover { background: var(--wash); }
+.home-brand-entry:hover > .icon { transform: translateX(4px); }
+.home-brand-entry:focus-visible { outline-offset: -4px; }
+.home-brand-entry-all h3 { color: var(--accent); font-size: 23px; }
+.home-equipment-section { background: var(--wash); border-block: 1px solid var(--line); }
+.home-equipment-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 20px; }
+.home-equipment-card { display: flex; flex-direction: column; min-width: 0; border: 1px solid var(--line); background: white; transition: border-color .18s; }
+.home-equipment-card:hover { border-color: var(--accent); }
+.home-equipment-card .equipment-photo-home-equipment { display: flex; flex-direction: column; flex: 1; border-bottom: 1px solid var(--line); }
+.home-equipment-card .equipment-photo-home-equipment img { width: 100%; height: 215px; padding: 15px; }
+.home-equipment-card .equipment-photo-home-equipment figcaption { margin-top: auto; min-height: 47px; padding: 9px 15px; font-size: 9px; border-top: 1px solid #edf1f5; }
+.home-equipment-copy { padding: 21px 18px 24px; }
+.home-equipment-copy .eyebrow { font-size: 9px; letter-spacing: .07em; margin-bottom: 12px; }
+.home-equipment-copy h3 { margin-bottom: 9px; font-size: 20px; }
+.home-equipment-copy > p { min-height: 34px; margin-bottom: 22px; font-size: 11px; line-height: 1.6; color: var(--muted); }
+.home-equipment-copy .link-arrow { justify-content: space-between; width: 100%; color: var(--accent); font-size: 11px; gap: 10px; }
+.home-equipment-copy .icon { width: 19px; height: 19px; }
+.home-oil-layout { display: grid; grid-template-columns: .85fr 1.15fr; gap: 60px; align-items: center; }
+.home-oil-copy > p { margin-block: 24px; max-width: 365px; font-size: 14px; line-height: 1.8; color: var(--muted); }
+.home-oil-photo { border: 1px solid var(--line); background: var(--wash); }
+.home-oil-photo img { width: 100%; height: 310px; object-fit: cover; }
+.home-oil-photo figcaption { padding: 12px 16px; font-size: 10px; color: var(--muted); background: white; }
+.home-contact-section { background: #eaf2fb; border-top: 1px solid var(--line); }
+.home-contact-inner { display: flex; align-items: center; justify-content: space-between; gap: 45px; padding-block: 47px; }
+.home-contact-section .eyebrow { color: var(--accent); margin-bottom: 14px; font-size: 10px; }
+.home-contact-section h2 { font-size: clamp(28px, 2.8vw, 38px); }
+.home-contact-section p { color: var(--muted); margin: 15px 0 0; font-size: 14px; }
+.home-contact-actions { display: flex; align-items: flex-start; flex-direction: column; gap: 12px; flex: 0 0 auto; }
+.home-contact-phone { color: var(--accent); font-size: 27px; font-weight: 700; letter-spacing: -.035em; }
+.home-contact-actions .link-arrow { color: var(--accent); font-size: 14px; }
+@media (max-width: 1050px) {
   .home-equipment-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .home-equipment-card .equipment-photo-home-equipment img { height: 225px; }
-  .home-equipment-card .equipment-photo-home-equipment figcaption { min-height: 0; }
-  .home-process-layout { gap: 42px; grid-template-columns: .8fr 1.2fr; }
-  .home-process-list { gap: 0 20px; }
-  .home-service-section { padding-bottom: 0; }
-  .home-service-band { padding: 38px; gap: 40px; }
-  .home-company-layout { gap: 60px; }
-  .home-article-row { grid-template-columns: 145px 1fr 26px; gap: 25px; }
-  .home-request-section { padding-block: 62px; }
+  .home-equipment-card .equipment-photo-home-equipment img { height: 240px; }
+  .home-brand-entry h3 { font-size: 26px; }
+  .home-oil-layout { gap: 35px; }
+  .home-oil-photo img { height: 280px; }
 }
-@media (max-width: 800px) {
-  .home-series-grid { gap: 12px; }
-  .home-series-topline { align-items: start; flex-direction: column; gap: 5px; min-height: 61px; }
-  .home-series-card .equipment-photo-home-series img { height: 170px; padding: 10px; }
-  .home-series-card .equipment-photo-home-series figcaption { min-height: 55px; padding-inline: 13px; }
-  .home-series-body { padding: 19px 14px 17px; }
-  .home-series-body h3 { font-size: 20px; }
-  .home-series-body p { font-size: 10px; line-height: 1.6; margin-bottom: 21px; }
-  .home-series-bottom { font-size: 10px; gap: 8px; }
-  .home-series-bottom > .icon { width: 29px; height: 29px; padding: 6px; }
-  .home-applications-grid { grid-template-columns: 1fr; }
-  .home-application-feature { min-height: 350px; }
-  .home-application-row { grid-template-columns: minmax(0, 1fr) 150px; }
-  .home-application-row > img { width: 150px; height: 135px; }
-  .home-application-feature-copy { padding: 30px; }
-  .home-process-layout { grid-template-columns: 1fr; gap: 35px; }
-  .home-process-intro h2 > br { display: none; }
-  .home-process-intro > p { max-width: 590px; }
-  .home-service-band { grid-template-columns: 1fr; gap: 36px; }
-  .home-service-copy h2 { font-size: 39px; }
-  .home-service-list li { padding-block: 18px; }
-  .home-company-layout { grid-template-columns: 1fr; gap: 34px; }
-  .home-company-intro h2 > br { display: none; }
-  .home-company-intro > p { max-width: 590px; }
-  .home-company-facts { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 22px; }
-  .home-company-facts > div { border-bottom: 0; }
-  .home-company-facts h3 { font-size: 17px; }
-  .home-article-row { grid-template-columns: 115px minmax(0, 1fr) 22px; gap: 18px; }
-  .home-article-row h3 { font-size: 20px; }
+@media (max-width: 700px) {
+  .home-section { padding-block: 45px; }
+  .home-section-heading { align-items: flex-start; flex-direction: column; gap: 19px; margin-bottom: 25px; }
+  .home-section-heading h2, .home-oil-copy h2 { font-size: 32px; }
+  .home-section .eyebrow { margin-bottom: 13px; font-size: 9px; }
+  .home-section-heading > p { font-size: 13px; line-height: 1.75; }
+  .home-brand-directory { grid-template-columns: 1fr; }
+  .home-brand-entry, .home-brand-entry:nth-child(even) { min-height: 100px; padding: 22px 7px 22px 0; border-left: 0; gap: 18px; }
+  .home-brand-entry h3 { font-size: 27px; }
+  .home-brand-entry p { font-size: 11px; }
+  .home-brand-entry-all h3 { font-size: 23px; }
+  .home-equipment-grid { gap: 15px; }
+  .home-equipment-card .equipment-photo-home-equipment img { height: 170px; padding: 11px; }
+  .home-equipment-card .equipment-photo-home-equipment figcaption { min-height: 56px; padding: 9px 11px; font-size: 8px; }
+  .home-equipment-copy { padding: 18px 12px 20px; }
+  .home-equipment-copy h3 { font-size: 18px; }
+  .home-equipment-copy > p { min-height: 33px; font-size: 10px; margin-bottom: 17px; }
+  .home-equipment-copy .link-arrow { font-size: 10px; gap: 6px; }
+  .home-oil-layout { grid-template-columns: 1fr; gap: 28px; }
+  .home-oil-copy > p { max-width: 440px; margin-block: 19px; font-size: 13px; }
+  .home-oil-photo img { height: auto; aspect-ratio: 1000 / 563; }
+  .home-contact-inner { flex-direction: column; align-items: flex-start; gap: 25px; padding-block: 36px; }
+  .home-contact-section h2 { font-size: 30px; }
+  .home-contact-section p { font-size: 13px; }
+  .home-contact-phone { font-size: 26px; }
 }
-@media (max-width: 600px) {
-  .home-section { padding-block: 46px; }
-  .home-section-heading { align-items: start; flex-direction: column; gap: 17px; margin-bottom: 23px; }
-  .home-section-heading h2, .home-process-intro h2, .home-company-intro h2 { font-size: 31px; }
-  .home-section-heading > .link-arrow { font-size: 12px; }
-  .home-section .eyebrow { font-size: 9px; margin-bottom: 13px; }
-  .home-section-lead { font-size: 13px; margin-bottom: 24px; }
-  .home-series-grid { grid-template-columns: 1fr; gap: 18px; }
-  .home-series-topline { flex-direction: row; align-items: center; min-height: 43px; padding: 13px 20px; font-size: 8px; }
-  .home-series-card .equipment-photo-home-series img { height: 225px; padding: 8px 22px 16px; }
-  .home-series-card .equipment-photo-home-series figcaption { min-height: 0; padding: 9px 20px; font-size: 9px; }
-  .home-series-body { padding: 23px 20px 20px; }
-  .home-series-body h3 { font-size: 26px; }
-  .home-series-body p { font-size: 12px; margin-bottom: 22px; }
-  .home-series-bottom { font-size: 12px; }
-  .home-series-bottom > .icon { width: 34px; height: 34px; padding: 7px; }
-  .home-application-feature { min-height: 380px; }
-  .home-application-feature-copy { padding: 25px; }
-  .home-application-feature h3 { font-size: 27px; }
-  .home-application-feature p { font-size: 12px; }
-  .home-application-row { grid-template-columns: minmax(0, 1fr) 88px; gap: 17px; padding-block: 24px; }
-  .home-application-row > img { width: 88px; height: 125px; }
-  .home-application-row .eyebrow { font-size: 8px; }
-  .home-application-row h3 { font-size: 21px; }
-  .home-application-row p { font-size: 11px; }
+@media (max-width: 370px) {
   .home-equipment-grid { grid-template-columns: 1fr; }
-  .home-equipment-card .equipment-photo-home-equipment img { height: 235px; }
-  .home-equipment-card .equipment-photo-home-equipment figcaption { padding-inline: 22px; }
-  .home-equipment-copy { padding: 23px 22px; }
-  .home-equipment-copy .eyebrow { font-size: 9px; }
-  .home-equipment-copy h3 { font-size: 25px; }
-  .home-equipment-copy .link-arrow { font-size: 12px; }
-  .home-process-intro > p { font-size: 13px; margin-bottom: 23px; }
-  .home-process-list { grid-template-columns: 1fr; }
-  .home-process-list > li { grid-template-columns: 29px minmax(0, 1fr); gap: 16px; padding-block: 19px; }
-  .home-process-list > li:last-child { border-bottom: 1px solid #4b4e50; }
-  .home-process-list h3 { font-size: 19px; }
-  .home-process-list p { font-size: 12px; }
-  .home-service-section { padding-bottom: 0; }
-  .home-service-band { padding: 29px 24px; gap: 30px; }
-  .home-service-copy h2 { font-size: 35px; }
-  .home-service-copy p { font-size: 12px; }
-  .home-service-copy .button { padding-inline: 15px; font-size: 11px; gap: 13px; }
-  .home-service-list li { grid-template-columns: 20px minmax(0, 1fr); gap: 10px; font-size: 12px; padding-block: 17px; }
-  .home-service-list .icon { width: 18px; height: 18px; }
-  .home-company-intro > p { font-size: 13px; }
-  .home-company-facts { grid-template-columns: 1fr; gap: 0; }
-  .home-company-facts > div { padding-block: 20px; border-bottom: 1px solid var(--line); }
-  .home-company-facts h3 { font-size: 20px; }
-  .home-article-row { grid-template-columns: minmax(0, 1fr) 22px; gap: 12px; padding-block: 24px; }
-  .home-article-category { grid-column: 1; font-size: 9px; padding-top: 0; }
-  .home-article-row > div { grid-column: 1; }
-  .home-article-row > .icon { grid-column: 2; grid-row: 2; }
-  .home-article-row h3 { font-size: 21px; }
-  .home-article-row p { font-size: 12px; }
-  .home-request-section { padding-block: 46px; }
+  .home-equipment-card .equipment-photo-home-equipment img { height: 220px; }
+  .home-equipment-card .equipment-photo-home-equipment figcaption { min-height: 0; font-size: 10px; }
+  .home-equipment-copy { padding: 20px; }
+  .home-equipment-copy > p { min-height: 0; }
 }
 @media (prefers-reduced-motion: reduce) {
-  .home-series-card, .home-series-bottom > .icon, .home-equipment-card { transition: none; }
+  .home-brand-entry, .home-brand-entry > .icon, .home-equipment-card { transition: none; }
+  .home-brand-entry:hover > .icon { transform: none; }
 }

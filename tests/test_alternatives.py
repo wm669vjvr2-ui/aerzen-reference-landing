@@ -16,7 +16,7 @@ from app.main import create_app
 
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
-FAMILY_COUNTS = {"huadong-hdsr": 11, "mingtian-rsr": 6, "erstvak-erb": 6}
+FAMILY_COUNTS = {"huadong-hdsr": 11}
 DISCLAIMER = "Эти модели не поставляем."
 
 
@@ -157,7 +157,7 @@ def make_site(tmp_path):
 def test_reference_pages_explain_comparison_context_and_are_distinct(make_site):
     app, client, _ = make_site()
     families = {item["slug"]: item for item in app.state.content.alternatives}
-    assert set(FAMILY_COUNTS).issubset(families)
+    assert set(FAMILY_COUNTS) == set(families)
     headings = []
     for path in ["/alternatives"] + ["/alternatives/" + slug for slug in FAMILY_COUNTS]:
         response = client.get(path, follow_redirects=False)
@@ -193,13 +193,16 @@ def test_reference_families_are_excluded_from_products_cart_and_feed(make_site):
     reference_ids = {f"ref-{family['slug']}-{model['anchor']}"
                      for family in content.alternatives for model in family["models"]}
     reference_models = {model["anchor"] for family in content.alternatives for model in family["models"]}
-    assert not ((reference_ids | reference_models) & product_slugs)
+    brand_slugs = {brand["slug"] for brand in content.brands}
+    brand_series_ids = {f"brand-{brand['slug']}-{series['slug']}"
+                        for brand in content.brands for series in brand["series"]}
+    assert not ((reference_ids | reference_models | brand_slugs | brand_series_ids) & product_slugs)
     for slug in FAMILY_COUNTS:
         assert content.product(slug) is None
         assert content.alternative(slug) is not None
     confirmed_page = Page(client.get("/models/test-confirmed").text)
     cart_form = next(form for form in confirmed_page.forms if form["action"] == "/cart/add")
-    for slug in set(FAMILY_COUNTS) | reference_ids | reference_models:
+    for slug in set(FAMILY_COUNTS) | reference_ids | reference_models | brand_slugs | brand_series_ids:
         response = client.post("/cart/add", data={**cart_form["fields"], "slug": slug, "quantity": "1"})
         assert response.status_code == 422
     # Confirm the preceding rejections were not caused by disabled commerce or an invalid token.
@@ -215,6 +218,8 @@ def test_reference_families_are_excluded_from_products_cart_and_feed(make_site):
         assert family["slug"] not in feed_response.text
         assert family["slug"] not in cart_response.text
         assert family["name"] not in feed_response.text
+    for brand in content.brands:
+        assert brand["name"] not in feed_response.text
 
 
 def test_reference_form_requests_an_alternative_without_fake_product(make_site):
@@ -237,17 +242,23 @@ def test_reference_form_requests_an_alternative_without_fake_product(make_site):
     assert payload["message"] == message.strip()
 
 
-def test_reference_model_cannot_become_a_quote_product(make_site):
+@pytest.mark.parametrize("candidate_group", ["reference-and-brands", "brand-series"])
+def test_reference_models_and_other_brands_cannot_become_quote_products(make_site, candidate_group):
     app, client, _ = make_site()
     family = app.state.content.alternative("huadong-hdsr")
     model = family["models"][0]
     page = Page(client.get("/alternatives/huadong-hdsr").text)
     form = next(form for form in page.forms if form["action"].startswith("/requests/"))
-    candidate = f"ref-{family['slug']}-{model['anchor']}"
-    response = client.post(form["action"], data={**form["fields"], "product_slug": candidate,
-                           "name": "Test Person", "company": "TEST", "email": "person@example.test",
-                           "phone": "", "message": "Compare the reference model", "consent": "yes", "website": ""})
-    assert response.status_code == 422
+    if candidate_group == "reference-and-brands":
+        candidates = {f"ref-{family['slug']}-{model['anchor']}"}
+        candidates.update(brand["slug"] for brand in app.state.content.brands)
+    else:
+        candidates = {f"brand-{brand['slug']}-{brand['series'][0]['slug']}" for brand in app.state.content.brands}
+    for candidate in candidates:
+        response = client.post(form["action"], data={**form["fields"], "product_slug": candidate,
+                               "name": "Test Person", "company": "TEST", "email": "person@example.test",
+                               "phone": "", "message": "Compare the reference model", "consent": "yes", "website": ""})
+        assert response.status_code == 422, candidate
     with app.state.store.connect() as db:
         assert db.execute("SELECT COUNT(*) FROM leads").fetchone()[0] == 0
 
@@ -269,12 +280,12 @@ def test_model_name_prefill_cannot_close_textarea_or_create_script(make_site):
     assert not any('alert("reference-name")' in script for script in page.script_text)
 
 
-def test_reference_unit_conversions_and_unconfirmed_erb_values(make_site):
+def test_huadong_unit_conversions_preserve_manufacturer_ranges(make_site):
     app, client, _ = make_site()
     families = {family["slug"]: family for family in app.state.content.alternatives}
     for slug, family in families.items():
-        native_unit = "m3/h" if slug == "erstvak-erb" else "m3/min"
-        multiplier = Decimal(1) if native_unit == "m3/h" else Decimal(60)
+        native_unit = "m3/min"
+        multiplier = Decimal(60)
         for model in family["models"]:
             assert model["flow_source_unit"] == native_unit
             expected = [Decimal(str(value)) * multiplier for value in model["flow_native"]]
@@ -283,28 +294,12 @@ def test_reference_unit_conversions_and_unconfirmed_erb_values(make_site):
             assert rendered == expected
     hdsr = {model["name"]: model for model in families["huadong-hdsr"]["models"]}
     assert hdsr["HDSR150"]["pressure_display"] == "9,8–58,8"
-    rsr = {model["name"]: model for model in families["mingtian-rsr"]["models"]}
-    for name in ("RSR50", "RSR65", "RSR100"):
-        assert rsr[name]["pressure_display"] == "9,8–78,4"
-    for name in ("RSR80", "RSR125", "RSR150"):
-        assert rsr[name]["pressure_display"] == "9,8–98"
-    erb = families["erstvak-erb"]
-    assert erb["country_status"] == "unconfirmed"
-    assert erb["country"] != "Китай"
-    assert "не подтверждено" in erb["origin_note"]
-    erb100 = next(model for model in erb["models"] if model["name"] == "ERB-100")
-    assert erb100["power_display"] == "Требует уточнения"
-    assert not any(character.isdigit() for character in erb100["power_display"])
-    assert all(model["pressure_display"] == "до 100" for model in erb["models"])
-    page = Page(client.get("/alternatives/erstvak-erb").text)
-    assert "Китай" not in page.headings[0]
-    assert "Требует уточнения" in " ".join(page.text)
-    assert "не подтверждено" in " ".join(page.text)
+    assert all(model["photo"]["scope"] == "series" for model in hdsr.values())
 
 
 @pytest.mark.parametrize("preview_mode", [True, False])
 def test_reference_sitemap_respects_preview_indexing(make_site, preview_mode):
-    _, client, _ = make_site(preview_mode=preview_mode)
+    app, client, _ = make_site(preview_mode=preview_mode)
     sitemap = client.get("/sitemap.xml")
     assert sitemap.status_code == 200
     tree = ElementTree.fromstring(sitemap.content)
@@ -317,5 +312,8 @@ def test_reference_sitemap_respects_preview_indexing(make_site, preview_mode):
     else:
         expected = {"https://testserver/alternatives"}
         expected.update("https://testserver/alternatives/" + slug for slug in FAMILY_COUNTS)
+        expected.update("https://testserver/brands/" + brand["slug"] for brand in app.state.content.brands)
+        expected.update({"https://testserver/brands", "https://testserver/oil"})
         assert expected.issubset(locations)
+        assert not any(path in location for location in locations for path in ("/articles", "/solutions", "/repair", "mingtian", "erstvak"))
         assert "noindex" not in page.headers.get("x-robots-tag", "")

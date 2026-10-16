@@ -1,0 +1,353 @@
+{
+  "checked_on": "2026-10-16T16:50:13.656276+00:00",
+  "url": "https://wm669vjvr2-ui.github.io/aerzen-reference-landing/",
+  "anonymous": true,
+  "resources": [
+    {
+      "path": "index.html",
+      "status": 200,
+      "match": true
+    },
+    {
+      "path": "robots.txt",
+      "status": 200,
+      "match": true
+    },
+    {
+      "path": "contact/index.html",
+      "status": 200,
+      "match": true
+    },
+    {
+      "path": "privacy/index.html",
+      "status": 200,
+      "match": true
+    },
+    {
+      "path": "brands/index.html",
+      "status": 200,
+      "match": true
+    },
+    {
+      "path": "payment/index.html",
+      "status": 200,
+      "match": true
+    },
+    {
+      "path": "terms/index.html",
+      "status": 200,
+      "match": true
+    },
+    {
+      "path": "about/index.html",
+      "status": 200,
+      "match": true
+    },
+    {
+      "path": "models/index.html",
+      "status": 200,
+      "match": true
+    },
+    {
+      "path": "delivery/index.html",
+      "status": 200,
+      "match": true
+    },
+    {
+      "path": "alternatives/index.html",
+      "status": 200,
+      "match": true
+    },
+    {
+      "path": "cookies/index.html",
+      "status": 200,
+      "match": true
+    },
+    {
+      "path": "oil/index.html",
+      "status": 200,
+      "match": true
+    },
+    {
+      "path": "brands/pedro-gil/index.html",
+      "status": 200,
+      "match": true
+    },
+    {
+      "path": "brands/lutos/index.html",
+      "status": 200,
+      "match": true
+    },
+    {
+      "path": "brands/atlas-copco/index.html",
+      "status": 200,
+      "match": true
+    },
+    {
+      "path": "brands/kubicek/index.html",
+      "status": 200,
+      "match": true
+    },
+    {
+      "path": "brands/busch/index.html",
+      "status": 200,
+      "match": true
+    },
+    {
+      "path": "brands/robuschi/index.html",
+      "status": 200,
+      "match": true
+    },
+    {
+      "path": "brands/kaeser/index.html",
+      "status": 200,
+      "match": true
+    },
+    {
+      "path": "models/gm50l/index.html",
+      "status": 200,
+      "match": true
+    },
+    {
+      "path": "models/delta-hybrid/index.html",
+      "status": 200,
+      "match": true
+    },
+    {
+      "path": "models/gm80l/index.html",
+      "status": 200,
+      "match": true
+    },
+    {
+      "path": "models/delta-screw/index.html",
+      "status": 200,
+      "match": true
+    },
+    {
+      "path": "models/delta-blower/index.html",
+      "status": 200,
+      "match": true
+    },
+    {
+      "path": "models/gm35s/index.html",
+      "status": 200,
+      "match": true
+    },
+    {
+      "path": "models/gm60s/index.html",
+      "status": 200,
+      "match": true
+    },
+    {
+      "path": "static/css/storefront.css",
+      "status": 200,
+      "match": true
+    },
+    {
+      "path": "static/css/model-photos.css",
+      "status": 200,
+      "match": true
+    },
+    {
+      "path": "static/css/home-sections.css",
+      "status": 200,
+      "match": true
+    },
+    {
+      "path": "static/css/home-hero.css",
+      "status": 200,
+      "match": true
+    },
+    {
+      "path": "static/css/blue-white.css",
+      "status": 200,
+      "match": true
+    },
+    {
+      "path": "static/css/reference-focus.css",
+      "status": 200,
+      "match": true
+    },
+    {
+      "path": "static/js/public-preview.js",
+      "status": 200,
+      "match": true
+    },
+    {
+      "path": "static/js/site.js",
+      "status": 200,
+      "match": true
+    },
+    {
+      "path": "static/images/storefront/mark.svg",
+      "status": 200,
+      "match": true
+    },
+    {
+      "path": "static/images/brands/pedro-gil-tpg.webp",
+      "status": 200,
+      "match": true
+    },
+    {
+      "path": "static/images/brands/atlas-copco.jpg",
+      "status": 200,
+      "match": true
+    },
+    {
+      "path": "static/images/brands/kubicek-screw.png",
+      "status": 200,
+      "match": true
+    },
+    {
+      "path": "static/images/brands/kaeser-gbs.png",
+      "status": 200,
+      "match": true
+    },
+    {
+      "path": "static/images/brands/robuschi-screw.webp",
+      "status": 200,
+      "match": true
+    },
+    {
+      "path": "static/images/brands/lutos.jpg",
+      "status": 200,
+      "match": true
+    },
+    {
+      "path": "static/images/brands/atlas-copco-zs.png",
+      "status": 200,
+      "match": true
+    },
+    {
+      "path": "static/images/brands/busch.png",
+      "status": 200,
+      "match": true
+    },
+    {
+      "path": "static/images/brands/kaeser.png",
+      "status": 200,
+      "match": true
+    },
+    {
+      "path": "static/images/brands/pedro-gil.webp",
+      "status": 200,
+      "match": true
+    },
+    {
+      "path": "static/images/brands/robuschi.jpg",
+      "status": 200,
+      "match": true
+    },
+    {
+      "path": "static/images/brands/kubicek.png",
+      "status": 200,
+      "match": true
+    },
+    {
+      "path": "static/images/source/article-oil.webp",
+      "status": 200,
+      "match": true
+    },
+    {
+      "path": "static/images/models/aerzen/delta-screw-open.png",
+      "status": 200,
+      "match": true
+    },
+    {
+      "path": "static/images/models/aerzen/delta-hybrid-detail.png",
+      "status": 200,
+      "match": true
+    },
+    {
+      "path": "static/images/models/aerzen/delta-blower-open.png",
+      "status": 200,
+      "match": true
+    },
+    {
+      "path": "static/images/models/aerzen/delta-screw-enclosure.png",
+      "status": 200,
+      "match": true
+    },
+    {
+      "path": "static/images/models/aerzen/delta-hybrid-enclosure.png",
+      "status": 200,
+      "match": true
+    },
+    {
+      "path": "static/images/models/aerzen/delta-blower-enclosure.png",
+      "status": 200,
+      "match": true
+    },
+    {
+      "path": "static/images/models/aerzen/gm-series.png",
+      "status": 200,
+      "match": true
+    },
+    {
+      "path": "static/images/models/chinese/huadong-hdsr-package.webp",
+      "status": 200,
+      "match": true
+    },
+    {
+      "path": "static/images/models/chinese/huadong-hdsr-unit-side.webp",
+      "status": 200,
+      "match": true
+    },
+    {
+      "path": "static/images/models/chinese/huadong-hdsr-unit.webp",
+      "status": 200,
+      "match": true
+    },
+    {
+      "path": "alternatives/huadong-hdsr/index.html",
+      "status": 200,
+      "match": true
+    }
+  ],
+  "removed_and_sensitive_paths": [
+    {
+      "path": "articles/",
+      "status": 404
+    },
+    {
+      "path": "articles/pneumatic-conveying/",
+      "status": 404
+    },
+    {
+      "path": "solutions/",
+      "status": 404
+    },
+    {
+      "path": "repair/",
+      "status": 404
+    },
+    {
+      "path": "alternatives/mingtian-rsr/",
+      "status": 404
+    },
+    {
+      "path": "alternatives/erstvak-erb/",
+      "status": 404
+    },
+    {
+      "path": ".env",
+      "status": 404
+    },
+    {
+      "path": ".git/config",
+      "status": 404
+    },
+    {
+      "path": "app/main.py",
+      "status": 404
+    },
+    {
+      "path": "content/brands.json",
+      "status": 404
+    },
+    {
+      "path": "database.sqlite3",
+      "status": 404
+    }
+  ]
+}

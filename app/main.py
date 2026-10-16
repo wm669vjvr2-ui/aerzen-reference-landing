@@ -69,7 +69,7 @@ def create_app(settings: Settings | None = None) -> FastAPI:
     def base_context(request: Request, purpose: str = "lead") -> dict:
         site = content.site
         return {"request": request, "site": site, "products": content.products, "articles": content.articles,
-                "alternatives": content.alternatives,
+                "alternatives": content.alternatives, "brands": content.brands,
                 "csrf_token": security.csrf(request), "form_token": security.token(request, purpose),
                 "cart_token": security.token(request, "cart"), "csp_nonce": request.state.csp_nonce,
                 "preview_mode": settings.preview_mode, "readiness": readiness(site, settings),
@@ -111,12 +111,12 @@ def create_app(settings: Settings | None = None) -> FastAPI:
 
     @app.get("/models", response_class=HTMLResponse)
     async def models(request: Request, q: str = Query(default="", max_length=100),
-                     equipment_type: Literal["", "rotary", "screw"] = Query(default="", alias="type"),
+                     equipment_type: Literal["", "rotary", "screw", "turbo"] = Query(default="", alias="type"),
                      equipment_kind: Literal["", "reference", "series", "model"] = Query(default="", alias="kind"),
-                     brand: Literal["", "huadong", "mingtian", "erstvak", "aerzen"] = Query(default="")):
+                     brand: Literal["", "huadong", "aerzen", "lutos", "robuschi", "kaeser", "atlas-copco", "kubicek", "busch", "pedro-gil"] = Query(default="")):
         query = q.strip()
         matching_references = []
-        if brand != "aerzen" and equipment_type != "screw" and equipment_kind in ("", "reference"):
+        if equipment_type in ("", "rotary") and equipment_kind in ("", "reference"):
             for family in content.alternatives:
                 family_brand = family["slug"].split("-")[0]
                 if brand and family_brand != brand:
@@ -141,19 +141,49 @@ def create_app(settings: Settings | None = None) -> FastAPI:
                 continue
             if equipment_type == "screw" and "Винтов" not in product.get("type", ""):
                 continue
+            if equipment_type == "turbo":
+                continue
             if equipment_kind == "series" and not product.get("is_series"):
                 continue
             if equipment_kind == "model" and product.get("is_series"):
                 continue
             matching.append(product)
+        matching_brand_series = []
+        if equipment_kind in ("", "series"):
+            for manufacturer in content.brands:
+                if brand and manufacturer["slug"] != brand:
+                    continue
+                for series in manufacturer.get("series", []):
+                    if equipment_type and series["type"] != equipment_type:
+                        continue
+                    searchable = " ".join([manufacturer["name"], *manufacturer.get("aliases", []),
+                                           series["name"], series.get("description", ""),
+                                           *series.get("models", [])]).casefold()
+                    if query.casefold() in searchable:
+                        matching_brand_series.append({"brand": manufacturer, "series": series,
+                            "card_id": f"brand-{manufacturer['slug']}-{series['slug']}",
+                            "url": f"/brands/{manufacturer['slug']}#{series['slug']}"})
         return render(request, "models.html", page="models", title="Каталог воздуходувок и компрессоров", query=query,
                       equipment_type=equipment_type, equipment_kind=equipment_kind, selected_brand=brand,
-                      matching_products=matching, matching_references=matching_references)
+                      matching_products=matching, matching_references=matching_references,
+                      matching_brand_series=matching_brand_series)
+
+    @app.get("/brands", response_class=HTMLResponse)
+    async def brands(request: Request):
+        return render(request, "brands.html", page="brands", title="Бренды промышленных воздуходувок")
+
+    @app.get("/brands/{slug}", response_class=HTMLResponse)
+    async def brand_detail(request: Request, slug: str):
+        manufacturer = content.brand(slug)
+        if manufacturer is None:
+            raise HTTPException(404, "Бренд не найден")
+        return render(request, "brand.html", page="brands", manufacturer=manufacturer,
+                      title=manufacturer["name"] + " — воздуходувки и серии оборудования")
 
     @app.get("/alternatives", response_class=HTMLResponse)
     async def alternatives(request: Request):
         return render(request, "alternatives.html", page="alternatives",
-                      title="Китайские воздуходувки и модели ERSTVAK: подбор альтернативы")
+                      title="Huadong HDSR — модели и характеристики воздуходувок")
 
     @app.get("/alternatives/{slug}", response_class=HTMLResponse)
     async def alternative(request: Request, slug: str):
@@ -177,14 +207,6 @@ def create_app(settings: Settings | None = None) -> FastAPI:
                       previous_product=products[(index-1) % len(products)] if len(products)>1 else None,
                       purchasable=readiness(content.site,settings)["commerce_enabled"] and commercial_product(product))
 
-    @app.get("/solutions", response_class=HTMLResponse)
-    async def solutions(request: Request):
-        return render(request, "solutions.html", page="solutions", kind="task", title="Есть задача")
-
-    @app.get("/repair", response_class=HTMLResponse)
-    async def repair(request: Request):
-        return render(request, "repair.html", page="repair", kind="repair", title="Ремонт и диагностика")
-
     @app.get("/about", response_class=HTMLResponse)
     async def about(request: Request):
         return render(request, "about.html", page="about", title="О компании")
@@ -193,16 +215,9 @@ def create_app(settings: Settings | None = None) -> FastAPI:
     async def contact(request: Request):
         return render(request, "contact.html", page="contact", kind="contact", title="Контакты")
 
-    @app.get("/articles", response_class=HTMLResponse)
-    async def articles(request: Request):
-        return render(request, "articles.html", page="articles", title="Статьи и применение")
-
-    @app.get("/articles/{slug}", response_class=HTMLResponse)
-    async def article(request: Request, slug: str):
-        item = next((a for a in content.articles if a["slug"]==slug),None)
-        if not item:
-            raise HTTPException(404, "Статья не найдена")
-        return render(request,"article.html", page="articles", article=item, title=item.get("title",slug))
+    @app.get("/oil", response_class=HTMLResponse)
+    async def oil(request: Request):
+        return render(request, "oil.html", page="oil", title="Масло для воздуходувок AERZEN Delta Lube")
 
     def register_legal_page(page_key: str):
         async def legal(request: Request):
@@ -344,9 +359,9 @@ def create_app(settings: Settings | None = None) -> FastAPI:
     @app.get("/sitemap.xml")
     async def sitemap():
         tree=Element("urlset",xmlns="http://www.sitemaps.org/schemas/sitemap/0.9")
-        urls=["/","/models","/solutions","/repair","/about","/articles","/contact","/alternatives"]
+        urls=["/","/models","/brands","/oil","/about","/contact","/alternatives"]
         urls += ["/alternatives/"+family["slug"] for family in content.alternatives]
-        urls += ["/models/"+p["slug"] for p in content.products] + ["/articles/"+a["slug"] for a in content.articles]
+        urls += ["/models/"+p["slug"] for p in content.products] + ["/brands/"+b["slug"] for b in content.brands]
         if not settings.preview_mode:
             for url in urls:
                 SubElement(SubElement(tree,"url"),"loc").text=settings.base_url+url

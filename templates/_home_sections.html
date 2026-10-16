@@ -1,102 +1,49 @@
-{% from '_macros.html' import arrow, form, equipment_photo with context %}
-<section class="home-section home-series-section wrap" id="reference-models" aria-labelledby="reference-models-heading">
+{% from '_macros.html' import arrow, equipment_photo with context %}
+<section class="home-section home-brands-section wrap" id="brands" aria-labelledby="home-brands-heading">
   <div class="home-section-heading">
-    <div><span class="eyebrow">HDSR / RSR / ERB</span><h2 id="reference-models-heading">Найдите свою серию</h2></div>
-    <a class="link-arrow" href="/models?kind=reference">Все модели {{ arrow() }}</a>
+    <div><span class="eyebrow">Каталог по производителям</span><h2 id="home-brands-heading">Бренды<br>воздуходувок.</h2></div>
+    <p>Выберите производителя, чтобы посмотреть серии и&nbsp;модели воздуходувок.</p>
   </div>
-  <p class="home-section-lead">Фотографии и характеристики для сравнения серий. Оборудование AERZEN подбираем по рабочей точке и условиям эксплуатации.</p>
-  <div class="home-series-grid">
-    {% set brand_filters = {'huadong-hdsr': 'huadong', 'mingtian-rsr': 'mingtian', 'erstvak-erb': 'erstvak'} %}
-    {% for family in alternatives %}
-    <a class="home-series-card" href="/models?brand={{ brand_filters[family.slug] }}">
-      <div class="home-series-topline"><span>{{ 'Китайский производитель' if family.country_status == 'verified' else 'Серия ERSTVAK' }}</span><span>{{ '%02d'|format(family.models|length) }} моделей</span></div>
-      {{ equipment_photo(family.photo, 'home-series') }}
-      <div class="home-series-body">
-        <h3>{{ family.name }}</h3>
-        <p>{{ family.models[0].name }} — {{ family.models[-1].name }}</p>
-        <span class="home-series-bottom"><span>Модели и характеристики</span>{{ arrow() }}</span>
-      </div>
+  <div class="home-brand-directory">
+    {% for brand in brands %}
+    <a class="home-brand-entry" href="/brands/{{ brand.slug }}">
+      <span class="home-brand-number" aria-hidden="true">{{ '%02d'|format(loop.index) }}</span>
+      <div class="home-brand-entry-copy"><h3>{{ brand.name }}</h3><p>{% for series in brand.series[:3] %}{{ series.name }}{{ ' · ' if not loop.last else '' }}{% endfor %}</p></div>
+      {{ arrow() }}
     </a>
     {% endfor %}
+    <a class="home-brand-entry home-brand-entry-all" href="/models"><span class="home-brand-number" aria-hidden="true">→</span><div class="home-brand-entry-copy"><h3>Все оборудование</h3><p>Бренды, серии и модели в одном каталоге</p></div>{{ arrow() }}</a>
   </div>
 </section>
 
-<section class="home-section home-applications-section" id="directions" aria-labelledby="home-applications-heading">
+<section class="home-section home-equipment-section" id="equipment" aria-labelledby="home-equipment-heading">
   <div class="wrap">
-    <div class="home-section-heading">
-      <div><span class="eyebrow">Применение оборудования</span><h2 id="home-applications-heading">Воздух в вашем процессе</h2></div>
-      <a class="link-arrow" href="/solutions">Все направления {{ arrow() }}</a>
-    </div>
-    <div class="home-applications-grid">
-      {% for item in site.applications %}
-      {% if item.slug == 'aeration' %}
-      <a class="home-application-feature" href="/solutions#{{ item.slug }}">
-        <img src="/static/images/storefront/water-treatment.jpg" alt="Очистные сооружения — тематическая иллюстрация применения" width="1600" height="1200" loading="lazy" decoding="async">
-        <div class="home-application-feature-copy"><span class="eyebrow">01 / Водоочистка</span><h3>{{ item.title }}</h3><p>{{ item.description }}</p><span class="link-arrow">Подробнее о решении {{ arrow() }}</span></div>
+    <div class="home-section-heading"><div><span class="eyebrow">Также в каталоге</span><h2 id="home-equipment-heading">AERZEN и Huadong</h2></div><a class="link-arrow" href="/models">Смотреть оборудование {{ arrow() }}</a></div>
+    <div class="home-equipment-grid">
+      {% for p in products if p.is_series %}
+      <a class="home-equipment-card" href="/models/{{ p.slug }}">
+        {{ equipment_photo(p.photo, 'home-equipment') }}
+        <div class="home-equipment-copy"><span class="eyebrow">AERZEN</span><h3>{{ p.name }}</h3><p>{{ p.type }}</p><span class="link-arrow">Открыть серию {{ arrow() }}</span></div>
       </a>
-      {% endif %}
       {% endfor %}
-      <div class="home-application-list">
-        {% for item in site.applications if item.slug != 'aeration' %}
-        <a class="home-application-row" href="/solutions#{{ item.slug }}">
-          <div class="home-application-row-copy"><span class="eyebrow">0{{ loop.index + 1 }} / Промышленность</span><h3>{{ item.title }}</h3><p>{{ item.description }}</p><span class="link-arrow">Подробнее {{ arrow() }}</span></div>
-          <img src="/static/images/storefront/{{ 'factory-hall.jpg' if item.slug == 'pneumatic' else 'industrial-plant.jpg' }}" alt="{{ 'Промышленный цех' if item.slug == 'pneumatic' else 'Промышленная трубопроводная система' }} — тематическая иллюстрация применения" width="2000" height="{{ 1329 if item.slug == 'pneumatic' else 1333 }}" loading="lazy" decoding="async">
-        </a>
-        {% endfor %}
-      </div>
+      {% for family in alternatives if family.slug == 'huadong-hdsr' %}
+      <a class="home-equipment-card" href="/models?brand=huadong">
+        {{ equipment_photo(family.photo, 'home-equipment') }}
+        <div class="home-equipment-copy"><span class="eyebrow">Huadong</span><h3>Серия HDSR</h3><p>{{ family.models[0].name }} — {{ family.models[-1].name }}</p><span class="link-arrow">Смотреть модели {{ arrow() }}</span></div>
+      </a>
+      {% endfor %}
     </div>
   </div>
 </section>
 
-<section class="home-section wrap home-aerzen-section" id="equipment" aria-labelledby="home-aerzen-heading">
-  <div class="home-section-heading">
-    <div><span class="eyebrow">Подбор оборудования</span><h2 id="home-aerzen-heading">Решения AERZEN</h2></div>
-    <a class="link-arrow" href="/models?brand=aerzen">Смотреть AERZEN {{ arrow() }}</a>
-  </div>
-  <div class="home-equipment-grid">
-    {% for p in products if p.is_series %}
-    <a class="home-equipment-card" href="/models/{{ p.slug }}">
-      {{ equipment_photo(p.photo, 'home-equipment') }}
-      <div class="home-equipment-copy"><span class="eyebrow">{{ p.type }}</span><h3>{{ p.name }}</h3><p>{{ p.short_description }}</p><span class="link-arrow">Характеристики {{ arrow() }}</span></div>
-    </a>
-    {% endfor %}
-    <a class="home-equipment-card" href="/models?brand=aerzen&amp;kind=model">
-      {% set gm = products|selectattr('slug', 'equalto', 'gm35s')|first %}{% if gm is defined %}{{ equipment_photo(gm.photo, 'home-equipment') }}{% endif %}
-      <div class="home-equipment-copy"><span class="eyebrow">Роторные воздуходувки</span><h3>Серия GM</h3><p>GM35S, GM50L, GM60S и GM80L. Характеристики и подбор комплектации.</p><span class="link-arrow">Смотреть модели {{ arrow() }}</span></div>
-    </a>
+<section class="home-section wrap home-oil-section" aria-labelledby="home-oil-heading">
+  <div class="home-oil-layout">
+    <div class="home-oil-copy"><span class="eyebrow">Масло для оборудования</span><h2 id="home-oil-heading">AERZEN<br>Delta Lube</h2><p>Информация о масле для воздуходувок: наименование, маркировка и&nbsp;совместимость с&nbsp;вашей моделью.</p><a class="button button-outline" href="/oil">Перейти к маслу {{ arrow() }}</a></div>
+    <figure class="home-oil-photo"><img src="/static/images/source/article-oil.webp" alt="Упаковка масла AERZEN Delta Lube 06" width="1000" height="563" loading="lazy" decoding="async"><figcaption>Масло AERZEN Delta Lube · фото упаковки</figcaption></figure>
   </div>
 </section>
 
-<section class="home-section home-process-section" aria-labelledby="home-process-heading">
-  <div class="wrap home-process-layout">
-    <div class="home-process-intro"><span class="eyebrow">Порядок работы</span><h2 id="home-process-heading">От исходных данных<br>до запуска</h2><p>Сначала разбираемся в задаче. Параметры, комплектацию и условия согласуем до заказа.</p><a class="link-arrow" href="#request">Обсудить задачу {{ arrow() }}</a></div>
-    <ol class="home-process-list">
-      {% for heading, text in [('Задача','Обсуждаем процесс, оборудование и исходные данные.'),('Подбор','Проверяем расход, давление и условия эксплуатации.'),('Предложение','Определяем состав оборудования и комплектацию.'),('Согласование','Фиксируем стоимость, сроки и условия в договоре.'),('Поставка','Согласуем получение и необходимые пусковые работы.'),('Сервис','Обслуживаем оборудование во время эксплуатации.')] %}
-      <li><span class="home-step-number">0{{ loop.index }}</span><div><h3>{{ heading }}</h3><p>{{ text }}</p></div></li>
-      {% endfor %}
-    </ol>
-  </div>
-</section>
-
-<section class="home-section wrap home-service-section" aria-labelledby="home-service-heading">
-  <div class="home-service-band">
-    <div class="home-service-copy"><span class="eyebrow">Сервис и техническая поддержка</span><h2 id="home-service-heading">Оборудование<br>должно работать.</h2><p>{{ site.repair.description }}</p><a class="button button-dark" href="/repair">Обсудить обслуживание {{ arrow() }}</a></div>
-    <ul class="home-service-list">{% for item in site.repair.services %}<li><span>{{ '%02d'|format(loop.index) }}</span><span>{{ item }}</span></li>{% endfor %}</ul>
-  </div>
-</section>
-
-<section class="home-section wrap home-company-section" aria-labelledby="home-company-heading">
-  <div class="home-company-layout">
-    <div class="home-company-intro"><span class="eyebrow">ПСК АРУС</span><h2 id="home-company-heading">Инженерный подход<br>к каждой задаче</h2><p>{{ site.company.description }}</p><a class="link-arrow" href="/about">О компании {{ arrow() }}</a></div>
-    <div class="home-company-facts">{% for fact in site.company.facts %}<div><h3>{{ fact.label }}</h3><p>{{ fact.description }}</p></div>{% endfor %}</div>
-  </div>
-</section>
-
-<section class="home-section home-articles-section" aria-labelledby="home-articles-heading">
-  <div class="wrap">
-    <div class="home-section-heading"><div><span class="eyebrow">Технический блог</span><h2 id="home-articles-heading">Разбираемся в оборудовании</h2></div><a class="link-arrow" href="/articles">Все материалы {{ arrow() }}</a></div>
-    <div class="home-article-list">{% for item in articles %}<a class="home-article-row" href="/articles/{{ item.slug }}"><span class="home-article-category">{{ item.category }}</span><div><h3>{{ item.title }}</h3><p>{{ item.summary }}</p></div>{{ arrow() }}</a>{% endfor %}</div>
-  </div>
-</section>
-
-<div class="wrap home-request-section">{{ form('task', '', 'Обсудите задачу с инженером') }}</div>
+<section class="home-contact-section" id="request" aria-labelledby="home-contact-heading"><div class="wrap home-contact-inner">
+  <div><span class="eyebrow">Связаться с нами</span><h2 id="home-contact-heading">Ищете конкретную модель?</h2><p>Сообщите бренд и&nbsp;маркировку оборудования.</p></div>
+  <div class="home-contact-actions"><a class="home-contact-phone" href="{{ site.phone_href }}">{{ site.phone }}</a><a class="link-arrow" href="mailto:{{ site.email }}">{{ site.email }} {{ arrow() }}</a></div>
+</div></section>

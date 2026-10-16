@@ -1,0 +1,10 @@
+{% extends 'base.html' %}{% from '_macros.html' import arrow, form with context %}
+{% block description %}Масло AERZEN Delta Lube для воздуходувок: подбор по модели оборудования, требования к спецификации и условиям эксплуатации.{% endblock %}
+{% block content %}
+<div class="breadcrumb wrap"><a href="/">Главная</a><span>/</span><span>Масло</span></div>
+<section class="page-heading wrap"><span class="eyebrow">Для обслуживания оборудования</span><h1>Масло для воздуходувок</h1><p>AERZEN Delta Lube. Масло подбирают по руководству конкретного агрегата и условиям эксплуатации.</p></section>
+<section class="section-pad wrap content-grid"><div class="service-card"><span class="eyebrow">AERZEN</span><h2>Delta Lube</h2><p>Для запроса укажите модель и серийный номер оборудования, используемое сейчас масло и необходимый объём. Марку, фасовку, совместимость, цену и сроки уточняют для конкретной поставки.</p><a href="#request" class="button">Уточнить масло {{ arrow() }}</a></div><div class="prose"><h2>Что проверить перед заменой</h2><p>Спецификацию масла, допустимость смешивания и периодичность замены определяет документация производителя. Внешний вид упаковки сам по себе не подтверждает подлинность.</p><p>Проверяйте маркировку, номер партии и документы о происхождении.</p></div></section>
+<div class="wrap">{{ form('contact', '', 'Запрос по маслу', 'Интересует масло. Модель оборудования: 
+Текущая марка масла: 
+Объём: ') }}</div>
+{% endblock %}

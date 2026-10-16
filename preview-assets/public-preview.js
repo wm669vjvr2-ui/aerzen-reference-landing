@@ -5,7 +5,9 @@ if (form && cards.length) {
   const fields = Object.fromEntries(['q','brand','type','kind'].map(name => [name, form.elements.namedItem(name)]));
   const empty = document.querySelector('[data-preview-empty]');
   const count = document.querySelector('.catalog-toolbar strong');
-  const allowed = {brand:['','huadong','mingtian','erstvak','aerzen'],type:['','rotary','screw'],kind:['','reference','series','model']};
+  // Read the catalogue's options so exported filters keep pace with its brands.
+  const allowed = Object.fromEntries(['brand','type','kind'].map(key =>
+    [key, [...fields[key].options].map(option => option.value)]));
   function apply() {
     const params = new URLSearchParams(location.search);
     fields.q.value = (params.get('q') || '').slice(0,100);

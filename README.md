@@ -1,33 +1,20 @@
-# AERZEN reference landing
+# ПСК АРУС — каталог воздуходувок
 
-## Сайт для просмотра
+[Открыть сайт для просмотра](https://wm669vjvr2-ui.github.io/aerzen-reference-landing/)
 
-[Открыть демоверсию сайта](https://wm669vjvr2-ui.github.io/aerzen-reference-landing/)
+![Обновлённая главная](docs/previews/brands-blue-white-desktop.jpg)
 
-![Главная страница](docs/previews/home-refined-desktop.png)
+Изменение 16.10.2026: сине-белая палитра, фото воздуходувки вместо цеха с кранами, каталог по брендам Lutos, Robuschi, Kaeser, Atlas Copco, Kubicek, Busch, Pedro Gil, AERZEN и Huadong. Блог, пневмотранспорт, расчёты и сервисные разделы удалены из опубликованной версии. Масло выделено в `/oil`. Фирменный PNG пока не получен: в шапке используется нейтральное текстовое название компании.
 
-[Мобильная версия](docs/previews/home-refined-mobile.png) · [Сервисный раздел](docs/previews/home-refined-service.png)
+27 страниц, 30 карточек: 12 серий семи новых брендов с собственными фотографиями серий, 11 моделей Huadong и 7 позиций AERZEN. Общие изображения серий подписаны; уникальные фотографии каждого типоразмера не заявляются. Официальное написание Robuschi, вариант Robushi поддержан в поиске. Историческая серия Lutos DT объяснена по сведениям Atlas Copco, без обещания новых поставок.
 
-Демоверсия открывается без входа: доступны 26 страниц, фотографии, каталог, поиск и фильтры. Формы и заказы отключены. Python/FastAPI-проект сохранён; GitHub Pages показывает подготовленную Python-экспортом копию для просмотра, без серверной обработки и базы данных.
+Статическая демоверсия открывается без входа, с фотографиями, каталогом, поиском и фильтрами. Формы, заказы, аналитика и индексация поисковиками отключены. Python/FastAPI/Jinja2/SQLite проект сохранён; GitHub Pages показывает подготовленную Python-экспортом копию без серверного кода, базы и секретов.
 
-**Доступ:** 16.10.2026 пользователь прямо поручил открыть этот репозиторий для просмотра другими людьми. Это новое указание заменяет прежнее требование private для данного репозитория; исходники и история становятся публичными. Прежние документы о private фиксируют состояние на соответствующую дату. Исходный репозиторий aerzen-psk-arus не изменяется.
+**Доступ к исходникам:** 16.10.2026 пользователь прямо поручил открыть этот репозиторий для просмотра другими людьми. Поэтому он остаётся `public`; прежнее требование private для него было явно переопределено. Старые документы о private относятся к прежнему состоянию. Исходный репозиторий `aerzen-psk-arus` не изменяется. Рабочая ветка этого отдельного проекта — `codex/reference-landing`, публикация — `gh-pages`.
 
+## Запуск Python
 
-Separate Python/FastAPI/Jinja2/SQLite project on branch `codex/reference-landing`. The existing `aerzen-psk-arus` repository and its branches are not used as a remote for this project. The new site was created from a sanitized tracked-file snapshot; no original Git history, environment files, database or runtime state was copied.
-
-Latest selected direction (14 October 2026): a separate supplier site based on the verified structure of Erstvak.com, with a black/yellow palette and AERZEN models. The previous main-site layout and photos are no longer rendered. Home includes a multi-row header, industrial hero, applications, equipment categories, six work steps, services, company information, technical articles and an engineering request. Thematic photographs use the free Unsplash License; exact sources and limitations are in `docs/photo-sources.md`.
-
-Photo update (15 October 2026): all 30 AERZEN/reference entries now have real manufacturer photographs in catalogue/detail pages and reference rows. Shared series images are labeled accurately; seven distinct primary photographs plus seven additional views are used. This is not a claim of 30 unique exact-SKU photographs. Sources, license limits, changed files and current validation: `docs/model-photo-update.md`. Manufacturer-photo redistribution rights are unconfirmed; the viewing copy does not establish commercial redistribution rights. Confirm permissions or replace the assets before a business release.
-
-Catalogue follow-up (15 October 2026): HDSR, RSR and ERB now lead the homepage and the unified catalogue. All 23 reference models have their own photo/specification cards before the seven AERZEN entries. Native brand/type/category/search filters work without JavaScript. The large yellow non-supply banner was removed as requested; reference comparison context and inventory/commerce separation remain. Current verification: `docs/catalog-focus-update.md`.
-
-The reference home, rotary category and product page yielded readable structure; browser visual access failed. This is a structural adaptation, not a verified pixel-identical copy. Erstvak business claims, reviews, prices, contacts, brand identity and project claims are not represented as the client's. All navigation and requests stay on this independent site.
-
-Homepage refinement (15 October 2026): replaced the enlarged manufacturer-photo hero with the existing licensed industrial photograph, a larger task-led headline and compact series navigation. Refined the family cards, applications, process, service, company and article sections. Catalogue and backend are unchanged. Current checks and source limits: `docs/home-refinement.md`.
-
-## Local launch
-
-Use Python 3.12 or newer:
+Python 3.12 или новее:
 
 ```bash
 python3.12 -m venv .venv
@@ -35,30 +22,29 @@ python3.12 -m venv .venv
 AERZEN_SECURE_COOKIES=false AERZEN_PREVIEW_MODE=true AERZEN_BASE_URL=http://127.0.0.1:8027 .venv/bin/python -m uvicorn app.main:app --host 127.0.0.1 --port 8027 --no-access-log
 ```
 
-Local URL: http://127.0.0.1:8027/. Data defaults to `~/.local/share/aerzen-reference-landing`, outside static files and separate from the original project's data.
+Данные хранятся вне публичной статики: `~/.local/share/aerzen-reference-landing`. Для проверки в этой сессии использован уже установленный соседний Python runtime в режиме чтения; его файлы и зависимости не менялись.
 
-During this session the existing installed Python runtime was used read-only from the neighboring project; no dependencies or settings there were changed.
+## Публичная копия
 
-## Operation and publication
+```bash
+.venv/bin/python scripts/export_preview.py --output /absolute/empty/directory --site-url https://wm669vjvr2-ui.github.io/aerzen-reference-landing
+```
 
-Phone/email links work. Backend form submission, purchases and analytics are disabled by default. The request section provides a working mailto action; it opens the user's mail app and does not send a message automatically. Enabling server-side lead handling requires confirmed owner/privacy settings and actual operator delivery. The disabled form is labeled.
+Экспортируются только разрешённые HTML-страницы и используемые ими CSS/JS/изображения. Новую сборку следует целиком заменять в ветке `gh-pages`, чтобы не сохранялись исключённые страницы. Backend и SQLite не размещаются на GitHub Pages. До бизнес-запуска нужны согласованные данные владельца, обработка и доставка обращений, права на изображения и совместимый Python хостинг с постоянным приватным хранилищем.
 
-A public read-only viewing copy is available at https://wm669vjvr2-ui.github.io/aerzen-reference-landing/. It does not host the Python backend or database. Before business operation: approve business data/privacy documents and retention, configure a compatible Python host with persistent private SQLite storage, permanent secret and HTTPS origin. Old unused media remain in source history and are not part of the displayed interface; exclude unapproved legacy assets from a production package. Do not expose server code, .env, .git or database files; do not change the Python stack for hosting. No temporary tunnel or owner-only preview counts as the public handoff.
+## Источники и проверки
 
-## Model comparisons added 14 October 2026
+- Текущая сдача: [docs/brands-blue-white-update.md](docs/brands-blue-white-update.md).
+- Официальные факты/серии: [docs/brand-research-2026-10-16.md](docs/brand-research-2026-10-16.md).
+- Фотографии/SHA256/права: [docs/brand-photo-manifest-2026-10-16.json](docs/brand-photo-manifest-2026-10-16.json).
+- UI Pattern Forge, Refero/21st и лицензии компонентов: [docs/home-blue-white-review.md](docs/home-blue-white-review.md). Новые компоненты написаны в проекте без внешней библиотеки.
 
-`/alternatives` and three family pages cover 17 Chinese Huadong HDSR / Mingtian RSR models and six ERSTVAK ERB models. ERSTVAK Chinese origin is unconfirmed. These remain reference comparisons rather than supplied inventory; they never become cart/feed offers. Requests stay on this separate site; there are no links or redirects to the main company website. Search frequency rankings are not established.
-
-Primary sources and access/licensing limits: `docs/chinese-models-sources.md`. Verification: `docs/alternatives-verification.md`. No additional dependencies were installed.
-
-The price follow-up also includes Chinese models. `docs/price-verification.md` records live primary-page checks: no comparable numerical prices were confirmed, so no unsupported 30% discount or sale price was published. Reference pages show quote-only primary-source pricing with the checked date and source link.
-
-## Checks
+Числовые цены, наличие и статус официального дилера не подтверждены. Выдуманная скидка 30% не публикуется. Названия сторонних производителей не становятся коммерческими SKU, заказами или предложениями фида. Коммерческие разрешения на перепубликацию фотографий производителей не установлены; публичный просмотр не подтверждает такие права.
 
 ```bash
 .venv/bin/python -m pytest -q
-.venv/bin/python -m compileall -q app tests
-.venv/bin/python -m pip_audit -r requirements.txt
+.venv/bin/python -m compileall -q app scripts tests
+git diff --check
 ```
 
-Evidence and remaining gaps: `docs/catalog-focus-update.md` (current), `docs/storefront-verification.md` (14 October snapshot) and `docs/verification.md` (13 October snapshot). Content/photo provenance: `docs/content-sources.md`, `docs/photo-sources.md`. Current selection and styling: `.ui-pattern-forge/selected-concept.json`, `docs/design-system.md`, `static/css/storefront.css`. Older motion documents and styles are historical; no 3D runtime is loaded by the current interface.
+Исторические отчёты в `docs/` фиксируют предыдущие версии и не заменяют текущий отчёт.

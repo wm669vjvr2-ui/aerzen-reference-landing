@@ -1,0 +1,45 @@
+{
+  "checked_on": "2026-10-16",
+  "metrics": [
+    {
+      "broken": [],
+      "doc": 1440,
+      "page": "home",
+      "width": 1440
+    },
+    {
+      "broken": [],
+      "doc": 768,
+      "page": "home",
+      "width": 768
+    },
+    {
+      "broken": [],
+      "doc": 390,
+      "page": "home",
+      "width": 390
+    },
+    {
+      "count": "0",
+      "doc": 390,
+      "page": "catalogue-empty",
+      "width": 390
+    },
+    {
+      "broken": [],
+      "doc": 390,
+      "page": "brand-robuschi",
+      "width": 390
+    }
+  ],
+  "public_search": {
+    "Robushi": 2,
+    "huadong": 11,
+    "unknown": 0
+  },
+  "local_menu_escape": {
+    "closed": true,
+    "focus_returned": true
+  },
+  "console": []
+}

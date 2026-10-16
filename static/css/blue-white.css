@@ -1,0 +1,86 @@
+/* User-selected blue/white theme. Kept separate from the earlier reference theme. */
+:root {
+  --accent: #0755a5;
+  --accent-hover: #064483;
+  --accent-light: #eaf2fb;
+  --on-accent: #fff;
+  --yellow: var(--accent);
+  --yellow-hover: var(--accent-hover);
+  --ink: #17324d;
+  --dark: #153b62;
+  --blue: var(--accent);
+  --muted: #53687b;
+  --line: #d8e3ed;
+  --wash: #f3f7fb;
+  --paper: #fff;
+  --focus: #0755a5;
+  --radius: 3px;
+}
+::selection { background: #d4e7ff; color: #113154; }
+.skip-link, .button { background: var(--accent); border-color: var(--accent); color: var(--on-accent); }
+.button:hover { background: var(--accent-hover); border-color: var(--accent-hover); color: var(--on-accent); }
+.button-outline { color: var(--accent); background: transparent; border-color: var(--accent); }
+.button-outline:hover { background: var(--accent); color: white; }
+.button-dark { background: var(--accent); border-color: var(--accent); color: white; }
+.button-dark:hover { background: var(--accent-hover); border-color: var(--accent-hover); }
+.utility-bar { background: var(--wash); color: var(--muted); border-bottom: 1px solid var(--line); }
+.utility-links a:hover { color: var(--accent); }
+.brand-mark { color: var(--accent); background: transparent; padding-left: 0; align-items: flex-start; letter-spacing: -.035em; }
+.brand-wordmark { color: var(--accent); font-size: 26px; line-height: 1.2; font-weight: 700; letter-spacing: -.035em; white-space: nowrap; }
+.brand-caption { color: var(--muted); }
+.header-phone, .callback-link { color: var(--accent); }
+.header-search button:hover { color: var(--accent); background: #dfebf7; }
+.nav-bar { background: white; color: var(--ink); border-block: 1px solid var(--line); }
+.catalog-menu { background: var(--accent); color: white; }
+.catalog-dropdown { color: var(--ink); }
+.main-nav a:hover, .main-nav a[aria-current] { background: var(--wash); color: var(--accent); }
+.nav-request { color: var(--accent); border-left-color: var(--line); }
+.nav-request:hover { background: var(--wash); }
+.mobile-menu summary { color: var(--accent); }
+.mobile-menu nav { background: white; color: var(--ink); border-color: var(--line); }
+.mobile-menu nav a:hover { color: var(--accent); background: var(--wash); }
+.site-footer { background: #f3f7fb; color: var(--ink); border-top: 1px solid var(--line); }
+.footer-grid h2, .footer-grid .brand { color: var(--ink); }
+.footer-grid p { color: var(--muted); }
+.footer-grid .header-phone { color: var(--accent); }
+.footer-grid a:hover { color: var(--accent); }
+.footer-bottom { color: var(--muted); border-color: var(--line); }
+.footer-bottom a:hover, .footer-bottom button:hover { color: var(--accent); }
+.consent input { accent-color: var(--accent); }
+.catalog-notice, .supply-disclosure, .announcement { background: var(--accent-light); color: var(--ink); }
+.catalog-notice p, .supply-disclosure p { color: var(--muted); }
+.reference-model-list a:hover { background: var(--accent); color: white; }
+.reference-band { background: var(--wash); color: var(--ink); }
+.reference-band-copy p, .reference-brand-list small { color: var(--muted); }
+.reference-band-copy .button-dark { color: white; }
+.reference-brand-list { border-color: var(--line); }
+.reference-brand-list > a { border-color: var(--line); }
+.category-card-dark { background: var(--wash); color: var(--ink); }
+.category-card-dark p { color: var(--muted); }
+.service-band { background: var(--accent-light); color: var(--ink); }
+.service-band .button { background: var(--accent); color: white; border-color: var(--accent); }
+.service-band .button:hover { background: var(--accent-hover); border-color: var(--accent-hover); }
+.brand-directory { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 22px; }
+.brand-tile { display: flex; flex-direction: column; min-width: 0; background: white; border-top: 3px solid var(--accent); }
+.brand-tile h2 { margin-bottom: 17px; font-size: 28px; }
+.brand-tile .eyebrow, .manufacturer-series .eyebrow { color: var(--accent); }
+.brand-tile .reference-model-list { margin-block: 2px 22px; gap: 7px; }
+.brand-tile .reference-model-list a { padding: 6px 9px; font-size: 11px; background: var(--wash); }
+.brand-tile .reference-model-list a:hover { background: var(--accent); color: white; }
+.brand-tile > .link-arrow { margin-top: auto; padding-top: 11px; color: var(--accent); font-size: 12px; }
+.brand-series-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 23px; }
+.manufacturer-series { min-width: 0; background: white; scroll-margin-top: 25px; }
+.manufacturer-series h3 { font-size: 25px; }
+.manufacturer-series .link-arrow { color: var(--accent); font-size: 12px; }
+.brand-series-photo { border: 1px solid var(--line); margin-bottom: 24px; }
+.brand-series-photo img { height: 265px; padding: 15px; }
+.brand-series-photo figcaption { border-top: 1px solid var(--line); font-size: 10px; }
+.series-models { padding-top: 17px; border-top: 1px solid var(--line); }
+@media (max-width: 1000px) { .brand-directory { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 700px) {
+  .brand-directory, .brand-series-grid { grid-template-columns: 1fr; gap: 18px; }
+  .brand-tile h2 { font-size: 27px; }
+  .brand-series-photo img { height: 230px; }
+}
+@media (max-width: 600px) { .brand-wordmark { font-size: 23px; } }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }

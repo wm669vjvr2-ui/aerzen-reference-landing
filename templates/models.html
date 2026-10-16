@@ -1,23 +1,28 @@
 {% extends 'base.html' %}{% from '_macros.html' import arrow, equipment_photo with context %}
 {% block content %}
 <div class="breadcrumb wrap"><a href="/">Главная</a><span>/</span><span>Каталог оборудования</span></div>
-<section class="page-heading wrap"><span class="eyebrow">HDSR · RSR · ERB · AERZEN</span><h1>Каталог воздуходувок и компрессоров</h1><p>Фотографии и технические параметры моделей. HDSR, RSR и ERB представлены для сравнения и подбора альтернативы AERZEN по рабочей точке.</p></section>
+<section class="page-heading wrap"><span class="eyebrow">Бренды · Серии · Модели</span><h1>Каталог воздуходувок и компрессоров</h1><p>Lutos, Robuschi, Kaeser, Atlas Copco, Kubicek, Busch, Pedro Gil, AERZEN и Huadong. Выберите производителя или найдите серию по названию.</p></section>
 <section class="catalog-layout wrap section-pad">
   <aside class="catalog-sidebar">
     <form class="catalog-filter" action="/models" method="get">
       <h2>Подбор оборудования</h2>
-      <label>Поиск<input type="search" name="q" maxlength="100" value="{{ query }}" placeholder="Например, HDSR150"></label>
-      <label>Производитель<select name="brand"><option value="">Все производители</option>{% for key, label in [('huadong', 'HUADONG HDSR'), ('mingtian', 'MINGTIAN RSR'), ('erstvak', 'ERSTVAK ERB'), ('aerzen', 'AERZEN')] %}<option value="{{ key }}" {% if selected_brand==key %}selected{% endif %}>{{ label }}</option>{% endfor %}</select></label>
-      <label>Тип оборудования<select name="type"><option value="">Все типы</option><option value="rotary" {% if equipment_type=='rotary' %}selected{% endif %}>Роторные воздуходувки</option><option value="screw" {% if equipment_type=='screw' %}selected{% endif %}>Винтовое оборудование</option></select></label>
-      <label>Категория<select name="kind"><option value="">Все серии и модели</option><option value="reference" {% if equipment_kind=='reference' %}selected{% endif %}>HDSR, RSR и ERB</option><option value="series" {% if equipment_kind=='series' %}selected{% endif %}>Серии AERZEN Delta</option><option value="model" {% if equipment_kind=='model' %}selected{% endif %}>Модели AERZEN GM</option></select></label>
+      <label>Поиск<input type="search" name="q" maxlength="100" value="{{ query }}" placeholder="Например, Robuschi или GM35S"></label>
+      <label>Производитель<select name="brand"><option value="">Все производители</option>{% for b in brands %}<option value="{{ b.slug }}" {% if selected_brand==b.slug %}selected{% endif %}>{{ b.name }}</option>{% endfor %}{% for key, label in [('aerzen', 'AERZEN'), ('huadong', 'Huadong HDSR')] %}<option value="{{ key }}" {% if selected_brand==key %}selected{% endif %}>{{ label }}</option>{% endfor %}</select></label>
+      <label>Тип оборудования<select name="type"><option value="">Все типы</option><option value="rotary" {% if equipment_type=='rotary' %}selected{% endif %}>Роторные воздуходувки</option><option value="screw" {% if equipment_type=='screw' %}selected{% endif %}>Винтовое оборудование</option><option value="turbo" {% if equipment_type=='turbo' %}selected{% endif %}>Турбовоздуходувки</option></select></label>
+      <label>Категория<select name="kind"><option value="">Все серии и модели</option><option value="reference" {% if equipment_kind=='reference' %}selected{% endif %}>Модели Huadong HDSR</option><option value="series" {% if equipment_kind=='series' %}selected{% endif %}>Серии оборудования</option><option value="model" {% if equipment_kind=='model' %}selected{% endif %}>Модели AERZEN GM</option></select></label>
       <button class="button" type="submit">Показать {{ arrow() }}</button><a href="/models" class="text-button">Сбросить фильтры</a>
     </form>
-    <div class="filter-group"><h2>Технические справочники</h2>{% for family in alternatives %}<a class="filter-link" href="/alternatives/{{ family.slug }}">{{ family.name }} {{ arrow() }}</a>{% endfor %}</div>
-    <div class="filter-group"><h2>Нужен подбор?</h2><p>Проверим оборудование под параметры процесса.</p><a class="link-arrow" href="/solutions#request">Связаться с инженером {{ arrow() }}</a></div>
+    <div class="filter-group"><h2>Производители</h2>{% for b in brands %}<a class="filter-link" href="/brands/{{ b.slug }}">{{ b.name }} {{ arrow() }}</a>{% endfor %}<a class="filter-link" href="/alternatives/huadong-hdsr">Huadong HDSR {{ arrow() }}</a></div>
+    <div class="filter-group"><h2>Нужен подбор?</h2><p>Проверим оборудование под параметры процесса.</p><a class="link-arrow" href="/contact#request">Связаться с инженером {{ arrow() }}</a></div>
   </aside>
   <div class="catalog-main">
-    <div class="catalog-toolbar"><span>Найдено моделей и серий: <strong>{{ matching_references|length + matching_products|length }}</strong></span><button class="text-button link-arrow" data-open-search>Быстрый поиск {{ arrow() }}</button></div>
+    <div class="catalog-toolbar"><span>Найдено моделей и серий: <strong>{{ matching_references|length + matching_products|length + matching_brand_series|length }}</strong></span><button class="text-button link-arrow" data-open-search>Быстрый поиск {{ arrow() }}</button></div>
     <div class="product-grid">
+      {% for item in matching_brand_series %}{% set b = item.brand %}{% set series = item.series %}
+      <article class="product-card" id="{{ item.card_id }}" data-catalog-kind="brand-series" data-catalog-brand="{{ b.slug }}">
+        <a href="{{ item.url }}" class="product-card-media" aria-label="{{ b.name }} {{ series.name }} — подробнее">{% if series.photo %}{{ equipment_photo(series.photo) }}{% else %}<div class="product-nameplate"><span>{{ b.name }}</span><strong>{{ series.name }}</strong><small>Серия оборудования</small></div>{% endif %}</a>
+        <div class="product-card-body"><span class="eyebrow">{{ b.name }}</span><h2><a href="{{ item.url }}">{{ series.name }}</a></h2><p>{{ series.description }}</p><a class="link-arrow" href="{{ item.url }}">О серии {{ arrow() }}</a></div>
+      </article>{% endfor %}
       {% for item in matching_references %}{% set m = item.model %}
       <article class="product-card" id="{{ item.card_id }}" data-catalog-kind="reference" data-catalog-brand="{{ item.brand }}">
         <a href="{{ item.url }}" class="product-card-media" aria-label="{{ m.name }} — характеристики">{{ equipment_photo(m.photo) }}</a>
@@ -33,7 +38,7 @@
         <div class="product-card-body"><span class="eyebrow">AERZEN · {{ p.type }}</span><h2><a href="/models/{{ p.slug }}">{{ p.name }}</a></h2><p>{{ p.short_description }}</p><dl class="product-meta">{% for spec in p.technical_specs[:2] %}<div><dt>{{ spec.label }}</dt><dd>{{ spec.value }}</dd></div>{% endfor %}</dl><a class="link-arrow" href="/models/{{ p.slug }}">Характеристики и КП {{ arrow() }}</a></div>
       </article>
       {% endfor %}
-      {% if not matching_references and not matching_products %}<div class="catalog-empty"><h2>Модели не найдены</h2><p>Измените запрос или сбросьте фильтры.</p><a class="button" href="/models">Все модели {{ arrow() }}</a></div>{% endif %}
+      {% if not matching_references and not matching_products and not matching_brand_series %}<div class="catalog-empty"><h2>Модели не найдены</h2><p>Измените запрос или сбросьте фильтры.</p><a class="button" href="/models">Все модели {{ arrow() }}</a></div>{% endif %}
     </div>
   </div>
 </section>

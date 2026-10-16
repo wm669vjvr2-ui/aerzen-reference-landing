@@ -119,15 +119,16 @@ def export(output: Path, site_url: str):
         raise ValueError('Output directory must be empty')
     products = json.loads((ROOT / 'content/products.json').read_text())
     families = json.loads((ROOT / 'content/alternatives.json').read_text())
-    articles = json.loads((ROOT / 'content/articles.json').read_text())
-    routes = ['/', '/models', '/alternatives', '/solutions', '/repair', '/about', '/contact', '/articles',
+    brands = json.loads((ROOT / 'content/brands.json').read_text())
+    routes = ['/', '/models', '/brands', '/alternatives', '/oil', '/about', '/contact',
               '/privacy', '/terms', '/cookies', '/payment', '/delivery']
     routes += ['/models/' + p['slug'] for p in products]
     routes += ['/alternatives/' + f['slug'] for f in families]
-    routes += ['/articles/' + a['slug'] for a in articles]
+    routes += ['/brands/' + b['slug'] for b in brands]
     cards = {}
     for p in products:
         cards[p['slug']] = {
+            'data-catalog-brand': 'aerzen',
             'data-preview-kind': 'series' if p.get('is_series') else 'model',
             'data-preview-type': 'rotary' if 'Роторная' in p.get('type', '') else 'screw',
             'data-preview-search': ' '.join(str(p.get(k, '')) for k in ('brand', 'name', 'type', 'family')),
@@ -135,8 +136,18 @@ def export(output: Path, site_url: str):
     for family in families:
         for model in family['models']:
             cards[f"ref-{family['slug']}-{model['anchor']}"] = {
+                'data-catalog-brand': family['slug'].split('-')[0],
                 'data-preview-kind': 'reference', 'data-preview-type': 'rotary',
                 'data-preview-search': ' '.join((model['name'], family['name'], family['manufacturer'], family['technology'])),
+            }
+    for brand in brands:
+        for series in brand['series']:
+            cards[f"brand-{brand['slug']}-{series['slug']}"] = {
+                'data-catalog-brand': brand['slug'],
+                'data-preview-kind': 'series',
+                'data-preview-type': series['type'],
+                'data-preview-search': ' '.join((brand['name'], *brand.get('aliases', []), series['name'],
+                                                series.get('description', ''), *series.get('models', []))),
             }
     assets = set()
     origin = urlunsplit((*urlsplit(site_url)[:2], '', '', ''))

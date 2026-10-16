@@ -1,27 +1,23 @@
-{% extends 'base.html' %}{% from '_macros.html' import arrow, form, equipment_photo with context %}
+{% extends 'base.html' %}{% from '_macros.html' import arrow with context %}
 {% block content %}
 <section class="home-hero" aria-labelledby="home-heading">
-  <img class="home-hero-photo" src="/static/images/storefront/factory-hall.jpg" alt="Промышленный цех — тематическая иллюстрация" width="2000" height="1329" fetchpriority="high" decoding="async">
   <div class="wrap home-hero-inner">
     <div class="home-hero-copy">
-      <span class="home-hero-kicker">ПСК АРУС <span aria-hidden="true">/</span> Промышленное оборудование</span>
-      <h1 id="home-heading">Воздуходувки<br>для промышленных<br><span>задач.</span></h1>
-      <p>HDSR, RSR и ERB — модели и характеристики для сравнения. Подбор оборудования AERZEN по параметрам вашего процесса.</p>
-      <div class="home-hero-actions"><a class="button" href="/models?kind=reference">Смотреть модели {{ arrow() }}</a><a class="home-hero-contact link-arrow" href="#request">Обсудить задачу {{ arrow() }}</a></div>
+      <span class="home-hero-kicker">Промышленное оборудование <span aria-hidden="true">/</span> ПСК АРУС</span>
+      <h1 id="home-heading">Промышленные<br><span>воздуходувки.</span></h1>
+      <p class="home-hero-description">Найдите оборудование по&nbsp;бренду, серии или&nbsp;названию модели.</p>
+      <p class="home-hero-brands">Lutos, Robuschi, Kaeser, Atlas Copco,<br>Kubicek, Busch и Pedro Gil.</p>
+      <div class="home-hero-actions"><a class="button" href="#brands">Выбрать бренд {{ arrow() }}</a><a class="home-hero-contact link-arrow" href="/models">Весь каталог {{ arrow() }}</a></div>
     </div>
-    <span class="home-hero-photo-note">Промышленный воздух<br>Инженерный подход к каждой задаче</span>
+    <figure class="home-hero-equipment">
+      <img class="home-hero-photo" src="/static/images/models/aerzen/delta-blower-open.png" alt="Роторная воздуходувная установка AERZEN Delta Blower в открытом исполнении" width="1000" height="1000" fetchpriority="high" decoding="async">
+      <figcaption><span>Оборудование на фото</span><a href="/models/delta-blower">AERZEN Delta Blower {{ arrow() }}</a></figcaption>
+    </figure>
   </div>
-  <div class="home-hero-index"><div class="wrap home-hero-index-inner">
-    <div class="home-hero-index-label"><span>Серии оборудования</span><a href="/models">Общий каталог {{ arrow() }}</a></div>
-    {% set brand_filters = {'huadong-hdsr': 'huadong', 'mingtian-rsr': 'mingtian', 'erstvak-erb': 'erstvak'} %}
-    {% for family in alternatives %}<a class="home-hero-family" href="/models?brand={{ brand_filters[family.slug] }}"><span class="home-hero-family-name home-hero-family-full">{{ family.name }}</span><span class="home-hero-family-name home-hero-family-short">{{ family.name.split()[-1] }}</span><span class="home-hero-family-meta">{{ family.models|length }} моделей {{ arrow() }}</span></a>{% endfor %}
-  </div></div>
 </section>
-<div class="wrap home-capabilities" aria-label="Работа с оборудованием">
-  <div><span>01</span><p>Модели<br><strong>и характеристики</strong></p></div>
-  <div><span>02</span><p>Подбор<br><strong>по рабочей точке</strong></p></div>
-  <div><span>03</span><p>Поставка<br><strong>по договору</strong></p></div>
-  <div><span>04</span><p>Обслуживание<br><strong>и ремонт</strong></p></div>
-</div>
+<div class="home-brand-ribbon" aria-label="Бренды в каталоге"><div class="wrap home-brand-ribbon-inner">
+  {% for brand in brands %}<a href="/brands/{{ brand.slug }}">{{ brand.name }}</a>{% endfor %}
+  <a href="/models?brand=aerzen">AERZEN</a><a href="/models?brand=huadong">Huadong</a>
+</div></div>
 {% include '_home_sections.html' %}
 {% endblock %}

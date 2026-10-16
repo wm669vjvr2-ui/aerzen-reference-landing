@@ -42,6 +42,17 @@ class Content:
         return next((p for p in self.products if p["slug"] == slug), None)
 
     @property
+    def brands(self) -> list[dict]:
+        """Manufacturer reference pages are separate from commercial inventory."""
+        data = self.read("brands.json", [])
+        return [dict(item) for item in data if isinstance(item, dict)
+                and isinstance(item.get("slug"), str)
+                and re.fullmatch(r"[a-z0-9]+(?:-[a-z0-9]+)*", item["slug"])] if isinstance(data, list) else []
+
+    def brand(self, slug: str) -> dict | None:
+        return next((item for item in self.brands if item["slug"] == slug), None)
+
+    @property
     def alternatives(self) -> list[dict]:
         """Reference families are never inventory, purchasable SKUs or feed offers."""
         data = self.read("alternatives.json", [])

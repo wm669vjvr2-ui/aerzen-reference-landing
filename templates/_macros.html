@@ -7,7 +7,7 @@
 {% endmacro %}
 {% macro form(kind='task', product_slug='', heading='Обсудим вашу задачу', message_default='') %}
 <section class="request-block" id="request" aria-labelledby="request-heading">
-  <div class="request-intro"><span class="eyebrow">Связаться с инженером</span><h2 id="request-heading">{{ heading }}</h2><p>Расскажите о процессе или оборудовании. Параметры, которых пока нет, можно уточнить вместе.</p><a class="contact-phone" href="{{ site.phone_href }}">{{ site.phone }}</a><a href="mailto:{{ site.email }}">{{ site.email }}</a>{% if not readiness.forms_enabled %}<a class="button reference-email-action" href="mailto:{{ site.email }}?subject=Запрос%20предложения%20AERZEN">Запросить КП по e-mail {{ arrow() }}</a>{% endif %}</div>
+  <div class="request-intro"><span class="eyebrow">Связаться с инженером</span><h2 id="request-heading">{{ heading }}</h2><p>Расскажите о процессе или оборудовании. Параметры, которых пока нет, можно уточнить вместе.</p><a class="contact-phone" href="{{ site.phone_href }}">{{ site.phone }}</a><a href="mailto:{{ site.email }}">{{ site.email }}</a>{% if not readiness.forms_enabled %}<a class="button reference-email-action" href="mailto:{{ site.email }}?subject=Запрос%20по%20оборудованию">Запросить КП по e-mail {{ arrow() }}</a>{% endif %}</div>
   <form class="request-form" method="post" action="/requests/{{ kind }}" data-request-form>
     <input type="hidden" name="csrf_token" value="{{ csrf_token }}"><input type="hidden" name="form_token" value="{{ form_token }}"><input type="hidden" name="product_slug" value="{{ product_slug }}">
     <div class="honeyfield" aria-hidden="true"><label>Ваш сайт<input name="website" tabindex="-1" autocomplete="off"></label></div>
