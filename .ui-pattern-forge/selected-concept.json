@@ -2,14 +2,14 @@
   "date": "2026-10-16",
   "direction": "blue-white-brand-directory",
   "user_selected": true,
-  "user_instruction": "Prioritize Lutos, Robuschi, Kaeser, Atlas Copco, Kubicek, Busch, Pedro Gil; retain only Huadong among Chinese references; blue/white palette, clear blower hero; remove pneumatic transport, calculations, services and blog; keep oil. Corporate PNG to follow.",
+  "user_instruction": "Prioritize Lutos, Robuschi, Kaeser, Atlas Copco, Kubicek, Busch, Pedro Gil; retain only Huadong among Chinese references; blue/white palette, clear blower hero; remove pneumatic transport, calculations, services and blog; keep oil. Reuse the corporate logo from vozduhoduvka-aerzen.ru without any alteration.",
   "reference": "https://erstvak.com/",
   "branch": "codex/reference-landing",
   "implementation": "Python/FastAPI/Jinja2; brand directory, seven manufacturer pages, searchable brand/series/model catalogue, oil and contacts. Native HTML/CSS; no new runtime.",
   "photos": "12 sourced real photographs for12series across7newbrands, existing AERZEN/Huadong series photos accurately captioned. No factory/crane hero. Manufacturer commercial redistribution permissions remain unconfirmed.",
   "motion": "Equipment photo enters once0.6s; no loops; reduced motion disables movement.",
   "verified_scope": "Official home, category and product text structure; exact visual matching blocked by browser network access.",
-  "restrictions": "No main-site links/redirect, fake inventory, dealer status or unsupported prices. Neutral company text pending corporate PNG.",
+  "restrictions": "No main-site links/redirect, fake inventory, dealer status or unsupported prices. Original corporate SVG in header/footer, unchanged bytes/colors/proportions.",
   "production_status": "blocked for commercial operation: confirmed image permissions, owner/privacy and compatible Python hosting required. Read-only public viewing copy retained.",
   "photo_revision": "2026-10-15",
   "catalog_revision": "2026-10-15",
@@ -21,5 +21,12 @@
     "checked_on": "2026-10-16",
     "mode": "Python-generated read-only viewing copy on GitHub Pages; backend and database not deployed",
     "repository_visibility": "public by explicit user instruction on 2026-10-16"
+  },
+  "logo": {
+    "path": "/static/images/source/logo-psk-arus.svg",
+    "source_url": "https://vozduhoduvka-aerzen.ru/wp-content/themes/aerzen/assets/img/logo-psk-arus-2.svg",
+    "sha256": "7d3f543de1f093f9a695a41c9fd2120d107f082eabd6169c55fc10fee653c881",
+    "user_instruction": "Use logo from own site, never change it.",
+    "altered": false
   }
 }

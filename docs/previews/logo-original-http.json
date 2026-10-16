@@ -1,0 +1,375 @@
+{
+  "date": "2026-10-16T16:59:50.681815+00:00",
+  "url": "https://wm669vjvr2-ui.github.io/aerzen-reference-landing/",
+  "pages_commit": "dc1874c127b44e76be32bd2663c1a2950a040a33",
+  "anonymous": true,
+  "logo_unchanged": true,
+  "checks": [
+    {
+      "path": "index.html",
+      "status": 200,
+      "sha256": "64a8d3a19fb61d743e377a410795f1015545ff271edc5936d51cd08c367bb748",
+      "matches_export": true
+    },
+    {
+      "path": "robots.txt",
+      "status": 200,
+      "sha256": "331ea9090db0c9f6f597bd9840fd5b171830f6e0b3ba1cb24dfa91f0c95aedc1",
+      "matches_export": true
+    },
+    {
+      "path": "contact/index.html",
+      "status": 200,
+      "sha256": "03f78bd7dad53b8e20f864a51e8ecb797a74d54927d2da2958d26a5b31e44151",
+      "matches_export": true
+    },
+    {
+      "path": "privacy/index.html",
+      "status": 200,
+      "sha256": "ca02c240ed18c9fc562e2eb4d1079aed651b225f5a6b6a97c88e6e1ed57b9fc4",
+      "matches_export": true
+    },
+    {
+      "path": "brands/index.html",
+      "status": 200,
+      "sha256": "638b79ab6f14cb6b11493411e9b0730afad5ec06150c86ade630a95d1c1c8b36",
+      "matches_export": true
+    },
+    {
+      "path": "payment/index.html",
+      "status": 200,
+      "sha256": "02c285f6cd17746ec94365e4432df5eb4d92b2a73572d41733c8ed8e7248fe51",
+      "matches_export": true
+    },
+    {
+      "path": "terms/index.html",
+      "status": 200,
+      "sha256": "9e9ef79e1887d908bb98224ad5146f30d6909282a56c15a48ae5c1c8c0305732",
+      "matches_export": true
+    },
+    {
+      "path": "about/index.html",
+      "status": 200,
+      "sha256": "aff4a4eb8fc468a4fd5f9b319bb5534782baafc696e77aba471974d3f2f92c4d",
+      "matches_export": true
+    },
+    {
+      "path": "models/index.html",
+      "status": 200,
+      "sha256": "0f094636e293499dddf8735004cd90b02062e3ed19a03c8d1cad3c853ea27106",
+      "matches_export": true
+    },
+    {
+      "path": "delivery/index.html",
+      "status": 200,
+      "sha256": "c58b3d866641a335ebab19e67951f6ff200cd1dce74f31d55bf88ced61073a52",
+      "matches_export": true
+    },
+    {
+      "path": "alternatives/index.html",
+      "status": 200,
+      "sha256": "6f64e3d4696cdcf080d0dd0a0b4a43e976193242e865714998947cdb779c09a7",
+      "matches_export": true
+    },
+    {
+      "path": "cookies/index.html",
+      "status": 200,
+      "sha256": "9cf530eae82b69cf44631428ac5f66ba42db4d637383f91828bc9c3613172557",
+      "matches_export": true
+    },
+    {
+      "path": "oil/index.html",
+      "status": 200,
+      "sha256": "04ddd7800632a6c7ed1f022a13752bbbe464a33576000be9c80dc5c14c613a1e",
+      "matches_export": true
+    },
+    {
+      "path": "brands/pedro-gil/index.html",
+      "status": 200,
+      "sha256": "d11daea4043ec11aa205696a20655a6d8caa7e216bd63d0a8865af1b88ab88ce",
+      "matches_export": true
+    },
+    {
+      "path": "brands/lutos/index.html",
+      "status": 200,
+      "sha256": "ff964e250c6a43a6fea91b4026e0ce9872fab827ef9c4765b310feea1e433191",
+      "matches_export": true
+    },
+    {
+      "path": "brands/atlas-copco/index.html",
+      "status": 200,
+      "sha256": "10e7ef0e62f4a317fb2bb5500bc3ec7f8050a7ab841d52b18dc83e88a635097d",
+      "matches_export": true
+    },
+    {
+      "path": "brands/kubicek/index.html",
+      "status": 200,
+      "sha256": "bca52a650dde8b44eca26efe16f7f0efc1e9273b6831aeeb96f699d108590def",
+      "matches_export": true
+    },
+    {
+      "path": "brands/busch/index.html",
+      "status": 200,
+      "sha256": "8bedf16a76aa77c1964ee181bb0d6ad0ed13df46a222563dd975290bcd76e66e",
+      "matches_export": true
+    },
+    {
+      "path": "brands/robuschi/index.html",
+      "status": 200,
+      "sha256": "056b2bd2af7b49d19b9baac9c0d8c2aef5c60c629395341a20d1ee7ba3af7427",
+      "matches_export": true
+    },
+    {
+      "path": "brands/kaeser/index.html",
+      "status": 200,
+      "sha256": "9809e43802e160eb11e87cf9ec2d43767face5700e3399da72577bc91f600337",
+      "matches_export": true
+    },
+    {
+      "path": "models/gm50l/index.html",
+      "status": 200,
+      "sha256": "a3f24d333b2724099eb24ceef95a861ed0fbf8f291fdae9a8a188e13ef09e0bf",
+      "matches_export": true
+    },
+    {
+      "path": "models/delta-hybrid/index.html",
+      "status": 200,
+      "sha256": "e0e4249c3977b3fa614719e32ced246232f15e0c5ae006a1d1b131f374551b65",
+      "matches_export": true
+    },
+    {
+      "path": "models/gm80l/index.html",
+      "status": 200,
+      "sha256": "08c009e4a1fc9c66fdebd0481eef980493156fad636b8dda3d44dd2b18ab467a",
+      "matches_export": true
+    },
+    {
+      "path": "models/delta-screw/index.html",
+      "status": 200,
+      "sha256": "f82d4a8d3491c59ebb52336d54c695c56d96c04d2e03d80385519b05ce703b44",
+      "matches_export": true
+    },
+    {
+      "path": "models/delta-blower/index.html",
+      "status": 200,
+      "sha256": "efc32ab3ed275ebefde5c45e9beaa52c4ae77c03d45d8f93449862af691b305c",
+      "matches_export": true
+    },
+    {
+      "path": "models/gm35s/index.html",
+      "status": 200,
+      "sha256": "ab81a18db81f222ad7c7392e03de627aa4aa6d3a77cf1aea9fcd750037fc42c8",
+      "matches_export": true
+    },
+    {
+      "path": "models/gm60s/index.html",
+      "status": 200,
+      "sha256": "fb145a439c41cee82f15ae836507884fc6163353a52f5c0a01737686b33523cb",
+      "matches_export": true
+    },
+    {
+      "path": "static/css/storefront.css",
+      "status": 200,
+      "sha256": "e6a04de6adf2f0eaf4d05cbfc6c0ab033028c5d0bcaf6ffb35e4994989ebfcce",
+      "matches_export": true
+    },
+    {
+      "path": "static/css/model-photos.css",
+      "status": 200,
+      "sha256": "b477e3fc65ae0e957dd1abadf764d61973c4e1e4cba99a00bac57fa1a010a95b",
+      "matches_export": true
+    },
+    {
+      "path": "static/css/home-sections.css",
+      "status": 200,
+      "sha256": "317f49c617cfef75f308286c5438731cbe4e11b80174a46cc26545caa6281e6a",
+      "matches_export": true
+    },
+    {
+      "path": "static/css/home-hero.css",
+      "status": 200,
+      "sha256": "a31080f5913d597e5af6bf14dd5d5eb4c9c2d7ff992716b1419d714cdf070e52",
+      "matches_export": true
+    },
+    {
+      "path": "static/css/blue-white.css",
+      "status": 200,
+      "sha256": "19d86f066d9b23c4659317994460be2aba3bcc620b72fe825deaf233278e7a6e",
+      "matches_export": true
+    },
+    {
+      "path": "static/css/reference-focus.css",
+      "status": 200,
+      "sha256": "494bd84d6d0445b67150ef266657aca1160f37e64fd01c9bdc0181ac9e5bae0a",
+      "matches_export": true
+    },
+    {
+      "path": "static/js/public-preview.js",
+      "status": 200,
+      "sha256": "3c3abd9804ed26d29a2fdccaf964365709347fde24677810ad0202041ea7f626",
+      "matches_export": true
+    },
+    {
+      "path": "static/js/site.js",
+      "status": 200,
+      "sha256": "20608da65bbc947ccb2e638639d8c72967ec29dc92002cf36f1eda1a918eadbe",
+      "matches_export": true
+    },
+    {
+      "path": "static/images/storefront/mark.svg",
+      "status": 200,
+      "sha256": "d982c2c8613c3fe1c21990b78729e45b3c63a05b9e70dd42fff6e675390f56a4",
+      "matches_export": true
+    },
+    {
+      "path": "static/images/brands/pedro-gil-tpg.webp",
+      "status": 200,
+      "sha256": "549eb81f42f95dc6d133a3024fabd6d153147b4d89b6365c2acfba24c0027e43",
+      "matches_export": true
+    },
+    {
+      "path": "static/images/brands/atlas-copco.jpg",
+      "status": 200,
+      "sha256": "da348d428a9035dab61505bfc5323d2cb948b04a3ef61db80972772c6e72b945",
+      "matches_export": true
+    },
+    {
+      "path": "static/images/brands/kubicek-screw.png",
+      "status": 200,
+      "sha256": "4fe1b8538a7e5dc40809c0df9d01880116b34f368f4e06e2be7bc8abf0916cbf",
+      "matches_export": true
+    },
+    {
+      "path": "static/images/brands/kaeser-gbs.png",
+      "status": 200,
+      "sha256": "5f76ee9e9285a6ca1f0931db714d482cf5d4a09e5c16f0e173dc9b9b28fe7cf4",
+      "matches_export": true
+    },
+    {
+      "path": "static/images/brands/robuschi-screw.webp",
+      "status": 200,
+      "sha256": "fabced5991078cccf7bd1b6cd9b6e5eaa61376f055deac7dfaa368c735232d21",
+      "matches_export": true
+    },
+    {
+      "path": "static/images/brands/lutos.jpg",
+      "status": 200,
+      "sha256": "1f668ca54a842965d8316470f1a11628a91480369ede1714f49ca78713ce08b9",
+      "matches_export": true
+    },
+    {
+      "path": "static/images/brands/atlas-copco-zs.png",
+      "status": 200,
+      "sha256": "0fedabdb6a186691f386ef2d77288716f7844e8ef0297208951b7f56e2d42258",
+      "matches_export": true
+    },
+    {
+      "path": "static/images/brands/busch.png",
+      "status": 200,
+      "sha256": "1222ef59b8fb060dacacae6727aee21aa5a81cfe56757262de5b7028428c52cd",
+      "matches_export": true
+    },
+    {
+      "path": "static/images/brands/kaeser.png",
+      "status": 200,
+      "sha256": "4e40e5af4328ee0698a25b6e9ef1d87774ededef6f625c310ffce1fdaf58045a",
+      "matches_export": true
+    },
+    {
+      "path": "static/images/brands/pedro-gil.webp",
+      "status": 200,
+      "sha256": "3e66f305e76c7a4ee3a143961667b2321a6d643e1223a8df632162ebc1d93dbb",
+      "matches_export": true
+    },
+    {
+      "path": "static/images/brands/robuschi.jpg",
+      "status": 200,
+      "sha256": "53fd8025cf82fa39c05bd53bcfcc87f6c6c33196694539ad0a9fbc27f036e9b7",
+      "matches_export": true
+    },
+    {
+      "path": "static/images/brands/kubicek.png",
+      "status": 200,
+      "sha256": "2c700418901b360cab7878fe274b0734b73ba93133363933e51a04542027853f",
+      "matches_export": true
+    },
+    {
+      "path": "static/images/source/article-oil.webp",
+      "status": 200,
+      "sha256": "ea8f87da8aa4ee1be4fed195ba93adf5da782ff46547ff6881ef86e6e0f0671b",
+      "matches_export": true
+    },
+    {
+      "path": "static/images/source/logo-psk-arus.svg",
+      "status": 200,
+      "sha256": "7d3f543de1f093f9a695a41c9fd2120d107f082eabd6169c55fc10fee653c881",
+      "matches_export": true
+    },
+    {
+      "path": "static/images/models/aerzen/delta-screw-open.png",
+      "status": 200,
+      "sha256": "d82167f83cea3efe0c68c2136b7b144d3fd49a28e4537977eff87fd8c6a5c26b",
+      "matches_export": true
+    },
+    {
+      "path": "static/images/models/aerzen/delta-hybrid-detail.png",
+      "status": 200,
+      "sha256": "cc525ed81f96fa4ed8a3065fb4a791b9e1f8bcb857ecd0382b3b512ab8baa707",
+      "matches_export": true
+    },
+    {
+      "path": "static/images/models/aerzen/delta-blower-open.png",
+      "status": 200,
+      "sha256": "5e19a4dfc40a460389b87426cc048b8d1aab47925cb3bea0a76c48b2673d3be8",
+      "matches_export": true
+    },
+    {
+      "path": "static/images/models/aerzen/delta-screw-enclosure.png",
+      "status": 200,
+      "sha256": "97567a84f0fca33a2e7227e8cc05250a312e5368ebc9af787427640089b9e64d",
+      "matches_export": true
+    },
+    {
+      "path": "static/images/models/aerzen/delta-hybrid-enclosure.png",
+      "status": 200,
+      "sha256": "1d5d8058012d3f7ae083cf342147a1a3af96ca027562ec56439e8612fc1ea894",
+      "matches_export": true
+    },
+    {
+      "path": "static/images/models/aerzen/delta-blower-enclosure.png",
+      "status": 200,
+      "sha256": "be3b56e5c26493d38f8d5cf5093f91a0ce38da6df6ebb50a8968e97afd4c7610",
+      "matches_export": true
+    },
+    {
+      "path": "static/images/models/aerzen/gm-series.png",
+      "status": 200,
+      "sha256": "2bc5f56863e585d3e83a4fe2fb83feba7d7997bac1d4ecf64847c412f4e89cac",
+      "matches_export": true
+    },
+    {
+      "path": "static/images/models/chinese/huadong-hdsr-package.webp",
+      "status": 200,
+      "sha256": "c83b74984add194a3efa1a6e3b4122986bd98b420b5553425e6754ebdaa9d7a8",
+      "matches_export": true
+    },
+    {
+      "path": "static/images/models/chinese/huadong-hdsr-unit-side.webp",
+      "status": 200,
+      "sha256": "31516cc697ec62e197beeb04f0a56bf4adbad92ef89c085c06bda7a910398381",
+      "matches_export": true
+    },
+    {
+      "path": "static/images/models/chinese/huadong-hdsr-unit.webp",
+      "status": 200,
+      "sha256": "e902de0217451338473b631131e3cde6a058d880f819077ea48d522a08244f07",
+      "matches_export": true
+    },
+    {
+      "path": "alternatives/huadong-hdsr/index.html",
+      "status": 200,
+      "sha256": "dc0e3ac3dc920ae777224bf4b6805e89a6ff32e6d6a1b6d63584b231190a848b",
+      "matches_export": true
+    }
+  ]
+}

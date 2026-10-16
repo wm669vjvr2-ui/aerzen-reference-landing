@@ -26,7 +26,8 @@
 .utility-bar { background: var(--wash); color: var(--muted); border-bottom: 1px solid var(--line); }
 .utility-links a:hover { color: var(--accent); }
 .brand-mark { color: var(--accent); background: transparent; padding-left: 0; align-items: flex-start; letter-spacing: -.035em; }
-.brand-wordmark { color: var(--accent); font-size: 26px; line-height: 1.2; font-weight: 700; letter-spacing: -.035em; white-space: nowrap; }
+.brand-logo { display: block; width: 172px; max-width: 100%; height: auto; object-fit: contain; }
+.footer-brand .brand-logo { width: 180px; }
 .brand-caption { color: var(--muted); }
 .header-phone, .callback-link { color: var(--accent); }
 .header-search button:hover { color: var(--accent); background: #dfebf7; }
@@ -82,5 +83,4 @@
   .brand-tile h2 { font-size: 27px; }
   .brand-series-photo img { height: 230px; }
 }
-@media (max-width: 600px) { .brand-wordmark { font-size: 23px; } }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }

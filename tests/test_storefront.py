@@ -283,6 +283,6 @@ def test_public_routes_do_not_reintroduce_main_site_links_or_old_photos(storefro
         assert response.status_code == 200, path
         page = CatalogPage(response.text)
         assert all(urlsplit(link["href"]).hostname != main_hostname for link in page.links), path
-        assert all(not source.startswith("/static/images/source/") or source == "/static/images/source/article-oil.webp"
+        assert all(not source.startswith("/static/images/source/") or source in {"/static/images/source/article-oil.webp", "/static/images/source/logo-psk-arus.svg"}
                    for source in page.sources), path
         assert not response.history
