@@ -1,5 +1,16 @@
 # AERZEN reference landing
 
+## Посмотреть главную
+
+![Главная страница](docs/previews/home-refined-desktop.png)
+
+[Мобильная версия](docs/previews/home-refined-mobile.png) · [Сервисный раздел](docs/previews/home-refined-service.png)
+
+Это изображения работающей локальной версии. Для интерактивного сайта требуется отдельное размещение Python/FastAPI; GitHub сам серверное приложение не запускает.
+
+**Доступ:** 16.10.2026 пользователь прямо поручил открыть этот репозиторий для просмотра другими людьми. Это новое указание заменяет прежнее требование private для данного репозитория; исходники и история становятся публичными. Прежние документы о private фиксируют состояние на соответствующую дату. Исходный репозиторий aerzen-psk-arus не изменяется.
+
+
 Separate Python/FastAPI/Jinja2/SQLite project on branch `codex/reference-landing`. The existing `aerzen-psk-arus` repository and its branches are not used as a remote for this project. The new site was created from a sanitized tracked-file snapshot; no original Git history, environment files, database or runtime state was copied.
 
 Latest selected direction (14 October 2026): a separate supplier site based on the verified structure of Erstvak.com, with a black/yellow palette and AERZEN models. The previous main-site layout and photos are no longer rendered. Home includes a multi-row header, industrial hero, applications, equipment categories, six work steps, services, company information, technical articles and an engineering request. Thematic photographs use the free Unsplash License; exact sources and limitations are in `docs/photo-sources.md`.
