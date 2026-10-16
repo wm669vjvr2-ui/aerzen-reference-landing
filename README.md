@@ -1,12 +1,14 @@
 # AERZEN reference landing
 
-## Посмотреть главную
+## Сайт для просмотра
+
+[Открыть демоверсию сайта](https://wm669vjvr2-ui.github.io/aerzen-reference-landing/)
 
 ![Главная страница](docs/previews/home-refined-desktop.png)
 
 [Мобильная версия](docs/previews/home-refined-mobile.png) · [Сервисный раздел](docs/previews/home-refined-service.png)
 
-Это изображения работающей локальной версии. Для интерактивного сайта требуется отдельное размещение Python/FastAPI; GitHub сам серверное приложение не запускает.
+Демоверсия открывается без входа: доступны 26 страниц, фотографии, каталог, поиск и фильтры. Формы и заказы отключены. Python/FastAPI-проект сохранён; GitHub Pages показывает подготовленную Python-экспортом копию для просмотра, без серверной обработки и базы данных.
 
 **Доступ:** 16.10.2026 пользователь прямо поручил открыть этот репозиторий для просмотра другими людьми. Это новое указание заменяет прежнее требование private для данного репозитория; исходники и история становятся публичными. Прежние документы о private фиксируют состояние на соответствующую дату. Исходный репозиторий aerzen-psk-arus не изменяется.
 
@@ -15,7 +17,7 @@ Separate Python/FastAPI/Jinja2/SQLite project on branch `codex/reference-landing
 
 Latest selected direction (14 October 2026): a separate supplier site based on the verified structure of Erstvak.com, with a black/yellow palette and AERZEN models. The previous main-site layout and photos are no longer rendered. Home includes a multi-row header, industrial hero, applications, equipment categories, six work steps, services, company information, technical articles and an engineering request. Thematic photographs use the free Unsplash License; exact sources and limitations are in `docs/photo-sources.md`.
 
-Photo update (15 October 2026): all 30 AERZEN/reference entries now have real manufacturer photographs in catalogue/detail pages and reference rows. Shared series images are labeled accurately; seven distinct primary photographs plus seven additional views are used. This is not a claim of 30 unique exact-SKU photographs. Sources, license limits, changed files and current validation: `docs/model-photo-update.md`. Manufacturer-photo redistribution rights are unconfirmed; publication remains blocked pending permission or replacement.
+Photo update (15 October 2026): all 30 AERZEN/reference entries now have real manufacturer photographs in catalogue/detail pages and reference rows. Shared series images are labeled accurately; seven distinct primary photographs plus seven additional views are used. This is not a claim of 30 unique exact-SKU photographs. Sources, license limits, changed files and current validation: `docs/model-photo-update.md`. Manufacturer-photo redistribution rights are unconfirmed; the viewing copy does not establish commercial redistribution rights. Confirm permissions or replace the assets before a business release.
 
 Catalogue follow-up (15 October 2026): HDSR, RSR and ERB now lead the homepage and the unified catalogue. All 23 reference models have their own photo/specification cards before the seven AERZEN entries. Native brand/type/category/search filters work without JavaScript. The large yellow non-supply banner was removed as requested; reference comparison context and inventory/commerce separation remain. Current verification: `docs/catalog-focus-update.md`.
 
@@ -41,7 +43,7 @@ During this session the existing installed Python runtime was used read-only fro
 
 Phone/email links work. Backend form submission, purchases and analytics are disabled by default. The request section provides a working mailto action; it opens the user's mail app and does not send a message automatically. Enabling server-side lead handling requires confirmed owner/privacy settings and actual operator delivery. The disabled form is labeled.
 
-No public HTTPS hosting is configured. Before launch: approve business data/privacy documents and retention, configure a compatible Python host with persistent private SQLite storage, permanent secret and HTTPS origin. Old unused media remain in source history and are not part of the displayed interface; exclude unapproved legacy assets from a production package. Do not expose server code, .env, .git or database files; do not change the Python stack for hosting. No temporary tunnel or owner-only preview counts as the public handoff.
+A public read-only viewing copy is available at https://wm669vjvr2-ui.github.io/aerzen-reference-landing/. It does not host the Python backend or database. Before business operation: approve business data/privacy documents and retention, configure a compatible Python host with persistent private SQLite storage, permanent secret and HTTPS origin. Old unused media remain in source history and are not part of the displayed interface; exclude unapproved legacy assets from a production package. Do not expose server code, .env, .git or database files; do not change the Python stack for hosting. No temporary tunnel or owner-only preview counts as the public handoff.
 
 ## Model comparisons added 14 October 2026
 

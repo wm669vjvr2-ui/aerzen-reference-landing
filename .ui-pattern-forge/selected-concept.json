@@ -15,5 +15,11 @@
   "catalog_revision": "2026-10-15",
   "catalog": "30 visible positions: 23 HDSR/RSR/ERB references first, then 7 AERZEN entries; model photos, GET brand/type/kind/search filters; reference data remain separate from inventory.",
   "home_revision": "2026-10-15",
-  "home": "Refined existing approved black/yellow direction: full-width licensed industrial-photo hero, large task-led heading, three model-series links, restrained equipment cards, asymmetric applications, numbered process list and yellow service band. Product data and catalogue unchanged."
+  "home": "Refined existing approved black/yellow direction: full-width licensed industrial-photo hero, large task-led heading, three model-series links, restrained equipment cards, asymmetric applications, numbered process list and yellow service band. Product data and catalogue unchanged.",
+  "public_preview": {
+    "url": "https://wm669vjvr2-ui.github.io/aerzen-reference-landing/",
+    "checked_on": "2026-10-16",
+    "mode": "Python-generated read-only viewing copy on GitHub Pages; backend and database not deployed",
+    "repository_visibility": "public by explicit user instruction on 2026-10-16"
+  }
 }

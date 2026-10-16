@@ -1,0 +1,387 @@
+{
+  "site_url": "https://wm669vjvr2-ui.github.io/aerzen-reference-landing/",
+  "checked_on": "2026-10-16",
+  "anonymous": true,
+  "sha256_matches": true,
+  "resources": [
+    {
+      "path": "/",
+      "status": 200,
+      "bytes": 41879
+    },
+    {
+      "path": ".nojekyll",
+      "status": 200,
+      "bytes": 0
+    },
+    {
+      "path": "robots.txt",
+      "status": 200,
+      "bytes": 26
+    },
+    {
+      "path": "contact/",
+      "status": 200,
+      "bytes": 18585
+    },
+    {
+      "path": "privacy/",
+      "status": 200,
+      "bytes": 15795
+    },
+    {
+      "path": "payment/",
+      "status": 200,
+      "bytes": 15594
+    },
+    {
+      "path": "articles/",
+      "status": 200,
+      "bytes": 17296
+    },
+    {
+      "path": "articles/pneumatic-conveying/",
+      "status": 200,
+      "bytes": 16952
+    },
+    {
+      "path": "articles/principle-roots/",
+      "status": 200,
+      "bytes": 17132
+    },
+    {
+      "path": "articles/delta-lube-check/",
+      "status": 200,
+      "bytes": 16973
+    },
+    {
+      "path": "terms/",
+      "status": 200,
+      "bytes": 16032
+    },
+    {
+      "path": "solutions/",
+      "status": 200,
+      "bytes": 21682
+    },
+    {
+      "path": "about/",
+      "status": 200,
+      "bytes": 18543
+    },
+    {
+      "path": "models/",
+      "status": 200,
+      "bytes": 71622
+    },
+    {
+      "path": "models/gm50l/",
+      "status": 200,
+      "bytes": 22935
+    },
+    {
+      "path": "models/delta-hybrid/",
+      "status": 200,
+      "bytes": 23617
+    },
+    {
+      "path": "models/gm80l/",
+      "status": 200,
+      "bytes": 22938
+    },
+    {
+      "path": "models/delta-screw/",
+      "status": 200,
+      "bytes": 23638
+    },
+    {
+      "path": "models/delta-blower/",
+      "status": 200,
+      "bytes": 23738
+    },
+    {
+      "path": "models/gm35s/",
+      "status": 200,
+      "bytes": 22936
+    },
+    {
+      "path": "models/gm60s/",
+      "status": 200,
+      "bytes": 22935
+    },
+    {
+      "path": "static/css/storefront.css",
+      "status": 200,
+      "bytes": 54609
+    },
+    {
+      "path": "static/css/model-photos.css",
+      "status": 200,
+      "bytes": 3388
+    },
+    {
+      "path": "static/css/home-sections.css",
+      "status": 200,
+      "bytes": 15503
+    },
+    {
+      "path": "static/css/home-hero.css",
+      "status": 200,
+      "bytes": 6247
+    },
+    {
+      "path": "static/css/reference-focus.css",
+      "status": 200,
+      "bytes": 1372
+    },
+    {
+      "path": "static/images/storefront/industrial-plant.jpg",
+      "status": 200,
+      "bytes": 488964
+    },
+    {
+      "path": "static/images/storefront/factory-hall.jpg",
+      "status": 200,
+      "bytes": 610627
+    },
+    {
+      "path": "static/images/storefront/mark.svg",
+      "status": 200,
+      "bytes": 182
+    },
+    {
+      "path": "static/images/storefront/water-treatment.jpg",
+      "status": 200,
+      "bytes": 451762
+    },
+    {
+      "path": "static/images/models/aerzen/delta-screw-open.png",
+      "status": 200,
+      "bytes": 995454
+    },
+    {
+      "path": "static/images/models/aerzen/delta-hybrid-detail.png",
+      "status": 200,
+      "bytes": 1189604
+    },
+    {
+      "path": "static/images/models/aerzen/delta-blower-open.png",
+      "status": 200,
+      "bytes": 839564
+    },
+    {
+      "path": "static/images/models/aerzen/delta-screw-enclosure.png",
+      "status": 200,
+      "bytes": 672968
+    },
+    {
+      "path": "static/images/models/aerzen/delta-hybrid-enclosure.png",
+      "status": 200,
+      "bytes": 662592
+    },
+    {
+      "path": "static/images/models/aerzen/delta-blower-enclosure.png",
+      "status": 200,
+      "bytes": 674651
+    },
+    {
+      "path": "static/images/models/aerzen/gm-series.png",
+      "status": 200,
+      "bytes": 845859
+    },
+    {
+      "path": "static/images/models/chinese/huadong-hdsr-package.webp",
+      "status": 200,
+      "bytes": 32566
+    },
+    {
+      "path": "static/images/models/chinese/huadong-hdsr-unit-side.webp",
+      "status": 200,
+      "bytes": 65702
+    },
+    {
+      "path": "static/images/models/chinese/mingtian-rsr-package-side.webp",
+      "status": 200,
+      "bytes": 46074
+    },
+    {
+      "path": "static/images/models/chinese/huadong-hdsr-unit.webp",
+      "status": 200,
+      "bytes": 41106
+    },
+    {
+      "path": "static/images/models/chinese/mingtian-rsr-unit.webp",
+      "status": 200,
+      "bytes": 13386
+    },
+    {
+      "path": "static/images/models/chinese/mingtian-rsr-package.webp",
+      "status": 200,
+      "bytes": 38930
+    },
+    {
+      "path": "static/images/models/erb/erb-assembly.png",
+      "status": 200,
+      "bytes": 337784
+    },
+    {
+      "path": "static/js/public-preview.js",
+      "status": 200,
+      "bytes": 1998
+    },
+    {
+      "path": "static/js/site.js",
+      "status": 200,
+      "bytes": 3822
+    },
+    {
+      "path": "delivery/",
+      "status": 200,
+      "bytes": 15477
+    },
+    {
+      "path": "alternatives/",
+      "status": 200,
+      "bytes": 25875
+    },
+    {
+      "path": "alternatives/huadong-hdsr/",
+      "status": 200,
+      "bytes": 35203
+    },
+    {
+      "path": "alternatives/erstvak-erb/",
+      "status": 200,
+      "bytes": 29947
+    },
+    {
+      "path": "alternatives/mingtian-rsr/",
+      "status": 200,
+      "bytes": 30410
+    },
+    {
+      "path": "repair/",
+      "status": 200,
+      "bytes": 21586
+    },
+    {
+      "path": "cookies/",
+      "status": 200,
+      "bytes": 15890
+    }
+  ],
+  "private_paths": {
+    ".env": 404,
+    ".git/config": 404,
+    "app/main.py": 404,
+    "content/site.json": 404,
+    "data.sqlite": 404
+  },
+  "deployed_commit": "65d7dfd2136a4c15c67edb0959e8756fd80db230",
+  "final_build_pages_checked": [
+    {
+      "path": "/",
+      "status": 200
+    },
+    {
+      "path": "contact/",
+      "status": 200
+    },
+    {
+      "path": "privacy/",
+      "status": 200
+    },
+    {
+      "path": "payment/",
+      "status": 200
+    },
+    {
+      "path": "articles/",
+      "status": 200
+    },
+    {
+      "path": "articles/pneumatic-conveying/",
+      "status": 200
+    },
+    {
+      "path": "articles/principle-roots/",
+      "status": 200
+    },
+    {
+      "path": "articles/delta-lube-check/",
+      "status": 200
+    },
+    {
+      "path": "terms/",
+      "status": 200
+    },
+    {
+      "path": "solutions/",
+      "status": 200
+    },
+    {
+      "path": "about/",
+      "status": 200
+    },
+    {
+      "path": "models/",
+      "status": 200
+    },
+    {
+      "path": "models/gm50l/",
+      "status": 200
+    },
+    {
+      "path": "models/delta-hybrid/",
+      "status": 200
+    },
+    {
+      "path": "models/gm80l/",
+      "status": 200
+    },
+    {
+      "path": "models/delta-screw/",
+      "status": 200
+    },
+    {
+      "path": "models/delta-blower/",
+      "status": 200
+    },
+    {
+      "path": "models/gm35s/",
+      "status": 200
+    },
+    {
+      "path": "models/gm60s/",
+      "status": 200
+    },
+    {
+      "path": "delivery/",
+      "status": 200
+    },
+    {
+      "path": "alternatives/",
+      "status": 200
+    },
+    {
+      "path": "alternatives/huadong-hdsr/",
+      "status": 200
+    },
+    {
+      "path": "alternatives/erstvak-erb/",
+      "status": 200
+    },
+    {
+      "path": "alternatives/mingtian-rsr/",
+      "status": 200
+    },
+    {
+      "path": "repair/",
+      "status": 200
+    },
+    {
+      "path": "cookies/",
+      "status": 200
+    }
+  ]
+}
