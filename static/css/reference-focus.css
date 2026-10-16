@@ -1,0 +1,20 @@
+/* Existing storefront tokens; foreground the reference families without stock claims. */
+.reference-hero-media { padding: 0; background: white; }
+.reference-hero-media .equipment-photo { display: flex; flex-direction: column; min-height: 100%; }
+.reference-hero-media .equipment-photo img { flex: 1; min-height: 330px; height: 370px; padding: 25px; object-fit: contain; }
+.reference-hero-media .equipment-photo figcaption { border-top: 1px solid var(--line); padding: 15px 20px; }
+.reference-family-intro { max-width: 780px; margin: -5px 0 25px; color: var(--muted); font-size: 14px; line-height: 1.75; }
+.reference-family-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.reference-family-grid .category-card p { margin-bottom: 24px; }
+.reference-family-grid .category-card .link-arrow { margin-top: auto; padding-top: 9px; }
+.reference-family-grid .equipment-photo img { height: 230px; }
+@media (max-width: 900px) {
+  .reference-hero-media .equipment-photo img { min-height: 260px; height: 300px; }
+  .reference-family-grid { grid-template-columns: 1fr; }
+  .reference-family-grid .equipment-photo img { height: 270px; }
+}
+@media (max-width: 600px) {
+  .reference-family-intro { font-size: 13px; }
+  .reference-hero-media .equipment-photo img { min-height: 0; height: 280px; padding: 18px; }
+  .reference-family-grid .equipment-photo img { height: 240px; }
+}
